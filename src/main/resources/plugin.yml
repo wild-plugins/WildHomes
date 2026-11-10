@@ -1,0 +1,45 @@
+name: WildHomes
+version: '${project.version}'
+main: de.justgino.plugins.wildhomes.WildHomes
+description: '${project.description}'
+api-version: '26.1'
+folia-supported: true
+authors: [ JustGino ]
+softdepend: [ PlaceholderAPI ]
+libraries:
+  - org.mariadb.jdbc:mariadb-java-client:${mariadb.version}
+
+permissions:
+  wildhomes.use:
+    description: Open the homes dialog and teleport to own homes
+    default: true
+  wildhomes.sethome:
+    description: Set and move own homes
+    default: true
+  wildhomes.delhome:
+    description: Delete own homes
+    default: true
+  wildhomes.rename:
+    description: Rename own homes
+    default: true
+  wildhomes.icon:
+    description: Change the icon of own homes
+    default: true
+  wildhomes.crossserver:
+    description: Teleport to own homes on other servers of the network
+    default: true
+  wildhomes.amount.unlimited:
+    description: As many homes as homes.max-slots in config.yml allows
+    default: op
+  wildhomes.bypass.warmup:
+    description: Teleport without the countdown
+    default: op
+  wildhomes.bypass.cooldown:
+    description: Teleport without the cooldown
+    default: op
+  wildhomes.bypass.world:
+    description: Set homes in disabled worlds
+    default: op
+  wildhomes.admin:
+    description: /wildhomes reload and managing the homes of other players
+    default: op

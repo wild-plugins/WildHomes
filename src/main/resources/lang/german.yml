@@ -1,0 +1,95 @@
+# WildHomes - Deutsch
+# Format: MiniMessage (https://docs.advntr.dev/minimessage/format.html)
+# "" blendet eine Nachricht aus. PlaceholderAPI-Platzhalter funktionieren in Chat-Nachrichten.
+
+prefix: "<#4cc38a>WildHomes <dark_gray>» <gray>"
+default-name: "Zuhause {slot}"
+
+messages:
+  no-permission: "<red>Dafür hast du keine Rechte."
+  players-only: "<red>Diesen Befehl können nur Spieler nutzen."
+  reloaded: "Konfiguration und Sprache neu geladen."
+  loading: "<red>Deine Zuhause werden noch geladen, versuche es gleich noch einmal."
+  error: "<red>Etwas ist schiefgelaufen, bitte versuche es erneut."
+  home-set: "Zuhause <white>{home}</white> gesetzt."
+  home-moved: "Zuhause <white>{home}</white> an deine Position verschoben."
+  home-deleted: "Zuhause <white>{home}</white> gelöscht."
+  home-renamed: "Zuhause in <white>{home}</white> umbenannt."
+  icon-changed: "Neues Symbol für <white>{home}</white>."
+  home-not-found: "<red>Es gibt kein Zuhause namens <white>{home}</white>."
+  home-exists: "<red>Es gibt schon ein Zuhause namens <white>{home}</white>."
+  no-homes: "Du hast noch kein Zuhause. Setze eins mit <white>/sethome</white>."
+  limit-reached: "<red>Du kannst nicht mehr als <white>{max}</white> Zuhause haben."
+  slot-locked: "<red>Dieser Platz ist gesperrt."
+  over-limit: "<red>Dieses Zuhause liegt über deinem Limit."
+  name-invalid: "<red>Der Name enthält Zeichen, die nicht erlaubt sind."
+  name-too-long: "<red>Namen dürfen höchstens <white>{max}</white> Zeichen lang sein."
+  world-disabled: "<red>In dieser Welt kannst du kein Zuhause setzen."
+  player-not-found: "<red>Es gibt keinen Spieler namens <white>{player}</white>."
+  usage-delhome: "<red>Benutzung: <white>/delhome <name>"
+
+teleport:
+  countdown: "Teleport zu <white>{home}</white> in <white>{seconds}</white>..."
+  countdown-title: "<#4cc38a>{seconds}"
+  countdown-subtitle: "<gray>Teleport zu <white>{home}"
+  success: "Zu <white>{home}</white> teleportiert."
+  cancelled-move: "<red>Teleport abgebrochen, weil du dich bewegt hast."
+  cancelled-damage: "<red>Teleport abgebrochen, weil du Schaden genommen hast."
+  cooldown: "<red>Bitte warte noch <white>{seconds}</white> Sekunden."
+  world-missing: "<red>Die Welt dieses Zuhauses gibt es nicht mehr."
+  no-cross-server: "<red>Dieses Zuhause ist auf <white>{server}</white>, du kannst nur Zuhause auf diesem Server nutzen."
+  switching: "Du wirst zu <white>{server}</white> gesendet..."
+  switch-failed: "<red>Du konntest nicht zu <white>{server}</white> gesendet werden."
+
+admin:
+  help:
+    - "<#4cc38a>WildHomes <gray>{version}"
+    - "<white>/wildhomes reload <gray>- Konfiguration und Sprache neu laden"
+    - "<white>/wildhomes open <spieler> <gray>- Zuhause eines Spielers verwalten"
+
+dialogs:
+  main:
+    title: "Zuhause"
+    title-other: "Zuhause von {player}"
+    home: "{icon} {home}"
+    home-tooltip:
+      - "<white>{home}"
+      - "<gray>Welt: <white>{world}"
+      - "<gray>Position: <white>{x}, {y}, {z}"
+      - ""
+      - "<#4cc38a>Klicke zum Verwalten"
+    home-tooltip-server: "<gray>Server: <white>{server}"
+    empty: "<gray>Neues Zuhause"
+    empty-tooltip:
+      - "<gray>Klicke, um ein neues Zuhause"
+      - "<gray>an deiner Position zu setzen"
+    locked: "<red>Gesperrt"
+    locked-tooltip:
+      - "<gray>Hol dir einen höheren Rang"
+      - "<gray>für mehr Zuhause-Plätze"
+    more: "Mehr anzeigen"
+    less: "Weniger anzeigen"
+  home:
+    title: "{home}"
+    teleport: "Teleportieren"
+    icon: "Symbol ändern"
+    rename: "Umbenennen"
+    delete: "<red>Löschen"
+    back: "Zurück"
+  rename:
+    title: "Umbenennen"
+    label: "Neuer Name"
+    save: "Speichern"
+    cancel: "Abbrechen"
+  icons:
+    title: "Symbol wählen"
+    search-label: "Suchen"
+    search: "Suchen"
+    default: "Standard"
+    back: "Zurück"
+    item: "{icon} {item}"
+    no-results: "<gray>Keine Items gefunden für <white>{search}"
+  delete:
+    title: "<red>{home} löschen?"
+    cancel: "Abbrechen"
+    confirm: "<red>Löschen"

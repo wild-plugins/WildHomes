@@ -1,0 +1,20 @@
+WildHomes - License
+===================
+
+Copyright (c) 2026 JustGino. All rights reserved.
+
+The source code is public so that it can be read, reviewed and built. It is
+not open source.
+
+You may:
+- run WildHomes on servers and networks you operate,
+- build it from this source for that purpose,
+- change it for your own use on those servers.
+
+You may not:
+- sell, re-upload or redistribute WildHomes or a changed version of it,
+- publish it, or parts of it, under another name,
+- remove this notice.
+
+The software is provided "as is", without warranty of any kind. The author is
+not liable for any damage or data loss resulting from its use.

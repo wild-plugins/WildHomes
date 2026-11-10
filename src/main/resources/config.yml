@@ -1,0 +1,80 @@
+# WildHomes - settings
+# Every text and dialog label is in lang/<language>.yml.
+# Apply changes with /wildhomes reload. Command aliases need a restart.
+
+# File in lang/ without .yml: english, german
+language: english
+
+# Must match the name of this server in the proxy config (velocity.toml)
+server-name: survival
+
+cross-server:
+  # Teleports to homes on other servers. Needs mariadb in database.yml,
+  # the same database on every server and WildHomes on every server.
+  enabled: false
+  # Seconds the player may take to switch servers
+  connect-timeout: 15
+
+homes:
+  # Homes without any wildhomes.amount.<n> permission
+  default-amount: 1
+  # Highest amount of homes and the number of slots in the dialog
+  max-slots: 28
+  default-icon: white_bed
+  name-max-length: 16
+  # Allowed characters in home names (regular expression)
+  name-pattern: "[\\p{L}\\p{N}_ -]+"
+  # /sethome with an existing name moves that home
+  overwrite-existing: true
+  # Homes above the limit (after losing a rank) can still be used
+  use-over-limit: true
+  disabled-worlds: []
+
+teleport:
+  # Seconds, 0 = instant
+  warmup: 3
+  cooldown: 0
+  cancel-on-move: true
+  cancel-on-damage: true
+  # ACTIONBAR, TITLE, CHAT or NONE
+  countdown-display: ACTIONBAR
+  # Sound names, "" = no sound
+  sounds:
+    volume: 1.0
+    countdown: block.note_block.hat
+    success: entity.enderman.teleport
+    cancel: block.note_block.bass
+
+# Button widths are in GUI pixels (1 - 1024).
+# 4 columns of 115 still fit on a 1080p screen with GUI scale 4.
+dialogs:
+  main:
+    columns: 4
+    button-width: 110
+    icon: white_bed
+    # Slots before "Show more"
+    preview-slots: 7
+    show-locked: true
+    # What a click on a home does: MANAGE or TELEPORT
+    click-action: MANAGE
+  home:
+    columns: 2
+    button-width: 150
+  rename:
+    button-width: 200
+    input-width: 200
+  icons:
+    columns: 4
+    button-width: 115
+    # Items to choose from, [] = every item
+    list: []
+  delete:
+    button-width: 150
+    # Ask before a home is deleted in the dialog
+    confirm: true
+
+commands:
+  home-aliases: [homes]
+  sethome-aliases: [createhome]
+  delhome-aliases: [deletehome, removehome]
+  admin-aliases: [whomes]

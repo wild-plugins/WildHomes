@@ -1,0 +1,22 @@
+# WildHomes - database
+# Changes need a server restart.
+
+# sqlite  - one file in the plugin folder, for a single server
+# mariadb - one shared database, needed for cross-server (MySQL works too)
+type: sqlite
+
+sqlite:
+  file: homes.db
+
+mariadb:
+  host: localhost
+  port: 3306
+  database: wildhomes
+  username: wildhomes
+  password: ""
+  pool-size: 4
+  # Extra JDBC parameters, for example sslMode: trust
+  properties: {}
+
+# Must be the same on every server of a network
+table-prefix: wildhomes_

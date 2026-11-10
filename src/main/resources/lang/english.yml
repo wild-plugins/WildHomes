@@ -1,0 +1,95 @@
+# WildHomes - English
+# Format: MiniMessage (https://docs.advntr.dev/minimessage/format.html)
+# "" hides a message. PlaceholderAPI placeholders work in chat messages.
+
+prefix: "<#4cc38a>WildHomes <dark_gray>» <gray>"
+default-name: "Home {slot}"
+
+messages:
+  no-permission: "<red>You don't have permission to do that."
+  players-only: "<red>Only players can use this command."
+  reloaded: "Configuration and language reloaded."
+  loading: "<red>Your homes are still loading, try again in a moment."
+  error: "<red>Something went wrong, please try again."
+  home-set: "Home <white>{home}</white> set."
+  home-moved: "Home <white>{home}</white> moved to your position."
+  home-deleted: "Home <white>{home}</white> deleted."
+  home-renamed: "Home renamed to <white>{home}</white>."
+  icon-changed: "New icon for <white>{home}</white>."
+  home-not-found: "<red>There is no home called <white>{home}</white>."
+  home-exists: "<red>There already is a home called <white>{home}</white>."
+  no-homes: "You have no homes yet. Set one with <white>/sethome</white>."
+  limit-reached: "<red>You can't have more than <white>{max}</white> homes."
+  slot-locked: "<red>This slot is locked."
+  over-limit: "<red>This home is above your home limit."
+  name-invalid: "<red>That name contains characters that are not allowed."
+  name-too-long: "<red>Home names can be at most <white>{max}</white> characters long."
+  world-disabled: "<red>You can't set homes in this world."
+  player-not-found: "<red>There is no player called <white>{player}</white>."
+  usage-delhome: "<red>Usage: <white>/delhome <name>"
+
+teleport:
+  countdown: "Teleporting to <white>{home}</white> in <white>{seconds}</white>..."
+  countdown-title: "<#4cc38a>{seconds}"
+  countdown-subtitle: "<gray>Teleporting to <white>{home}"
+  success: "Teleported to <white>{home}</white>."
+  cancelled-move: "<red>Teleport cancelled because you moved."
+  cancelled-damage: "<red>Teleport cancelled because you took damage."
+  cooldown: "<red>Please wait <white>{seconds}</white> more seconds."
+  world-missing: "<red>The world of this home does not exist anymore."
+  no-cross-server: "<red>This home is on <white>{server}</white>, you can only use homes on this server."
+  switching: "Sending you to <white>{server}</white>..."
+  switch-failed: "<red>Could not send you to <white>{server}</white>."
+
+admin:
+  help:
+    - "<#4cc38a>WildHomes <gray>{version}"
+    - "<white>/wildhomes reload <gray>- reload config and language"
+    - "<white>/wildhomes open <player> <gray>- manage the homes of a player"
+
+dialogs:
+  main:
+    title: "Homes"
+    title-other: "Homes of {player}"
+    home: "{icon} {home}"
+    home-tooltip:
+      - "<white>{home}"
+      - "<gray>World: <white>{world}"
+      - "<gray>Position: <white>{x}, {y}, {z}"
+      - ""
+      - "<#4cc38a>Click to manage"
+    home-tooltip-server: "<gray>Server: <white>{server}"
+    empty: "<gray>New Home"
+    empty-tooltip:
+      - "<gray>Click to set a new home"
+      - "<gray>at your position"
+    locked: "<red>Locked"
+    locked-tooltip:
+      - "<gray>Get a higher rank for"
+      - "<gray>more home slots"
+    more: "Show more"
+    less: "Show less"
+  home:
+    title: "{home}"
+    teleport: "Teleport"
+    icon: "Change icon"
+    rename: "Rename"
+    delete: "<red>Delete"
+    back: "Back"
+  rename:
+    title: "Rename"
+    label: "New name"
+    save: "Save"
+    cancel: "Cancel"
+  icons:
+    title: "Choose icon"
+    search-label: "Search"
+    search: "Search"
+    default: "Default"
+    back: "Back"
+    item: "{icon} {item}"
+    no-results: "<gray>No items found for <white>{search}"
+  delete:
+    title: "<red>Delete {home}?"
+    cancel: "Cancel"
+    confirm: "<red>Delete"
