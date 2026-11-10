@@ -36,7 +36,6 @@ public final class Database {
     private String homes;
     private String players;
     private String pending;
-    private String servers;
 
     public Database(WildHomes plugin) {
         this.plugin = plugin;
@@ -55,7 +54,6 @@ public final class Database {
         homes = prefix + "homes";
         players = prefix + "players";
         pending = prefix + "pending";
-        servers = prefix + "servers";
 
         try {
             Configurator.setLevel("de.justgino.plugins.wildhomes.libs.hikari", Level.WARN);
@@ -76,7 +74,7 @@ public final class Database {
             if (extra != null) for (String key : extra.getKeys(false)) params.put(key, String.valueOf(extra.get(key)));
             String query = params.entrySet().stream().map(e -> e.getKey() + "=" + e.getValue()).collect(Collectors.joining("&"));
             hikari.setDriverClassName("org.mariadb.jdbc.Driver");
-            hikari.setJdbcUrl("jdbc:mariadb://" + db.getString("host", "localhost") + ":" + db.getInt("port", 3306)
+            hikari.setJdbcUrl("jdbc:mariadb://" + db.getString("host", "localhost") + ":" + port(db.get("port"))
                     + "/" + db.getString("database", "wildhomes") + "?" + query);
             hikari.setUsername(db.getString("username", "root"));
             hikari.setPassword(db.getString("password", ""));
@@ -117,28 +115,15 @@ public final class Database {
                     + "player VARCHAR(36) NOT NULL PRIMARY KEY, server VARCHAR(64) NOT NULL, home VARCHAR(64) NOT NULL, "
                     + "world VARCHAR(128) NOT NULL, x DOUBLE NOT NULL, y DOUBLE NOT NULL, z DOUBLE NOT NULL, "
                     + "yaw FLOAT NOT NULL, pitch FLOAT NOT NULL, created BIGINT NOT NULL)" + options);
-            s.executeUpdate("CREATE TABLE IF NOT EXISTS " + servers + " ("
-                    + "name VARCHAR(64) NOT NULL PRIMARY KEY, address VARCHAR(255) NOT NULL, updated BIGINT NOT NULL)" + options);
         }
     }
 
-    public void saveServer(String name, String address) throws SQLException {
-        try (Connection c = source.getConnection();
-             PreparedStatement ps = c.prepareStatement("REPLACE INTO " + servers + " (name, address, updated) VALUES (?, ?, ?)")) {
-            ps.setString(1, name.toLowerCase(Locale.ROOT));
-            ps.setString(2, address);
-            ps.setLong(3, System.currentTimeMillis());
-            ps.executeUpdate();
-        }
-    }
-
-    public @Nullable String serverAddress(String name) throws SQLException {
-        try (Connection c = source.getConnection();
-             PreparedStatement ps = c.prepareStatement("SELECT address FROM " + servers + " WHERE name = ?")) {
-            ps.setString(1, name.toLowerCase(Locale.ROOT));
-            try (ResultSet rs = ps.executeQuery()) {
-                return rs.next() ? rs.getString("address") : null;
-            }
+    private static int port(Object value) {
+        if (value instanceof Number number) return number.intValue();
+        try {
+            return Integer.parseInt(String.valueOf(value).trim());
+        } catch (NumberFormatException e) {
+            return 3306;
         }
     }
 

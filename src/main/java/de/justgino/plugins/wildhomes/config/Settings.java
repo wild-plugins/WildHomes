@@ -22,14 +22,10 @@ public final class Settings {
 
     public enum ClickAction { MANAGE, TELEPORT }
 
-    public enum Method { PROXY, TRANSFER }
-
     public final String language;
     public final String serverName;
     public final boolean crossServer;
     public final int connectTimeout;
-    public final Method crossServerMethod;
-    public final String serverAddress;
 
     public final int defaultAmount;
     public final int maxSlots;
@@ -76,8 +72,6 @@ public final class Settings {
         serverName = c.getString("server-name", "survival").trim();
         crossServer = c.getBoolean("cross-server.enabled");
         connectTimeout = Math.max(3, c.getInt("cross-server.connect-timeout", 15));
-        crossServerMethod = enumValue(Method.class, c.getString("cross-server.method"), Method.PROXY);
-        serverAddress = c.getString("cross-server.server-address", "").trim();
 
         defaultAmount = Math.max(0, c.getInt("homes.default-amount", 1));
         maxSlots = clamp(c.getInt("homes.max-slots", 28), 1, 200);

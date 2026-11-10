@@ -23,7 +23,7 @@ cross-server:
 
 homes:
   # Homes without any wildhomes.amount.<n> permission
-  default-amount: 1
+  default-amount: 2
   # Highest amount of homes and the number of slots in the dialog
   max-slots: 28
   default-icon: white_bed
@@ -83,4 +83,4 @@ commands:
   home-aliases: [homes]
   sethome-aliases: [createhome]
   delhome-aliases: [deletehome, removehome]
-  admin-aliases: [wild-homes-admin]
+  admin-aliases: [homesadmin]

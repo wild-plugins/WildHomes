@@ -72,14 +72,11 @@ Switch the language with `language: german` and `/home-admin reload`. For anothe
 
 ## Cross-server
 
-Every server uses the same MariaDB database (`database.yml` -> `type: mariadb`, same `table-prefix`), and `config.yml` -> `cross-server.enabled: true` with a unique `server-name`. Then pick a `method`:
+1. Every server uses the same MariaDB database (`database.yml` -> `type: mariadb`, same `table-prefix`).
+2. `config.yml` -> `cross-server.enabled: true` and `server-name` set to the name of the server in the proxy config.
+3. Velocity: `bungee-plugin-message-channel = true` (the default).
 
-| Method | How the player gets there | Needs |
-|---|---|---|
-| `PROXY` | Switched through Velocity / BungeeCord | `server-name` = the name in `velocity.toml`, `bungee-plugin-message-channel = true` (default) |
-| `TRANSFER` | Sent straight to the other server's `server-address` (e.g. `play.example.net:25566`) | `server-address` set on every server, `accepts-transfers=true` in its `server.properties`. No proxy |
-
-The target server places the player at the home when they join. No plugin on the proxy is needed.
+A home on another server is teleported to by switching the player through the proxy; the target server places them at the home when they join. No plugin on the proxy is needed.
 
 ## Placeholders (PlaceholderAPI)
 
@@ -103,7 +100,3 @@ The jar is `target/WildHomes-<version>.jar`. `tools/SpriteMap.java` rebuilds `sp
 ## Icons and versions
 
 The icon list only contains items that exist on the server and are enabled in its world. With ViaVersion, each player only sees items their own client version knows, and homes with a newer icon show the default icon to older clients. No missing-texture icons.
-
-## Database
-
-`database.yml` holds the connection, the SQLite journal mode and busy timeout, the JDBC parameters (SSL, timeouts) and the connection pool (size, idle, lifetime, keepalive, leak detection).
