@@ -65,8 +65,8 @@ dialogs:
     button-width: 200
     input-width: 200
   icons:
-    columns: 4
-    button-width: 115
+    columns: 3
+    button-width: 150
     # Items to choose from, [] = every item
     list: []
     # Items left out of the list, * matches any text
@@ -81,6 +81,9 @@ dialogs:
       - "weathered_*"
       - "oxidized_*"
       - "waxed_*"
+      - "*_map"
+      - "*_boat_*"
+      - "*_sherd"
   delete:
     button-width: 150
     # Ask before a home is deleted in the dialog

@@ -104,3 +104,7 @@ The jar is `target/WildHomes-<version>.jar`. `tools/SpriteMap.java` rebuilds `sp
 The icon list only contains items that exist on the server and are enabled in its world. With ViaVersion, each player only sees items their own client version knows, and homes with a newer icon show the default icon to older clients. No missing-texture icons.
 
 The list leaves out what `dialogs.icons.exclude` matches (`*` = any text): by default stairs, slabs, fences, fence gates, buttons, trapdoors and the exposed, weathered, oxidized and waxed copper variants. The search matches the item ID and the English and German item name, e.g. `diamond` or `Diamant`. Dialogs only send the typed text when a button is pressed, so the list updates on the Search button, not while typing.
+
+## License
+
+MIT, see [LICENSE](LICENSE). Free to use, change and share.
