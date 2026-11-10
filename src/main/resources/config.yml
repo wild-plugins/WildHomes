@@ -82,7 +82,8 @@ dialogs:
       - "oxidized_*"
       - "waxed_*"
       - "*_map"
-      - "*_boat_*"
+      - "*_boat"
+      - "*_raft"
       - "*_sherd"
   delete:
     button-width: 150
