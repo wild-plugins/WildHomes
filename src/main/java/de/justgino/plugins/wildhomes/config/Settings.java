@@ -80,7 +80,7 @@ public final class Settings {
             for (String key : autoSection.getKeys(false)) auto.put(key.toLowerCase(Locale.ROOT), String.valueOf(autoSection.get(key)).trim().toLowerCase(Locale.ROOT));
         }
         autoLanguages = Map.copyOf(auto);
-        serverName = c.getString("server-name", "survival").trim();
+        serverName = YamlConfiguration.loadConfiguration(new File(plugin.getDataFolder(), "database.yml")).getString("server-name", "survival").trim();
         crossServer = c.getBoolean("cross-server.enabled");
         connectTimeout = Math.max(3, c.getInt("cross-server.connect-timeout", 15));
 

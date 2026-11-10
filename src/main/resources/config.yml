@@ -9,9 +9,6 @@ language: auto
 auto-languages:
   de: german
 
-# Must match the name of this server in the proxy config (velocity.toml)
-server-name: survival
-
 cross-server:
   # Teleports to homes on other servers. Needs mariadb in database.yml,
   # the same database on every server and WildHomes on every server.

@@ -18,5 +18,8 @@ mariadb:
   # Extra JDBC parameters, for example sslMode: trust
   properties: {}
 
+# Name of this server, must match velocity.toml (only used for cross-server)
+server-name: "survival"
+
 # Must be the same on every server of a network
 table-prefix: "wildhomes_"

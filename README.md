@@ -67,7 +67,7 @@ Example: helpers get `admin.view` and `admin.teleport`, moderators additionally 
 | File | Content |
 |---|---|
 | `config.yml` | Every value: limits, teleport, dialog layout, aliases |
-| `database.yml` | `sqlite` or `mariadb`, connection, table prefix |
+| `database.yml` | `sqlite` or `mariadb`, connection, server name, table prefix |
 | `lang/english.yml`, `lang/german.yml` | Every message and dialog text (MiniMessage) |
 
 `language: auto` (default) gives every player the file for their game language from `auto-languages` (`de: german`), everyone else gets English. A fixed `language: german` uses one file for everybody. Switch in game with `/home-admin language <name>`. For another language copy `english.yml`, translate it, and add it to `auto-languages` or pick it directly.
@@ -75,7 +75,7 @@ Example: helpers get `admin.view` and `admin.teleport`, moderators additionally 
 ## Cross-server
 
 1. Every server uses the same MariaDB database (`database.yml` -> `type: mariadb`, same `table-prefix`).
-2. `config.yml` -> `cross-server.enabled: true` and `server-name` set to the name of the server in the proxy config.
+2. `database.yml` -> `server-name` set to the name of the server in the proxy config, and `config.yml` -> `cross-server.enabled: true`.
 3. Velocity: `bungee-plugin-message-channel = true` (the default).
 
 A home on another server is teleported to by switching the player through the proxy; the target server places them at the home when they join. No plugin on the proxy is needed.

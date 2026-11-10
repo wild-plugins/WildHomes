@@ -154,7 +154,7 @@ public final class Network implements Listener, PluginMessageListener {
             if (!"GetServer".equals(in.readUTF())) return;
             String actual = in.readUTF();
             if (!actual.equalsIgnoreCase(plugin.settings().serverName)) {
-                plugin.getLogger().severe("config.yml -> server-name is '" + plugin.settings().serverName
+                plugin.getLogger().severe("database.yml -> server-name is '" + plugin.settings().serverName
                         + "' but the proxy calls this server '" + actual + "'. Teleports to this server will fail until both match.");
             }
         } catch (IOException ignored) {

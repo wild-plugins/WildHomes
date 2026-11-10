@@ -90,10 +90,10 @@ public final class Database {
             hikari.setLeakDetectionThreshold(leak <= 0 ? 0 : Math.max(2_000L, leak));
         } else {
             File db = new File(plugin.getDataFolder(), cfg.getString("sqlite.file", "homes.db"));
-            String journal = cfg.getString("sqlite.journal-mode", "WAL").replaceAll("[^A-Za-z]", "").toUpperCase(Locale.ROOT);
+            String journal = cfg.getString("sqlite.journal-mode", "DELETE").replaceAll("[^A-Za-z]", "").toUpperCase(Locale.ROOT);
             long busy = Math.max(0L, cfg.getLong("sqlite.busy-timeout", 5_000L));
             hikari.setDriverClassName("org.sqlite.JDBC");
-            hikari.setJdbcUrl("jdbc:sqlite:" + db.getAbsolutePath() + "?journal_mode=" + journal + "&synchronous=NORMAL&busy_timeout=" + busy);
+            hikari.setJdbcUrl("jdbc:sqlite:" + db.getAbsolutePath() + "?journal_mode=" + journal + "&synchronous=" + (journal.equals("WAL") ? "NORMAL" : "FULL") + "&busy_timeout=" + busy);
             hikari.setMaximumPoolSize(1);
         }
         source = new HikariDataSource(hikari);
