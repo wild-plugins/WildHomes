@@ -36,6 +36,7 @@ public final class Database {
     private String homes;
     private String players;
     private String pending;
+    private String servers;
 
     public Database(WildHomes plugin) {
         this.plugin = plugin;
@@ -54,6 +55,7 @@ public final class Database {
         homes = prefix + "homes";
         players = prefix + "players";
         pending = prefix + "pending";
+        servers = prefix + "servers";
 
         try {
             Configurator.setLevel("de.justgino.plugins.wildhomes.libs.hikari", Level.WARN);
@@ -61,7 +63,7 @@ public final class Database {
         }
         HikariConfig hikari = new HikariConfig();
         hikari.setPoolName("WildHomes");
-        hikari.setConnectionTimeout(10_000);
+        hikari.setConnectionTimeout(Math.max(1_000L, cfg.getLong("pool.connection-timeout", 10_000L)));
         if (mariadb) {
             ConfigurationSection db = cfg.getConfigurationSection("mariadb");
             if (db == null) db = cfg.createSection("mariadb");
@@ -78,13 +80,22 @@ public final class Database {
                     + "/" + db.getString("database", "wildhomes") + "?" + query);
             hikari.setUsername(db.getString("username", "root"));
             hikari.setPassword(db.getString("password", ""));
-            hikari.setMaximumPoolSize(Math.max(1, db.getInt("pool-size", 4)));
-            hikari.setMinimumIdle(1);
-            hikari.setMaxLifetime(600_000);
+            int size = Math.max(1, cfg.getInt("pool.maximum-size", db.getInt("pool-size", 4)));
+            hikari.setMaximumPoolSize(size);
+            hikari.setMinimumIdle(Math.max(0, Math.min(size, cfg.getInt("pool.minimum-idle", 1))));
+            long idle = cfg.getLong("pool.idle-timeout", 60_000L);
+            hikari.setIdleTimeout(idle <= 0 ? 0 : Math.max(10_000L, idle));
+            hikari.setMaxLifetime(Math.max(30_000L, cfg.getLong("pool.max-lifetime", 600_000L)));
+            long keepalive = cfg.getLong("pool.keepalive-time", 0L);
+            hikari.setKeepaliveTime(keepalive <= 0 ? 0 : Math.max(30_000L, Math.min(keepalive, hikari.getMaxLifetime() - 1_000L)));
+            long leak = cfg.getLong("pool.leak-detection", 0L);
+            hikari.setLeakDetectionThreshold(leak <= 0 ? 0 : Math.max(2_000L, leak));
         } else {
             File db = new File(plugin.getDataFolder(), cfg.getString("sqlite.file", "homes.db"));
+            String journal = cfg.getString("sqlite.journal-mode", "WAL").replaceAll("[^A-Za-z]", "").toUpperCase(Locale.ROOT);
+            long busy = Math.max(0L, cfg.getLong("sqlite.busy-timeout", 5_000L));
             hikari.setDriverClassName("org.sqlite.JDBC");
-            hikari.setJdbcUrl("jdbc:sqlite:" + db.getAbsolutePath() + "?journal_mode=WAL&synchronous=NORMAL&busy_timeout=5000");
+            hikari.setJdbcUrl("jdbc:sqlite:" + db.getAbsolutePath() + "?journal_mode=" + journal + "&synchronous=NORMAL&busy_timeout=" + busy);
             hikari.setMaximumPoolSize(1);
         }
         source = new HikariDataSource(hikari);
@@ -106,6 +117,28 @@ public final class Database {
                     + "player VARCHAR(36) NOT NULL PRIMARY KEY, server VARCHAR(64) NOT NULL, home VARCHAR(64) NOT NULL, "
                     + "world VARCHAR(128) NOT NULL, x DOUBLE NOT NULL, y DOUBLE NOT NULL, z DOUBLE NOT NULL, "
                     + "yaw FLOAT NOT NULL, pitch FLOAT NOT NULL, created BIGINT NOT NULL)" + options);
+            s.executeUpdate("CREATE TABLE IF NOT EXISTS " + servers + " ("
+                    + "name VARCHAR(64) NOT NULL PRIMARY KEY, address VARCHAR(255) NOT NULL, updated BIGINT NOT NULL)" + options);
+        }
+    }
+
+    public void saveServer(String name, String address) throws SQLException {
+        try (Connection c = source.getConnection();
+             PreparedStatement ps = c.prepareStatement("REPLACE INTO " + servers + " (name, address, updated) VALUES (?, ?, ?)")) {
+            ps.setString(1, name.toLowerCase(Locale.ROOT));
+            ps.setString(2, address);
+            ps.setLong(3, System.currentTimeMillis());
+            ps.executeUpdate();
+        }
+    }
+
+    public @Nullable String serverAddress(String name) throws SQLException {
+        try (Connection c = source.getConnection();
+             PreparedStatement ps = c.prepareStatement("SELECT address FROM " + servers + " WHERE name = ?")) {
+            ps.setString(1, name.toLowerCase(Locale.ROOT));
+            try (ResultSet rs = ps.executeQuery()) {
+                return rs.next() ? rs.getString("address") : null;
+            }
         }
     }
 

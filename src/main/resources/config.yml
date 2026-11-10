@@ -5,13 +5,19 @@
 # File in lang/ without .yml: english, german
 language: english
 
-# Must match the name of this server in the proxy config (velocity.toml)
+# Unique name of this server. With method PROXY it must match velocity.toml.
 server-name: survival
 
 cross-server:
   # Teleports to homes on other servers. Needs mariadb in database.yml,
   # the same database on every server and WildHomes on every server.
   enabled: false
+  # PROXY    - switch servers through Velocity / BungeeCord
+  # TRANSFER - send the player straight to the server-address of the other server,
+  #            no proxy needed (accepts-transfers=true in server.properties of the target)
+  method: PROXY
+  # Address of THIS server that others send players to with TRANSFER, e.g. play.example.net:25566
+  server-address: ""
   # Seconds the player may take to switch servers
   connect-timeout: 15
 

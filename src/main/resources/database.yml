@@ -2,11 +2,18 @@
 # Changes need a server restart.
 
 # sqlite  - one file in the plugin folder, for a single server
-# mariadb - one shared database, needed for cross-server (MySQL works too)
+# mariadb - one shared database, needed for cross-server (mysql works too)
 type: sqlite
+
+# Must be the same on every server of a network
+table-prefix: wildhomes_
 
 sqlite:
   file: homes.db
+  # WAL is faster, DELETE is safer on network drives
+  journal-mode: WAL
+  # Milliseconds a write waits while the file is busy
+  busy-timeout: 5000
 
 mariadb:
   host: localhost
@@ -14,9 +21,27 @@ mariadb:
   database: wildhomes
   username: wildhomes
   password: ""
-  pool-size: 4
-  # Extra JDBC parameters, for example sslMode: trust
-  properties: {}
+  # JDBC parameters added to the connection URL
+  properties:
+    # disable, trust, verify-ca or verify-full
+    sslMode: disable
+    allowPublicKeyRetrieval: true
+    # Milliseconds, never 0
+    connectTimeout: 5000
+    socketTimeout: 30000
 
-# Must be the same on every server of a network
-table-prefix: wildhomes_
+# Connection pool for mariadb. Times are in milliseconds.
+# Every server keeps its own pool, all of them count against max_connections of the database.
+pool:
+  maximum-size: 4
+  minimum-idle: 1
+  # How long a query waits for a free connection
+  connection-timeout: 10000
+  # Unused connections above minimum-idle are closed after this time, 0 = never
+  idle-timeout: 60000
+  # Connections are replaced after this time, keep it below wait_timeout of the database
+  max-lifetime: 600000
+  # Pings idle connections so firewalls don't drop them, 0 = off (at least 30000)
+  keepalive-time: 0
+  # Logs a warning when a connection is held longer than this, 0 = off
+  leak-detection: 0
