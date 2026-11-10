@@ -27,10 +27,12 @@ Change icon lists every item with its sprite and a search field. Rename uses a t
 | `/home <name>` | Teleport to a home |
 | `/sethome [name]` | Set a home, or move an existing one with that name |
 | `/delhome <name>` | Delete a home |
-| `/wildhomes reload` | Reload `config.yml` and the language |
-| `/wildhomes open <player>` | Manage the homes of any player, online or offline |
+| `/home-admin open <player>` | Manage the homes of any player, online or offline |
+| `/home-admin tp <player> <home>` | Teleport to a home of a player |
+| `/home-admin delete <player> <home>` | Delete a home of a player |
+| `/home-admin reload` | Reload `config.yml` and the language |
 
-Aliases are set in `config.yml` -> `commands` (restart needed).
+`/wild-homes-admin` is an alias of `/home-admin`. Aliases are set in `config.yml` -> `commands` (restart needed).
 
 ## Permissions
 
@@ -47,7 +49,16 @@ Aliases are set in `config.yml` -> `commands` (restart needed).
 | `wildhomes.bypass.warmup` | op | No countdown |
 | `wildhomes.bypass.cooldown` | op | No cooldown |
 | `wildhomes.bypass.world` | op | Set homes in `homes.disabled-worlds` |
-| `wildhomes.admin` | op | `/wildhomes` and other players' homes |
+| `wildhomes.admin.view` | op | `/home-admin open`, see other players' homes |
+| `wildhomes.admin.teleport` | op | Teleport to other players' homes |
+| `wildhomes.admin.set` | op | Set or move homes for other players |
+| `wildhomes.admin.rename` | op | Rename other players' homes |
+| `wildhomes.admin.icon` | op | Change icons of other players' homes |
+| `wildhomes.admin.delete` | op | Delete other players' homes |
+| `wildhomes.admin.reload` | op | `/home-admin reload` |
+| `wildhomes.admin` | op | All `wildhomes.admin.*` nodes |
+
+Example: helpers get `admin.view` and `admin.teleport`, moderators additionally `admin.rename` and `admin.delete`.
 
 ## Files
 
@@ -57,7 +68,7 @@ Aliases are set in `config.yml` -> `commands` (restart needed).
 | `database.yml` | `sqlite` or `mariadb`, connection, table prefix |
 | `lang/english.yml`, `lang/german.yml` | Every message and dialog text (MiniMessage) |
 
-Switch the language with `language: german` and `/wildhomes reload`. For another language copy `english.yml`, translate it and set `language` to its file name.
+Switch the language with `language: german` and `/home-admin reload`. For another language copy `english.yml`, translate it and set `language` to its file name.
 
 ## Cross-server
 
@@ -84,4 +95,8 @@ A home on another server is teleported to by switching the player through the pr
 mvn clean package
 ```
 
-The jar is `target/WildHomes-<version>.jar`. `tools/SpriteMap.java` rebuilds `sprites.txt` from a client jar, `tools/DialogShots.java` renders the preview images in `store/media/`.
+The jar is `target/WildHomes-<version>.jar`. `tools/SpriteMap.java` rebuilds `sprites.txt` from client jars (`26.1=<jar> 26.2=<jar> ...`, oldest first), `tools/DialogShots.java` renders the preview images in `store/media/`.
+
+## Icons and versions
+
+The icon list only contains items that exist on the server and are enabled in its world. With ViaVersion, each player only sees items their own client version knows, and homes with a newer icon show the default icon to older clients. No missing-texture icons.

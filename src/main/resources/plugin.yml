@@ -40,6 +40,35 @@ permissions:
   wildhomes.bypass.world:
     description: Set homes in disabled worlds
     default: op
-  wildhomes.admin:
-    description: /wildhomes reload and managing the homes of other players
+  wildhomes.admin.view:
+    description: /home-admin open - see the homes of other players
     default: op
+  wildhomes.admin.teleport:
+    description: Teleport to the homes of other players
+    default: op
+  wildhomes.admin.set:
+    description: Set or move homes for other players
+    default: op
+  wildhomes.admin.rename:
+    description: Rename the homes of other players
+    default: op
+  wildhomes.admin.icon:
+    description: Change the icons of other players' homes
+    default: op
+  wildhomes.admin.delete:
+    description: Delete the homes of other players
+    default: op
+  wildhomes.admin.reload:
+    description: /home-admin reload
+    default: op
+  wildhomes.admin:
+    description: Every wildhomes.admin node
+    default: op
+    children:
+      wildhomes.admin.view: true
+      wildhomes.admin.teleport: true
+      wildhomes.admin.set: true
+      wildhomes.admin.rename: true
+      wildhomes.admin.icon: true
+      wildhomes.admin.delete: true
+      wildhomes.admin.reload: true

@@ -62,7 +62,7 @@ public final class DialogShots {
         loadFont();
         for (String line : Files.readAllLines(root.resolve("src/main/resources/sprites.txt"))) {
             String[] p = line.split(" ");
-            if (p.length == 3) SPRITES.put(p[0], p[2]);
+            if (p.length == 4 && p[1].equals("26.1")) SPRITES.put(p[0], p[3]);
         }
         try (Reader r = Files.newBufferedReader(root.resolve("src/main/resources/lang/" + language + ".yml"))) {
             lang = new Yaml().load(r);

@@ -5,6 +5,7 @@ import de.justgino.plugins.wildhomes.config.Lang;
 import de.justgino.plugins.wildhomes.config.Settings;
 import de.justgino.plugins.wildhomes.home.Home;
 import de.justgino.plugins.wildhomes.home.PlayerHomes;
+import de.justgino.plugins.wildhomes.util.Versions;
 import io.papermc.paper.dialog.Dialog;
 import io.papermc.paper.dialog.DialogResponseView;
 import io.papermc.paper.registry.data.dialog.ActionButton;
@@ -45,6 +46,12 @@ public final class Dialogs implements Listener {
             .lifetime(Duration.ofHours(1)).uses(ClickCallback.UNLIMITED_USES).build();
     private static final Key ICON_PICK = Key.key("wildhomes", "icon");
     private static final Pattern ITEM = Pattern.compile("item:\"([a-z0-9_./-]+)\"");
+    private static final Map<String, String> ADMIN = Map.of(
+            "wildhomes.use", "wildhomes.admin.teleport",
+            "wildhomes.sethome", "wildhomes.admin.set",
+            "wildhomes.rename", "wildhomes.admin.rename",
+            "wildhomes.icon", "wildhomes.admin.icon",
+            "wildhomes.delhome", "wildhomes.admin.delete");
 
     private record IconSession(PlayerHomes homes, int slot) {
     }
@@ -67,7 +74,7 @@ public final class Dialogs implements Listener {
         plugin.tasks().entity(player, () -> {
             IconSession session = iconSessions.get(player.getUniqueId());
             Material material = Material.matchMaterial(key);
-            if (session == null || material == null || !plugin.icons().choices().contains(material)) return;
+            if (session == null || material == null || !plugin.icons().choices(player).contains(material)) return;
             PlayerHomes homes = plugin.homes().current(session.homes());
             if (!may(player, homes, "wildhomes.icon")) return;
             changeIcon(player, homes, session.slot(), material);
@@ -92,7 +99,7 @@ public final class Dialogs implements Listener {
     }
 
     private boolean may(Player viewer, PlayerHomes homes, String permission) {
-        return own(viewer, homes) ? viewer.hasPermission(permission) : viewer.hasPermission("wildhomes.admin");
+        return own(viewer, homes) ? viewer.hasPermission(permission) : viewer.hasPermission(ADMIN.getOrDefault(permission, "wildhomes.admin"));
     }
 
     public void openMain(Player viewer, PlayerHomes given, boolean expanded) {
@@ -137,7 +144,7 @@ public final class Dialogs implements Listener {
     }
 
     private ActionButton homeButton(Player viewer, PlayerHomes homes, Home home, boolean expanded) {
-        Object[] ph = placeholders(home);
+        Object[] ph = placeholders(home, viewer);
         List<String> tooltip = new ArrayList<>(lang().rawLines("dialogs.main.home-tooltip"));
         if (plugin.network().enabled()) {
             String server = lang().raw("dialogs.main.home-tooltip-server");
@@ -152,9 +159,9 @@ public final class Dialogs implements Listener {
         });
     }
 
-    private Object[] placeholders(Home home) {
+    private Object[] placeholders(Home home, Player viewer) {
         return new Object[]{
-                "icon", plugin.icons().sprite(plugin.homes().icon(home)),
+                "icon", plugin.icons().sprite(plugin.homes().icon(home), viewer),
                 "home", home.name(),
                 "world", home.world(),
                 "server", home.server(),
@@ -164,9 +171,18 @@ public final class Dialogs implements Listener {
         };
     }
 
+    private Material shownIcon(Home home, Player viewer) {
+        Material icon = plugin.homes().icon(home);
+        return plugin.icons().supported(icon, Versions.client(viewer)) ? icon : settings().defaultIcon;
+    }
+
     private void teleport(Player player, PlayerHomes homes, int slot) {
         Home home = homes.bySlot(slot);
         if (home == null) return;
+        if (!may(player, homes, "wildhomes.use")) {
+            lang().send(player, "messages.no-permission");
+            return;
+        }
         if (!plugin.homes().usable(player, homes, home)) {
             lang().send(player, "messages.over-limit");
             return;
@@ -183,7 +199,9 @@ public final class Dialogs implements Listener {
         }
         List<ActionButton> buttons = new ArrayList<>();
         int width = settings().homeWidth;
-        buttons.add(button(lang().get("dialogs.home.teleport", "home", home.name()), null, width, p -> teleport(p, homes, slot)));
+        if (may(viewer, homes, "wildhomes.use")) {
+            buttons.add(button(lang().get("dialogs.home.teleport", "home", home.name()), null, width, p -> teleport(p, homes, slot)));
+        }
         if (may(viewer, homes, "wildhomes.icon")) {
             buttons.add(button(lang().get("dialogs.home.icon", "home", home.name()), null, width, p -> openIcons(p, homes, slot, "")));
         }
@@ -200,7 +218,7 @@ public final class Dialogs implements Listener {
             }));
         }
         ActionButton back = button(lang().get("dialogs.home.back"), null, width, p -> openMain(p, homes, false));
-        show(viewer, lang().get("dialogs.home.title", "home", home.name()), List.of(item(plugin.homes().icon(home))),
+        show(viewer, lang().get("dialogs.home.title", "home", home.name()), List.of(item(shownIcon(home, viewer))),
                 List.of(), buttons, back, settings().homeColumns);
     }
 
@@ -244,8 +262,8 @@ public final class Dialogs implements Listener {
         }
         int width = settings().iconWidth;
         List<DialogBody> body = new ArrayList<>();
-        body.add(item(plugin.homes().icon(home)));
-        List<Material> found = plugin.icons().search(query);
+        body.add(item(shownIcon(home, viewer)));
+        List<Material> found = plugin.icons().search(viewer, query);
         if (found.isEmpty()) body.add(DialogBody.plainMessage(lang().get("dialogs.icons.no-results", "search", query)));
         DialogInput search = DialogInput.text("search", lang().get("dialogs.icons.search-label"))
                 .width(Math.min(1024, width * 2)).maxLength(32).initial(query).build();
@@ -255,7 +273,7 @@ public final class Dialogs implements Listener {
         buttons.add(button(lang().get("dialogs.icons.default"), null, width, p -> changeIcon(p, homes, slot, null)));
         buttons.add(button(lang().get("dialogs.icons.back"), null, width, p -> openHome(p, homes, slot)));
         for (Material material : found) {
-            buttons.add(action(lang().get("dialogs.icons.item", "icon", plugin.icons().sprite(material), "item", plugin.icons().name(material)),
+            buttons.add(action(lang().get("dialogs.icons.item", "icon", plugin.icons().sprite(material, viewer), "item", plugin.icons().name(material)),
                     null, width, DialogAction.customClick(ICON_PICK, BinaryTagHolder.binaryTagHolder("{item:\"" + material.getKey().getKey() + "\"}"))));
         }
         iconSessions.put(viewer.getUniqueId(), new IconSession(homes, slot));

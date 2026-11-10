@@ -1,6 +1,6 @@
 # WildHomes - settings
 # Every text and dialog label is in lang/<language>.yml.
-# Apply changes with /wildhomes reload. Command aliases need a restart.
+# Apply changes with /home-admin reload. Command aliases need a restart.
 
 # File in lang/ without .yml: english, german
 language: english
@@ -77,4 +77,4 @@ commands:
   home-aliases: [homes]
   sethome-aliases: [createhome]
   delhome-aliases: [deletehome, removehome]
-  admin-aliases: [whomes]
+  admin-aliases: [wild-homes-admin]

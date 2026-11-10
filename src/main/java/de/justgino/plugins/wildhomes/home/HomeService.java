@@ -4,6 +4,7 @@ import de.justgino.plugins.wildhomes.WildHomes;
 import de.justgino.plugins.wildhomes.config.Settings;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.jetbrains.annotations.Nullable;
@@ -154,7 +155,7 @@ public final class HomeService {
         return home;
     }
 
-    public void delete(Player actor, PlayerHomes homes, Home home) {
+    public void delete(CommandSender actor, PlayerHomes homes, Home home) {
         homes.remove(home.slot());
         plugin.tasks().async(() -> {
             try {

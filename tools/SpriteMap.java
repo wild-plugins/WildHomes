@@ -23,26 +23,36 @@ public final class SpriteMap {
     private static ZipFile jar;
 
     public static void main(String[] args) throws Exception {
-        jar = new ZipFile(args[0]);
-        List<String> lines = new ArrayList<>();
-        for (ZipEntry entry : Collections.list(jar.entries())) {
-            String name = entry.getName();
-            if (!name.startsWith(ITEMS) || !name.endsWith(".json")) continue;
-            String id = name.substring(ITEMS.length(), name.length() - 5);
-            String model = findModel(read(name));
-            if (model == null) continue;
-            String texture = texture(model);
-            if (texture == null) continue;
-            texture = strip(texture);
-            String atlas;
-            if (texture.startsWith("block/")) atlas = "blocks";
-            else if (texture.startsWith("item/")) atlas = "items";
-            else continue;
-            lines.add(id + " " + atlas + " " + texture);
+        Map<String, String> found = new HashMap<>();
+        for (int i = 1; i < args.length; i++) {
+            String[] pair = args[i].split("=", 2);
+            String version = pair[0];
+            jar = new ZipFile(pair[1]);
+            int added = 0;
+            for (ZipEntry entry : Collections.list(jar.entries())) {
+                String name = entry.getName();
+                if (!name.startsWith(ITEMS) || !name.endsWith(".json")) continue;
+                String id = name.substring(ITEMS.length(), name.length() - 5);
+                if (found.containsKey(id)) continue;
+                String model = findModel(read(name));
+                if (model == null) continue;
+                String texture = texture(model);
+                if (texture == null) continue;
+                texture = strip(texture);
+                String atlas;
+                if (texture.startsWith("block/")) atlas = "blocks";
+                else if (texture.startsWith("item/")) atlas = "items";
+                else continue;
+                found.put(id, id + " " + version + " " + atlas + " " + texture);
+                added++;
+            }
+            jar.close();
+            System.out.println(version + ": " + added + " new items");
         }
+        List<String> lines = new ArrayList<>(found.values());
         Collections.sort(lines);
-        Files.write(Path.of(args[1]), lines, StandardCharsets.UTF_8);
-        System.out.println(lines.size() + " sprites written to " + args[1]);
+        Files.write(Path.of(args[0]), lines, StandardCharsets.UTF_8);
+        System.out.println(lines.size() + " sprites written to " + args[0]);
     }
 
     private static JsonObject read(String path) throws Exception {

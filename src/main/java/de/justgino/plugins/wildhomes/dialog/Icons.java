@@ -1,10 +1,14 @@
 package de.justgino.plugins.wildhomes.dialog;
 
 import de.justgino.plugins.wildhomes.WildHomes;
+import de.justgino.plugins.wildhomes.util.Versions;
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.object.ObjectContents;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.World;
+import org.bukkit.entity.Player;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -22,8 +26,11 @@ public final class Icons {
     private static final Key ITEMS = Key.key("minecraft", "items");
     private static final Key BLOCKS = Key.key("minecraft", "blocks");
 
+    private record Sprite(Component component, int[] since) {
+    }
+
     private final WildHomes plugin;
-    private final Map<String, Component> sprites = new HashMap<>();
+    private final Map<String, Sprite> sprites = new HashMap<>();
     private final List<Material> everything;
     private List<Material> choices;
 
@@ -35,17 +42,20 @@ public final class Icons {
                 String line;
                 while ((line = reader.readLine()) != null) {
                     String[] parts = line.trim().split(" ");
-                    if (parts.length != 3) continue;
-                    Key atlas = parts[1].equals("blocks") ? BLOCKS : ITEMS;
-                    sprites.put(parts[0], sprite(atlas, parts[2]));
+                    if (parts.length != 4) continue;
+                    Key atlas = parts[2].equals("blocks") ? BLOCKS : ITEMS;
+                    sprites.put(parts[0], new Sprite(sprite(atlas, parts[3]), Versions.parse(parts[1])));
                 }
             }
         } catch (Exception e) {
             plugin.getLogger().warning("Could not read the item sprites: " + e.getMessage());
         }
+        World world = Bukkit.getWorlds().isEmpty() ? null : Bukkit.getWorlds().getFirst();
         List<Material> items = new ArrayList<>();
         for (Material material : Material.values()) {
             if (material.name().startsWith("LEGACY_") || material.isAir() || !material.isItem()) continue;
+            if (!sprites.containsKey(material.getKey().getKey())) continue;
+            if (world != null && !enabled(world, material)) continue;
             items.add(material);
         }
         items.sort(Comparator.comparing(m -> m.getKey().getKey()));
@@ -53,30 +63,52 @@ public final class Icons {
         reload();
     }
 
+    @SuppressWarnings("UnstableApiUsage")
+    private static boolean enabled(World world, Material material) {
+        try {
+            return world.isEnabled(material.asItemType());
+        } catch (RuntimeException | LinkageError e) {
+            return true;
+        }
+    }
+
     public void reload() {
         List<Material> configured = plugin.settings().iconList;
-        choices = configured.isEmpty() ? everything : configured;
+        if (configured.isEmpty()) {
+            choices = everything;
+        } else {
+            List<Material> allowed = new ArrayList<>(configured);
+            allowed.retainAll(everything);
+            choices = List.copyOf(allowed);
+        }
     }
 
-    public List<Material> choices() {
-        return choices;
+    public boolean supported(Material material, int[] client) {
+        Sprite sprite = sprites.get(material.getKey().getKey());
+        return sprite != null && Versions.atMost(sprite.since(), client);
     }
 
-    public List<Material> search(String query) {
-        String q = normalize(query);
-        if (q.isEmpty()) return choices;
+    public List<Material> choices(Player viewer) {
+        int[] client = Versions.client(viewer);
         List<Material> result = new ArrayList<>();
-        for (Material material : choices) {
-            if (normalize(material.getKey().getKey()).contains(q)) result.add(material);
+        for (Material material : choices) if (supported(material, client)) result.add(material);
+        return result;
+    }
+
+    public List<Material> search(Player viewer, String query) {
+        String q = normalize(query);
+        List<Material> result = new ArrayList<>();
+        for (Material material : choices(viewer)) {
+            if (q.isEmpty() || normalize(material.getKey().getKey()).contains(q)) result.add(material);
         }
         return result;
     }
 
-    public Component sprite(Material material) {
-        String key = material.getKey().getKey();
-        Component known = sprites.get(key);
-        if (known != null) return known;
-        return material.isBlock() ? sprite(BLOCKS, "block/" + key) : sprite(ITEMS, "item/" + key);
+    public Component sprite(Material material, Player viewer) {
+        int[] client = Versions.client(viewer);
+        Material shown = supported(material, client) ? material : plugin.settings().defaultIcon;
+        Sprite sprite = sprites.get(shown.getKey().getKey());
+        return sprite != null && Versions.atMost(sprite.since(), client) ? sprite.component() : Component.empty();
     }
 
     public Component name(Material material) {

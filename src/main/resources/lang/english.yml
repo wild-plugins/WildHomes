@@ -2,7 +2,7 @@
 # Format: MiniMessage (https://docs.advntr.dev/minimessage/format.html)
 # "" hides a message. PlaceholderAPI placeholders work in chat messages.
 
-prefix: "<#4cc38a>WildHomes <dark_gray>» <gray>"
+prefix: "<bold><gradient:#c8f7dd:#4cc38a>ᴡɪʟᴅʜᴏᴍᴇꜱ</gradient></bold> <dark_gray>» <gray>"
 default-name: "Home {slot}"
 
 messages:
@@ -43,9 +43,11 @@ teleport:
 
 admin:
   help:
-    - "<#4cc38a>WildHomes <gray>{version}"
-    - "<white>/wildhomes reload <gray>- reload config and language"
-    - "<white>/wildhomes open <player> <gray>- manage the homes of a player"
+    - "<bold><gradient:#c8f7dd:#4cc38a>ᴡɪʟᴅʜᴏᴍᴇꜱ</gradient></bold> <gray>{version}"
+    - "<white>/home-admin open <player> <gray>- manage the homes of a player"
+    - "<white>/home-admin tp <player> <home> <gray>- teleport to a home of a player"
+    - "<white>/home-admin delete <player> <home> <gray>- delete a home of a player"
+    - "<white>/home-admin reload <gray>- reload config and language"
 
 dialogs:
   main:

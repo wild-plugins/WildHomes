@@ -284,68 +284,45 @@ table.ref td.a{text-align:right;width:18%}
 .shot+.eco-notes{margin-top:40px}
 </style>
 <style>
-.ph.img{height:auto;border-style:solid}
-.ph.img img{width:100%;image-rendering:auto}
+section{padding-block:72px}
+.sec-head{margin-bottom:36px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.facts span{font-family:var(--mono);font-size:16px;color:var(--fg);border:1px solid #4cc38a55;background:var(--panel);padding:8px 16px;border-radius:4px}
+table.ref td.cmd{width:44%}
+table.ref td.p{font-family:var(--mono);font-size:15px;color:var(--dim);width:20%;white-space:nowrap}
 </style>
 </head><body>
 <div class="page">
 <section class="wrap" style="border-top:none">
   <div class="sec-head">
-    <div class="label">Dialogs</div>
-    <h2>Every home in one dialog</h2>
-    <p class="lede"><code>/home</code> opens a Paper dialog with one button per home slot. Set, teleport, rename, change the icon or delete without typing a command.</p>
+    <div class="label">WildHomes</div>
+    <h2>Homes in Paper dialogs, across your whole network</h2>
+    <p class="lede">Set, teleport, rename, change the icon and delete homes in native dialogs. On a proxy network a home set on one server can be reached from every other.</p>
   </div>
-  <figure class="shot"><div class="ph img"><img src="media/english/1-homes.png" alt=""></div><figcaption><b>Your homes</b><code>/home</code></figcaption></figure>
-  <div class="eco-notes">
-    <div><b>Four per row</b>Homes, empty slots and locked slots sit in a grid of four. "Show more" opens all of them.</div>
-    <div><b>New home in one click</b>An empty slot sets a home at your position, named after its slot.</div>
-    <div><b>Locked slots sell ranks</b>Slots above the limit show as locked, with a tooltip you write yourself.</div>
+  <div class="eco-notes" style="margin-top:0">
+    <div><b>Dialogs only</b>No chest menus, no chat prompts, no resource pack. Item sprites as home icons.</div>
+    <div><b>Cross-server</b>One shared MariaDB database. The player is sent over and placed at the home.</div>
+    <div><b>Limits by rank</b>Home slots per permission. Slots above the limit show as locked.</div>
   </div>
-</section>
-<section class="wrap">
-  <div class="sec-head">
-    <div class="label">Cross-server</div>
-    <h2>Set a home on one server, teleport to it from another</h2>
-    <p class="lede">On a Velocity or BungeeCord network every server shares one MariaDB database. A home set on survival shows up in the lobby, and a click sends the player over and places them at the home.</p>
-  </div>
-  <div class="grid3 g2">
-    <div class="cell"><h3>One shared database</h3><p>Set <code>type: mariadb</code> in <code>database.yml</code> on every server and turn on <code>cross-server.enabled</code>. MySQL works too.</p></div>
-    <div class="cell"><h3>No proxy plugin</h3><p>The switch uses the proxy's built-in BungeeCord channel. Nothing to install on the proxy.</p></div>
-    <div class="cell"><h3>Placed on join</h3><p>The target server spawns the player straight at the home, so there is no second teleport after the switch.</p></div>
-    <div class="cell"><h3>Name check</h3><p>If <code>server-name</code> does not match the proxy, the console says so on the first join.</p></div>
-  </div>
-</section>
-<section class="wrap">
-  <div class="sec-head">
-    <div class="label">Features</div>
-    <h2>What a home plugin needs, nothing more</h2>
-  </div>
-  <div class="grid3">
-    <div class="cell"><h3>Limits by permission</h3><p><code>wildhomes.amount.&lt;n&gt;</code>, the highest wins. Up to 28 slots by default.</p></div>
-    <div class="cell"><h3>Any item as icon</h3><p>Every item in the game with its sprite, searchable. Or limit the list in the config.</p></div>
-    <div class="cell"><h3>Warmup and cooldown</h3><p>Countdown in the action bar, title or chat. Cancelled by moving or taking damage.</p></div>
-    <div class="cell"><h3>Rename in place</h3><p>A text field in the dialog. Length and allowed characters are set in the config.</p></div>
-    <div class="cell"><h3>Rank loss safe</h3><p>Homes above a new, lower limit are kept and stay usable, or are blocked if you prefer.</p></div>
-    <div class="cell"><h3>Staff access</h3><p><code>/wildhomes open &lt;player&gt;</code> opens anyone's homes, online or offline.</p></div>
-  </div>
+  <div class="facts"><span>Minecraft 26.1+</span><span>Paper</span><span>Folia</span><span>Java 25</span><span>SQLite / MariaDB / MySQL</span><span>English + German</span><span>Optional: PlaceholderAPI</span></div>
 </section>
 <section class="wrap">
   <div class="sec-head">
     <div class="label">Commands</div>
     <h2>Commands</h2>
-    <p class="lede">Aliases are set in <code>config.yml</code>. Home names are tab-completed.</p>
   </div>
   <table class="ref">
-    <thead><tr><th>Command</th><th>What it does</th></tr></thead>
+    <thead><tr><th>Command</th><th>Permission</th><th>What it does</th></tr></thead>
     <tbody>
-      <tr class="grp"><td colspan="2">Players</td></tr>
-      <tr><td class="cmd"><b>/home</b></td><td class="d">Open the homes dialog</td></tr>
-      <tr><td class="cmd"><b>/home</b> <span class="us">&lt;name&gt;</span></td><td class="d">Teleport to a home</td></tr>
-      <tr><td class="cmd"><b>/sethome</b> <span class="us">[name]</span></td><td class="d">Set a home here, or move an existing one</td></tr>
-      <tr><td class="cmd"><b>/delhome</b> <span class="us">&lt;name&gt;</span></td><td class="d">Delete a home</td></tr>
-      <tr class="grp"><td colspan="2">Staff</td></tr>
-      <tr><td class="cmd"><b>/wildhomes reload</b></td><td class="d">Reload config and language</td></tr>
-      <tr><td class="cmd"><b>/wildhomes open</b> <span class="us">&lt;player&gt;</span></td><td class="d">Manage the homes of any player</td></tr>
+      <tr class="grp"><td colspan="3">Players</td></tr>
+      <tr><td class="cmd"><b>/home</b> <span class="us">[name]</span></td><td class="p">use</td><td class="d">Open the dialog, or teleport to a home</td></tr>
+      <tr><td class="cmd"><b>/sethome</b> <span class="us">[name]</span></td><td class="p">sethome</td><td class="d">Set a home, or move one</td></tr>
+      <tr><td class="cmd"><b>/delhome</b> <span class="us">&lt;name&gt;</span></td><td class="p">delhome</td><td class="d">Delete a home</td></tr>
+      <tr class="grp"><td colspan="3">Staff · /home-admin or /wild-homes-admin</td></tr>
+      <tr><td class="cmd"><b>/home-admin open</b> <span class="us">&lt;player&gt;</span></td><td class="p">admin.view</td><td class="d">Open the homes of any player</td></tr>
+      <tr><td class="cmd"><b>/home-admin tp</b> <span class="us">&lt;player&gt; &lt;home&gt;</span></td><td class="p">admin.teleport</td><td class="d">Teleport to a home of a player</td></tr>
+      <tr><td class="cmd"><b>/home-admin delete</b> <span class="us">&lt;player&gt; &lt;home&gt;</span></td><td class="p">admin.delete</td><td class="d">Delete a home of a player</td></tr>
+      <tr><td class="cmd"><b>/home-admin reload</b></td><td class="p">admin.reload</td><td class="d">Reload config and language</td></tr>
     </tbody>
   </table>
 </section>
@@ -353,88 +330,31 @@ table.ref td.a{text-align:right;width:18%}
   <div class="sec-head">
     <div class="label">Permissions</div>
     <h2>Permissions</h2>
-    <p class="lede">Everything a player needs is on by default. More homes per rank is a single node.</p>
+    <p class="lede">Player nodes are on by default, staff nodes are for op. Split staff rights per rank, e.g. helpers view and teleport, moderators also rename and delete.</p>
   </div>
   <div class="pgrid">
     <div class="pgroup"><h3>Players</h3><ul><li><span class="pre">wildhomes.</span>use</li><li><span class="pre">wildhomes.</span>sethome</li><li><span class="pre">wildhomes.</span>delhome</li><li><span class="pre">wildhomes.</span>rename</li><li><span class="pre">wildhomes.</span>icon</li><li><span class="pre">wildhomes.</span>crossserver</li></ul></div>
     <div class="pgroup"><h3>Home limit</h3><ul><li><span class="pre">wildhomes.</span>amount.&lt;n&gt;</li><li><span class="pre">wildhomes.</span>amount.unlimited</li></ul></div>
-    <div class="pgroup"><h3>Bypass and staff</h3><ul><li><span class="pre">wildhomes.</span>bypass.warmup</li><li><span class="pre">wildhomes.</span>bypass.cooldown</li><li><span class="pre">wildhomes.</span>bypass.world</li><li><span class="pre">wildhomes.</span>admin</li></ul></div>
+    <div class="pgroup"><h3>Staff</h3><ul><li><span class="pre">wildhomes.</span>admin</li><li><span class="pre">wildhomes.</span>admin.view</li><li><span class="pre">wildhomes.</span>admin.teleport</li><li><span class="pre">wildhomes.</span>admin.set</li><li><span class="pre">wildhomes.</span>admin.rename</li><li><span class="pre">wildhomes.</span>admin.icon</li><li><span class="pre">wildhomes.</span>admin.delete</li><li><span class="pre">wildhomes.</span>admin.reload</li></ul></div>
+    <div class="pgroup"><h3>Bypass</h3><ul><li><span class="pre">wildhomes.</span>bypass.warmup</li><li><span class="pre">wildhomes.</span>bypass.cooldown</li><li><span class="pre">wildhomes.</span>bypass.world</li></ul></div>
   </div>
 </section>
 <section class="wrap">
   <div class="sec-head">
-    <div class="label">GUIs</div>
-    <h2>Dialogs</h2>
-    <p class="lede">No chest menus, no chat prompts and no resource pack. The icons are the game's own item sprites.</p>
+    <div class="label">Placeholders</div>
+    <h2>PlaceholderAPI</h2>
   </div>
-  <div class="shots">
-    <figure class="shot"><div class="ph img"><img src="media/english/2-homes-all.png" alt=""></div><figcaption><b>All slots</b><code>Show more</code></figcaption></figure>
-    <figure class="shot"><div class="ph img"><img src="media/english/3-home.png" alt=""></div><figcaption><b>Manage a home</b><code>click a home</code></figcaption></figure>
-    <figure class="shot"><div class="ph img"><img src="media/english/4-rename.png" alt=""></div><figcaption><b>Rename</b><code>text field</code></figcaption></figure>
-    <figure class="shot"><div class="ph img"><img src="media/english/7-delete.png" alt=""></div><figcaption><b>Delete</b><code>with confirmation</code></figcaption></figure>
-    <figure class="shot"><div class="ph img"><img src="media/english/5-icons.png" alt=""></div><figcaption><b>Choose icon</b><code>every item</code></figcaption></figure>
-    <figure class="shot"><div class="ph img"><img src="media/english/6-icons-search.png" alt=""></div><figcaption><b>Search</b><code>by item name</code></figcaption></figure>
-  </div>
-</section>
-<section class="wrap">
-  <div class="sec-head">
-    <div class="label">Configuration</div>
-    <h2>Values in one file, texts in another</h2>
-  </div>
-  <div class="cfg">
-    <div class="cfg-claim">
-      <p><code>config.yml</code> holds only values, <code>database.yml</code> the connection, and <code>lang/</code> every message and dialog label.</p>
-      <ul class="checks">
-        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="#4cc38a" stroke-width="2"/></svg>Columns and button widths</li>
-        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="#4cc38a" stroke-width="2"/></svg>Warmup, cooldown and sounds</li>
-        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="#4cc38a" stroke-width="2"/></svg>Slots, default icon, name rules</li>
-        <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5l4 4 8-9" stroke="#4cc38a" stroke-width="2"/></svg>Command aliases</li>
-      </ul>
-    </div>
-    <div class="code">
-      <div class="fname"><span>config.yml</span><span>excerpt</span></div>
-<pre><span class="y-k">teleport</span>:
-  <span class="y-c"># Seconds, 0 = instant</span>
-  <span class="y-k">warmup</span>: <span class="y-n">3</span>
-  <span class="y-k">cooldown</span>: <span class="y-n">0</span>
-  <span class="y-k">cancel-on-move</span>: <span class="y-n">true</span>
-  <span class="y-c"># ACTIONBAR, TITLE, CHAT or NONE</span>
-  <span class="y-k">countdown-display</span>: <span class="y-s">ACTIONBAR</span>
-
-<span class="y-k">dialogs</span>:
-  <span class="y-k">main</span>:
-    <span class="y-k">columns</span>: <span class="y-n">4</span>
-    <span class="y-k">button-width</span>: <span class="y-n">110</span>
-    <span class="y-c"># Slots before "Show more"</span>
-    <span class="y-k">preview-slots</span>: <span class="y-n">7</span>
-    <span class="y-k">show-locked</span>: <span class="y-n">true</span></pre>
-    </div>
-  </div>
-</section>
-<section class="wrap">
-  <div class="sec-head">
-    <div class="label">Languages</div>
-    <h2>English and German included</h2>
-  </div>
-  <div class="eco-notes" style="margin-top:0">
-    <div><b>One switch</b>Set <code>language: german</code> in <code>config.yml</code> and run <code>/wildhomes reload</code>.</div>
-    <div><b>Every text</b>Chat messages, the countdown and every dialog label are in <code>lang/</code>, with MiniMessage.</div>
-    <div><b>Your own language</b>Copy <code>english.yml</code>, translate it and point <code>language</code> at it. Missing keys fall back to the shipped text.</div>
-  </div>
-</section>
-<section class="wrap">
-  <div class="tech">
-    <div class="label">Under the hood</div>
-    <div class="tech-grid">
-      <div class="tech-item"><b>Paper and Folia 26.1+</b>Player work runs on the player's own scheduler, database work on its own thread. One jar for both.</div>
-      <div class="tech-item"><b>SQLite and MariaDB</b>SQLite needs no setup. MariaDB or MySQL for networks, with a table prefix for shared databases.</div>
-      <div class="tech-item"><b>Paper dialogs</b>Every screen is a native dialog with item sprites in the buttons.</div>
-      <div class="tech-item"><b>PlaceholderAPI</b><code>%wildhomes_amount%</code>, <code>%wildhomes_limit%</code>, <code>%wildhomes_free%</code> and <code>%wildhomes_home_&lt;n&gt;%</code>.</div>
-      <div class="tech-item" style="grid-column:1 / -1"><b>Optional integrations</b>
-        <div class="deps"><span>PlaceholderAPI</span><span>Velocity / BungeeCord <i>· cross-server</i></span></div>
-      </div>
-    </div>
-  </div>
+  <table class="ref">
+    <thead><tr><th>Placeholder</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td class="cmd"><b>%wildhomes_amount%</b></td><td class="d">Number of homes</td></tr>
+      <tr><td class="cmd"><b>%wildhomes_limit%</b></td><td class="d">Home limit</td></tr>
+      <tr><td class="cmd"><b>%wildhomes_free%</b></td><td class="d">Free slots</td></tr>
+      <tr><td class="cmd"><b>%wildhomes_names%</b></td><td class="d">All home names</td></tr>
+      <tr><td class="cmd"><b>%wildhomes_home_&lt;slot&gt;%</b></td><td class="d">Name of the home in a slot</td></tr>
+      <tr><td class="cmd"><b>%wildhomes_home_&lt;slot&gt;_world%</b></td><td class="d">Its world, also <code>_server</code>, <code>_x</code>, <code>_y</code>, <code>_z</code></td></tr>
+    </tbody>
+  </table>
 </section>
 </div>
 </body></html>

@@ -2,7 +2,7 @@
 # Format: MiniMessage (https://docs.advntr.dev/minimessage/format.html)
 # "" blendet eine Nachricht aus. PlaceholderAPI-Platzhalter funktionieren in Chat-Nachrichten.
 
-prefix: "<#4cc38a>WildHomes <dark_gray>» <gray>"
+prefix: "<bold><gradient:#c8f7dd:#4cc38a>ᴡɪʟᴅʜᴏᴍᴇꜱ</gradient></bold> <dark_gray>» <gray>"
 default-name: "Zuhause {slot}"
 
 messages:
@@ -43,9 +43,11 @@ teleport:
 
 admin:
   help:
-    - "<#4cc38a>WildHomes <gray>{version}"
-    - "<white>/wildhomes reload <gray>- Konfiguration und Sprache neu laden"
-    - "<white>/wildhomes open <spieler> <gray>- Zuhause eines Spielers verwalten"
+    - "<bold><gradient:#c8f7dd:#4cc38a>ᴡɪʟᴅʜᴏᴍᴇꜱ</gradient></bold> <gray>{version}"
+    - "<white>/home-admin open <spieler> <gray>- Zuhause eines Spielers verwalten"
+    - "<white>/home-admin tp <spieler> <zuhause> <gray>- zu einem Zuhause eines Spielers teleportieren"
+    - "<white>/home-admin delete <spieler> <zuhause> <gray>- ein Zuhause eines Spielers löschen"
+    - "<white>/home-admin reload <gray>- Konfiguration und Sprache neu laden"
 
 dialogs:
   main:
