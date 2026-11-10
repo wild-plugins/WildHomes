@@ -122,7 +122,7 @@ public final class HomeCommands {
 
     private static final List<String> ADMIN_NODES = List.of(
             "wildhomes.admin.view", "wildhomes.admin.teleport", "wildhomes.admin.set", "wildhomes.admin.rename",
-            "wildhomes.admin.icon", "wildhomes.admin.delete", "wildhomes.admin.reload");
+            "wildhomes.admin.icon", "wildhomes.admin.delete", "wildhomes.admin.reload", "wildhomes.admin.language");
 
     private static boolean anyAdmin(CommandSender sender) {
         for (String node : ADMIN_NODES) if (sender.hasPermission(node)) return true;
@@ -140,6 +140,32 @@ public final class HomeCommands {
                     plugin.lang().sendLines(ctx.getSource().getSender(), "admin.help", "version", plugin.getPluginMeta().getVersion());
                     return Command.SINGLE_SUCCESS;
                 })
+                .then(Commands.literal("language").requires(can("wildhomes.admin.language"))
+                        .executes(ctx -> {
+                            CommandSender sender = ctx.getSource().getSender();
+                            plugin.lang().send(sender, "messages.language-current", "language", plugin.settings().language,
+                                    "languages", String.join(", ", plugin.lang().languages()));
+                            return Command.SINGLE_SUCCESS;
+                        })
+                        .then(Commands.argument("name", StringArgumentType.word())
+                                .suggests((ctx, builder) -> {
+                                    String typed = builder.getRemainingLowerCase();
+                                    for (String name : plugin.lang().languages()) if (name.startsWith(typed)) builder.suggest(name);
+                                    return builder.buildFuture();
+                                })
+                                .executes(ctx -> {
+                                    CommandSender sender = ctx.getSource().getSender();
+                                    String name = StringArgumentType.getString(ctx, "name").toLowerCase(Locale.ROOT);
+                                    if (!plugin.lang().exists(name)) {
+                                        plugin.lang().send(sender, "messages.language-unknown", "language", name,
+                                                "languages", String.join(", ", plugin.lang().languages()));
+                                    } else if (plugin.setLanguage(name)) {
+                                        plugin.lang().send(sender, "messages.language-set", "language", name);
+                                    } else {
+                                        plugin.lang().send(sender, "messages.error");
+                                    }
+                                    return Command.SINGLE_SUCCESS;
+                                })))
                 .then(Commands.literal("reload").requires(can("wildhomes.admin.reload")).executes(ctx -> {
                     plugin.reload();
                     plugin.lang().send(ctx.getSource().getSender(), "messages.reloaded");

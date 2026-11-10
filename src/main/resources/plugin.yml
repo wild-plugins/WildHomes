@@ -58,6 +58,9 @@ permissions:
   wildhomes.admin.delete:
     description: Delete the homes of other players
     default: op
+  wildhomes.admin.language:
+    description: /home-admin language - change the plugin language
+    default: op
   wildhomes.admin.reload:
     description: /home-admin reload
     default: op
@@ -72,3 +75,4 @@ permissions:
       wildhomes.admin.icon: true
       wildhomes.admin.delete: true
       wildhomes.admin.reload: true
+      wildhomes.admin.language: true

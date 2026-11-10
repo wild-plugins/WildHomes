@@ -304,7 +304,7 @@ table.ref td.p{font-family:var(--mono);font-size:15px;color:var(--dim);width:20%
     <div><b>Cross-server</b>One shared MariaDB database. The player is sent over and placed at the home.</div>
     <div><b>Limits by rank</b>Home slots per permission. Slots above the limit show as locked.</div>
   </div>
-  <div class="facts"><span>Minecraft 26.1+</span><span>Paper</span><span>Folia</span><span>Java 25</span><span>SQLite / MariaDB / MySQL</span><span>English + German</span><span>Optional: PlaceholderAPI</span></div>
+  <div class="facts"><span>Minecraft 26.1+</span><span>Paper</span><span>Folia</span><span>Java 25</span><span>SQLite / MariaDB / MySQL</span><span>English + German, per player</span><span>Optional: PlaceholderAPI</span></div>
 </section>
 <section class="wrap">
   <div class="sec-head">
@@ -318,10 +318,11 @@ table.ref td.p{font-family:var(--mono);font-size:15px;color:var(--dim);width:20%
       <tr><td class="cmd"><b>/home</b> <span class="us">[name]</span></td><td class="p">use</td><td class="d">Open the dialog, or teleport to a home</td></tr>
       <tr><td class="cmd"><b>/sethome</b> <span class="us">[name]</span></td><td class="p">sethome</td><td class="d">Set a home, or move one</td></tr>
       <tr><td class="cmd"><b>/delhome</b> <span class="us">&lt;name&gt;</span></td><td class="p">delhome</td><td class="d">Delete a home</td></tr>
-      <tr class="grp"><td colspan="3">Staff · /home-admin or /wild-homes-admin</td></tr>
+      <tr class="grp"><td colspan="3">Staff · /home-admin or /homesadmin</td></tr>
       <tr><td class="cmd"><b>/home-admin open</b> <span class="us">&lt;player&gt;</span></td><td class="p">admin.view</td><td class="d">Open the homes of any player</td></tr>
       <tr><td class="cmd"><b>/home-admin tp</b> <span class="us">&lt;player&gt; &lt;home&gt;</span></td><td class="p">admin.teleport</td><td class="d">Teleport to a home of a player</td></tr>
       <tr><td class="cmd"><b>/home-admin delete</b> <span class="us">&lt;player&gt; &lt;home&gt;</span></td><td class="p">admin.delete</td><td class="d">Delete a home of a player</td></tr>
+      <tr><td class="cmd"><b>/home-admin language</b> <span class="us">&lt;name&gt;</span></td><td class="p">admin.language</td><td class="d">auto, english, german, ...</td></tr>
       <tr><td class="cmd"><b>/home-admin reload</b></td><td class="p">admin.reload</td><td class="d">Reload config and language</td></tr>
     </tbody>
   </table>
@@ -335,7 +336,7 @@ table.ref td.p{font-family:var(--mono);font-size:15px;color:var(--dim);width:20%
   <div class="pgrid">
     <div class="pgroup"><h3>Players</h3><ul><li><span class="pre">wildhomes.</span>use</li><li><span class="pre">wildhomes.</span>sethome</li><li><span class="pre">wildhomes.</span>delhome</li><li><span class="pre">wildhomes.</span>rename</li><li><span class="pre">wildhomes.</span>icon</li><li><span class="pre">wildhomes.</span>crossserver</li></ul></div>
     <div class="pgroup"><h3>Home limit</h3><ul><li><span class="pre">wildhomes.</span>amount.&lt;n&gt;</li><li><span class="pre">wildhomes.</span>amount.unlimited</li></ul></div>
-    <div class="pgroup"><h3>Staff</h3><ul><li><span class="pre">wildhomes.</span>admin</li><li><span class="pre">wildhomes.</span>admin.view</li><li><span class="pre">wildhomes.</span>admin.teleport</li><li><span class="pre">wildhomes.</span>admin.set</li><li><span class="pre">wildhomes.</span>admin.rename</li><li><span class="pre">wildhomes.</span>admin.icon</li><li><span class="pre">wildhomes.</span>admin.delete</li><li><span class="pre">wildhomes.</span>admin.reload</li></ul></div>
+    <div class="pgroup"><h3>Staff</h3><ul><li><span class="pre">wildhomes.</span>admin</li><li><span class="pre">wildhomes.</span>admin.view</li><li><span class="pre">wildhomes.</span>admin.teleport</li><li><span class="pre">wildhomes.</span>admin.set</li><li><span class="pre">wildhomes.</span>admin.rename</li><li><span class="pre">wildhomes.</span>admin.icon</li><li><span class="pre">wildhomes.</span>admin.delete</li><li><span class="pre">wildhomes.</span>admin.reload</li><li><span class="pre">wildhomes.</span>admin.language</li></ul></div>
     <div class="pgroup"><h3>Bypass</h3><ul><li><span class="pre">wildhomes.</span>bypass.warmup</li><li><span class="pre">wildhomes.</span>bypass.cooldown</li><li><span class="pre">wildhomes.</span>bypass.world</li></ul></div>
   </div>
 </section>

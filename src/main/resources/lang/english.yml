@@ -27,6 +27,9 @@ messages:
   world-disabled: "<red>You can't set homes in this world."
   player-not-found: "<red>There is no player called <white>{player}</white>."
   usage-delhome: "<red>Usage: <white>/delhome <name>"
+  language-current: "Language: <white>{language}</white>. Available: <white>{languages}"
+  language-set: "Language set to <white>{language}</white>."
+  language-unknown: "<red>There is no language <white>{language}</white>. Available: <white>{languages}"
 
 teleport:
   countdown: "Teleporting to <white>{home}</white> in <white>{seconds}</white>..."
@@ -47,6 +50,7 @@ admin:
     - "<white>/home-admin open <player> <gray>- manage the homes of a player"
     - "<white>/home-admin tp <player> <home> <gray>- teleport to a home of a player"
     - "<white>/home-admin delete <player> <home> <gray>- delete a home of a player"
+    - "<white>/home-admin language <name> <gray>- auto, english, german, ..."
     - "<white>/home-admin reload <gray>- reload config and language"
 
 dialogs:

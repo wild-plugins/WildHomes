@@ -30,9 +30,10 @@ Change icon lists every item with its sprite and a search field. Rename uses a t
 | `/home-admin open <player>` | Manage the homes of any player, online or offline |
 | `/home-admin tp <player> <home>` | Teleport to a home of a player |
 | `/home-admin delete <player> <home>` | Delete a home of a player |
+| `/home-admin language <name>` | `auto`, `english`, `german` or any file in `lang/` (tab-completed) |
 | `/home-admin reload` | Reload `config.yml` and the language |
 
-`/wild-homes-admin` is an alias of `/home-admin`. Aliases are set in `config.yml` -> `commands` (restart needed).
+`/homesadmin` is an alias of `/home-admin`. Aliases are set in `config.yml` -> `commands` (restart needed).
 
 ## Permissions
 
@@ -56,6 +57,7 @@ Change icon lists every item with its sprite and a search field. Rename uses a t
 | `wildhomes.admin.icon` | op | Change icons of other players' homes |
 | `wildhomes.admin.delete` | op | Delete other players' homes |
 | `wildhomes.admin.reload` | op | `/home-admin reload` |
+| `wildhomes.admin.language` | op | `/home-admin language` |
 | `wildhomes.admin` | op | All `wildhomes.admin.*` nodes |
 
 Example: helpers get `admin.view` and `admin.teleport`, moderators additionally `admin.rename` and `admin.delete`.
@@ -68,7 +70,7 @@ Example: helpers get `admin.view` and `admin.teleport`, moderators additionally 
 | `database.yml` | `sqlite` or `mariadb`, connection, table prefix |
 | `lang/english.yml`, `lang/german.yml` | Every message and dialog text (MiniMessage) |
 
-Switch the language with `language: german` and `/home-admin reload`. For another language copy `english.yml`, translate it and set `language` to its file name.
+`language: auto` (default) gives every player the file for their game language from `auto-languages` (`de: german`), everyone else gets English. A fixed `language: german` uses one file for everybody. Switch in game with `/home-admin language <name>`. For another language copy `english.yml`, translate it, and add it to `auto-languages` or pick it directly.
 
 ## Cross-server
 
@@ -100,3 +102,5 @@ The jar is `target/WildHomes-<version>.jar`. `tools/SpriteMap.java` rebuilds `sp
 ## Icons and versions
 
 The icon list only contains items that exist on the server and are enabled in its world. With ViaVersion, each player only sees items their own client version knows, and homes with a newer icon show the default icon to older clients. No missing-texture icons.
+
+The list leaves out what `dialogs.icons.exclude` matches (`*` = any text): by default stairs, slabs, fences, fence gates, buttons, trapdoors and the exposed, weathered, oxidized and waxed copper variants. The search matches the item ID and the English and German item name, e.g. `diamond` or `Diamant`. Dialogs only send the typed text when a button is pressed, so the list updates on the Search button, not while typing.

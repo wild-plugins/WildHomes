@@ -46,6 +46,7 @@ public final class DialogShots {
     static final Map<Integer, Glyph> FONT = new HashMap<>();
     static final Map<String, String> SPRITES = new HashMap<>();
     static final Map<String, BufferedImage> TEXTURES = new HashMap<>();
+    static final List<java.util.regex.Pattern> EXCLUDE = new ArrayList<>();
     static Map<String, Object> lang;
     static Map<String, String> names = new HashMap<>();
     static BufferedImage background;
@@ -67,6 +68,23 @@ public final class DialogShots {
         try (Reader r = Files.newBufferedReader(root.resolve("src/main/resources/lang/" + language + ".yml"))) {
             lang = new Yaml().load(r);
         }
+        try (Reader r = Files.newBufferedReader(root.resolve("src/main/resources/config.yml"))) {
+            Map<String, Object> config = new Yaml().load(r);
+            Object dialogs = config.get("dialogs");
+            Object icons = dialogs instanceof Map<?, ?> d ? d.get("icons") : null;
+            Object exclude = icons instanceof Map<?, ?> i ? i.get("exclude") : null;
+            if (exclude instanceof List<?> globs) {
+                for (Object glob : globs) {
+                    String[] parts = String.valueOf(glob).split("\\*", -1);
+                    StringBuilder regex = new StringBuilder();
+                    for (int p = 0; p < parts.length; p++) {
+                        if (p > 0) regex.append(".*");
+                        if (!parts[p].isEmpty()) regex.append(java.util.regex.Pattern.quote(parts[p]));
+                    }
+                    EXCLUDE.add(java.util.regex.Pattern.compile(regex.toString()));
+                }
+            }
+        }
         loadNames(names);
         background = makeBackground();
 
@@ -83,7 +101,7 @@ public final class DialogShots {
         render(out.resolve("3-home.png"), detail(farm));
         render(out.resolve("4-rename.png"), rename(farm));
         render(out.resolve("5-icons.png"), icons(farm, "", 3 + 4));
-        render(out.resolve("6-icons-search.png"), icons(farm, "diamond", 3 + 1));
+        render(out.resolve("6-icons-search.png"), icons(farm, de ? "Diamant" : "diamond", 3 + 1));
         render(out.resolve("7-delete.png"), delete(farm));
         System.out.println("rendered " + language + " to " + out);
     }
@@ -180,11 +198,11 @@ public final class DialogShots {
         buttons.add(new Button(mini(str("dialogs.icons.default"), WHITE), 115, List.of(), false));
         buttons.add(new Button(mini(str("dialogs.icons.back"), WHITE), 115, List.of(), false));
         List<String> keys = new ArrayList<>(SPRITES.keySet());
-        keys.removeIf(k -> !names.containsKey(k));
+        keys.removeIf(k -> !names.containsKey(k) || EXCLUDE.stream().anyMatch(p -> p.matcher(k).matches()));
         keys.sort(String::compareTo);
         String q = query.toLowerCase().replace("_", "").replace(" ", "");
         for (String key : keys) {
-            if (!q.isEmpty() && !key.replace("_", "").contains(q)) continue;
+            if (!q.isEmpty() && !key.replace("_", "").contains(q) && !names.get(key).toLowerCase().replace(" ", "").contains(q)) continue;
             Map<String, String> ph = Map.of("icon", "<sprite:" + key + ">", "item", names.get(key));
             buttons.add(new Button(mini(fill(str("dialogs.icons.item"), ph), WHITE), 115, List.of(), buttons.size() == hover));
         }

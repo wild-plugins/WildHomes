@@ -15,11 +15,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 public final class Icons {
 
@@ -31,6 +33,7 @@ public final class Icons {
 
     private final WildHomes plugin;
     private final Map<String, Sprite> sprites = new HashMap<>();
+    private final Map<String, String[]> names = new HashMap<>();
     private final List<Material> everything;
     private List<Material> choices;
 
@@ -49,6 +52,19 @@ public final class Icons {
             }
         } catch (Exception e) {
             plugin.getLogger().warning("Could not read the item sprites: " + e.getMessage());
+        }
+        try (InputStream in = plugin.getResource("item-names.txt")) {
+            if (in != null) {
+                BufferedReader reader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    String[] parts = line.split("\t");
+                    if (parts.length < 2) continue;
+                    names.put(parts[0], Arrays.copyOfRange(parts, 1, parts.length));
+                }
+            }
+        } catch (Exception e) {
+            plugin.getLogger().warning("Could not read the item names: " + e.getMessage());
         }
         World world = Bukkit.getWorlds().isEmpty() ? null : Bukkit.getWorlds().getFirst();
         List<Material> items = new ArrayList<>();
@@ -74,13 +90,18 @@ public final class Icons {
 
     public void reload() {
         List<Material> configured = plugin.settings().iconList;
-        if (configured.isEmpty()) {
-            choices = everything;
-        } else {
-            List<Material> allowed = new ArrayList<>(configured);
-            allowed.retainAll(everything);
-            choices = List.copyOf(allowed);
+        List<Material> allowed = new ArrayList<>(configured.isEmpty() ? everything : configured);
+        allowed.retainAll(everything);
+        allowed.removeIf(this::excluded);
+        choices = List.copyOf(allowed);
+    }
+
+    private boolean excluded(Material material) {
+        String key = material.getKey().getKey();
+        for (Pattern pattern : plugin.settings().iconExclude) {
+            if (pattern.matcher(key).matches()) return true;
         }
+        return false;
     }
 
     public boolean supported(Material material, int[] client) {
@@ -99,9 +120,20 @@ public final class Icons {
         String q = normalize(query);
         List<Material> result = new ArrayList<>();
         for (Material material : choices(viewer)) {
-            if (q.isEmpty() || normalize(material.getKey().getKey()).contains(q)) result.add(material);
+            if (q.isEmpty() || matches(material, q)) result.add(material);
         }
         return result;
+    }
+
+    private boolean matches(Material material, String query) {
+        String key = material.getKey().getKey();
+        if (normalize(key).contains(query)) return true;
+        String[] names = this.names.get(key);
+        if (names == null) return false;
+        for (String name : names) {
+            if (normalize(name).contains(query)) return true;
+        }
+        return false;
     }
 
     public Component sprite(Material material, Player viewer) {
@@ -120,6 +152,6 @@ public final class Icons {
     }
 
     private static String normalize(String text) {
-        return text.toLowerCase(Locale.ROOT).replace("_", "").replace(" ", "").trim();
+        return text.toLowerCase(Locale.ROOT).replace("_", "").replace(" ", "").replace("-", "").trim();
     }
 }

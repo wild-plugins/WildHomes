@@ -17,6 +17,11 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.List;
 
 public final class WildHomes extends JavaPlugin {
 
@@ -37,7 +42,7 @@ public final class WildHomes extends JavaPlugin {
         saveDefaults();
         settings = Settings.load(this);
         lang = new Lang(this);
-        lang.load(settings.language);
+        lang.load(settings);
         icons = new Icons(this);
         database = new Database(this);
         try {
@@ -73,8 +78,30 @@ public final class WildHomes extends JavaPlugin {
 
     public void reload() {
         settings = Settings.load(this);
-        lang.load(settings.language);
+        lang.load(settings);
         icons.reload();
+    }
+
+    public boolean setLanguage(String language) {
+        File file = new File(getDataFolder(), "config.yml");
+        try {
+            List<String> lines = new ArrayList<>(Files.readAllLines(file.toPath(), StandardCharsets.UTF_8));
+            boolean replaced = false;
+            for (int i = 0; i < lines.size(); i++) {
+                if (lines.get(i).startsWith("language:")) {
+                    lines.set(i, "language: " + language);
+                    replaced = true;
+                    break;
+                }
+            }
+            if (!replaced) lines.add(0, "language: " + language);
+            Files.write(file.toPath(), lines, StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            getLogger().warning("Could not write config.yml: " + e.getMessage());
+            return false;
+        }
+        reload();
+        return true;
     }
 
     private void saveDefaults() {

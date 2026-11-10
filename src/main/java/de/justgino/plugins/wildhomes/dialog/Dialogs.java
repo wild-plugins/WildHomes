@@ -120,7 +120,7 @@ public final class Dialogs implements Listener {
                 buttons.add(homeButton(viewer, homes, home, expanded));
             } else if (slot <= limit) {
                 int target = slot;
-                buttons.add(button(lang().get("dialogs.main.empty"), lang().lines("dialogs.main.empty-tooltip"), settings().mainWidth, p -> {
+                buttons.add(button(lang().get(viewer, "dialogs.main.empty"), lang().lines(viewer, "dialogs.main.empty-tooltip"), settings().mainWidth, p -> {
                     if (!may(p, homes, "wildhomes.sethome")) {
                         lang().send(p, "messages.no-permission");
                         return;
@@ -129,28 +129,28 @@ public final class Dialogs implements Listener {
                     openMain(p, homes, expanded);
                 }));
             } else {
-                buttons.add(button(lang().get("dialogs.main.locked"), lang().lines("dialogs.main.locked-tooltip"), settings().mainWidth,
+                buttons.add(button(lang().get(viewer, "dialogs.main.locked"), lang().lines(viewer, "dialogs.main.locked-tooltip"), settings().mainWidth,
                         p -> lang().send(p, "messages.slot-locked")));
             }
         }
         ActionButton exit = null;
         if (more && !expanded) {
-            buttons.add(button(lang().get("dialogs.main.more"), null, settings().mainWidth, p -> openMain(p, homes, true)));
+            buttons.add(button(lang().get(viewer, "dialogs.main.more"), null, settings().mainWidth, p -> openMain(p, homes, true)));
         } else if (more) {
-            exit = button(lang().get("dialogs.main.less"), null, settings().mainWidth, p -> openMain(p, homes, false));
+            exit = button(lang().get(viewer, "dialogs.main.less"), null, settings().mainWidth, p -> openMain(p, homes, false));
         }
-        Component title = admin ? lang().get("dialogs.main.title-other", "player", homes.name()) : lang().get("dialogs.main.title");
+        Component title = admin ? lang().get(viewer, "dialogs.main.title-other", "player", homes.name()) : lang().get(viewer, "dialogs.main.title");
         show(viewer, title, List.of(item(settings().mainIcon)), List.of(), buttons, exit, settings().mainColumns);
     }
 
     private ActionButton homeButton(Player viewer, PlayerHomes homes, Home home, boolean expanded) {
         Object[] ph = placeholders(home, viewer);
-        List<String> tooltip = new ArrayList<>(lang().rawLines("dialogs.main.home-tooltip"));
+        List<String> tooltip = new ArrayList<>(lang().rawLines(viewer, "dialogs.main.home-tooltip"));
         if (plugin.network().enabled()) {
-            String server = lang().raw("dialogs.main.home-tooltip-server");
+            String server = lang().raw(viewer, "dialogs.main.home-tooltip-server");
             if (!server.isEmpty()) tooltip.add(Math.min(3, tooltip.size()), server);
         }
-        return button(lang().get("dialogs.main.home", ph), lang().join(tooltip, ph), settings().mainWidth, p -> {
+        return button(lang().get(viewer, "dialogs.main.home", ph), lang().join(tooltip, ph), settings().mainWidth, p -> {
             if (settings().clickAction == Settings.ClickAction.TELEPORT && own(p, homes)) {
                 teleport(p, homes, home.slot());
             } else {
@@ -200,16 +200,16 @@ public final class Dialogs implements Listener {
         List<ActionButton> buttons = new ArrayList<>();
         int width = settings().homeWidth;
         if (may(viewer, homes, "wildhomes.use")) {
-            buttons.add(button(lang().get("dialogs.home.teleport", "home", home.name()), null, width, p -> teleport(p, homes, slot)));
+            buttons.add(button(lang().get(viewer, "dialogs.home.teleport", "home", home.name()), null, width, p -> teleport(p, homes, slot)));
         }
         if (may(viewer, homes, "wildhomes.icon")) {
-            buttons.add(button(lang().get("dialogs.home.icon", "home", home.name()), null, width, p -> openIcons(p, homes, slot, "")));
+            buttons.add(button(lang().get(viewer, "dialogs.home.icon", "home", home.name()), null, width, p -> openIcons(p, homes, slot, "")));
         }
         if (may(viewer, homes, "wildhomes.rename")) {
-            buttons.add(button(lang().get("dialogs.home.rename", "home", home.name()), null, width, p -> openRename(p, homes, slot, null)));
+            buttons.add(button(lang().get(viewer, "dialogs.home.rename", "home", home.name()), null, width, p -> openRename(p, homes, slot, null)));
         }
         if (may(viewer, homes, "wildhomes.delhome")) {
-            buttons.add(button(lang().get("dialogs.home.delete", "home", home.name()), null, width, p -> {
+            buttons.add(button(lang().get(viewer, "dialogs.home.delete", "home", home.name()), null, width, p -> {
                 if (settings().confirmDelete) {
                     openDelete(p, homes, slot);
                 } else {
@@ -217,8 +217,8 @@ public final class Dialogs implements Listener {
                 }
             }));
         }
-        ActionButton back = button(lang().get("dialogs.home.back"), null, width, p -> openMain(p, homes, false));
-        show(viewer, lang().get("dialogs.home.title", "home", home.name()), List.of(item(shownIcon(home, viewer))),
+        ActionButton back = button(lang().get(viewer, "dialogs.home.back"), null, width, p -> openMain(p, homes, false));
+        show(viewer, lang().get(viewer, "dialogs.home.title", "home", home.name()), List.of(item(shownIcon(home, viewer))),
                 List.of(), buttons, back, settings().homeColumns);
     }
 
@@ -231,26 +231,26 @@ public final class Dialogs implements Listener {
         }
         List<DialogBody> body = new ArrayList<>();
         if (error != null) body.add(DialogBody.plainMessage(error, settings().renameInputWidth));
-        DialogInput input = DialogInput.text("name", lang().get("dialogs.rename.label"))
+        DialogInput input = DialogInput.text("name", lang().get(viewer, "dialogs.rename.label"))
                 .width(settings().renameInputWidth)
                 .maxLength(settings().nameMaxLength)
                 .initial(home.name().length() > settings().nameMaxLength ? home.name().substring(0, settings().nameMaxLength) : home.name())
                 .build();
-        ActionButton save = submit(lang().get("dialogs.rename.save"), settings().renameWidth, (p, view) -> {
+        ActionButton save = submit(lang().get(viewer, "dialogs.rename.save"), settings().renameWidth, (p, view) -> {
             Home current = homes.bySlot(slot);
             if (current == null) return;
             String name = view.getText("name") == null ? "" : view.getText("name").trim();
             String problem = plugin.homes().nameError(homes, name, slot);
             if (problem != null) {
-                openRename(p, homes, slot, lang().get(problem, "home", name, "max", settings().nameMaxLength));
+                openRename(p, homes, slot, lang().get(viewer, problem, "home", name, "max", settings().nameMaxLength));
                 return;
             }
             Home renamed = plugin.homes().rename(homes, current, name);
             lang().send(p, "messages.home-renamed", "home", renamed.name());
             openHome(p, homes, slot);
         });
-        ActionButton cancel = button(lang().get("dialogs.rename.cancel"), null, settings().renameWidth, p -> openHome(p, homes, slot));
-        show(viewer, lang().get("dialogs.rename.title", "home", home.name()), body, List.of(input), List.of(save), cancel, 1);
+        ActionButton cancel = button(lang().get(viewer, "dialogs.rename.cancel"), null, settings().renameWidth, p -> openHome(p, homes, slot));
+        show(viewer, lang().get(viewer, "dialogs.rename.title", "home", home.name()), body, List.of(input), List.of(save), cancel, 1);
     }
 
     public void openIcons(Player viewer, PlayerHomes given, int slot, String query) {
@@ -264,20 +264,20 @@ public final class Dialogs implements Listener {
         List<DialogBody> body = new ArrayList<>();
         body.add(item(shownIcon(home, viewer)));
         List<Material> found = plugin.icons().search(viewer, query);
-        if (found.isEmpty()) body.add(DialogBody.plainMessage(lang().get("dialogs.icons.no-results", "search", query)));
-        DialogInput search = DialogInput.text("search", lang().get("dialogs.icons.search-label"))
+        if (found.isEmpty()) body.add(DialogBody.plainMessage(lang().get(viewer, "dialogs.icons.no-results", "search", query)));
+        DialogInput search = DialogInput.text("search", lang().get(viewer, "dialogs.icons.search-label"))
                 .width(Math.min(1024, width * 2)).maxLength(32).initial(query).build();
         List<ActionButton> buttons = new ArrayList<>();
-        buttons.add(submit(lang().get("dialogs.icons.search"), width, (p, view) ->
+        buttons.add(submit(lang().get(viewer, "dialogs.icons.search"), width, (p, view) ->
                 openIcons(p, homes, slot, view.getText("search") == null ? "" : view.getText("search"))));
-        buttons.add(button(lang().get("dialogs.icons.default"), null, width, p -> changeIcon(p, homes, slot, null)));
-        buttons.add(button(lang().get("dialogs.icons.back"), null, width, p -> openHome(p, homes, slot)));
+        buttons.add(button(lang().get(viewer, "dialogs.icons.default"), null, width, p -> changeIcon(p, homes, slot, null)));
+        buttons.add(button(lang().get(viewer, "dialogs.icons.back"), null, width, p -> openHome(p, homes, slot)));
         for (Material material : found) {
-            buttons.add(action(lang().get("dialogs.icons.item", "icon", plugin.icons().sprite(material, viewer), "item", plugin.icons().name(material)),
+            buttons.add(action(lang().get(viewer, "dialogs.icons.item", "icon", plugin.icons().sprite(material, viewer), "item", plugin.icons().name(material)),
                     null, width, DialogAction.customClick(ICON_PICK, BinaryTagHolder.binaryTagHolder("{item:\"" + material.getKey().getKey() + "\"}"))));
         }
         iconSessions.put(viewer.getUniqueId(), new IconSession(homes, slot));
-        show(viewer, lang().get("dialogs.icons.title", "home", home.name()), body, List.of(search), buttons, null, settings().iconColumns);
+        show(viewer, lang().get(viewer, "dialogs.icons.title", "home", home.name()), body, List.of(search), buttons, null, settings().iconColumns);
     }
 
     private void changeIcon(Player player, PlayerHomes homes, int slot, @Nullable Material material) {
@@ -297,9 +297,9 @@ public final class Dialogs implements Listener {
         }
         int width = settings().deleteWidth;
         List<ActionButton> buttons = List.of(
-                button(lang().get("dialogs.delete.cancel", "home", home.name()), null, width, p -> openHome(p, homes, slot)),
-                button(lang().get("dialogs.delete.confirm", "home", home.name()), null, width, p -> delete(p, homes, slot)));
-        show(viewer, lang().get("dialogs.delete.title", "home", home.name()), List.of(), List.of(), buttons, null, 2);
+                button(lang().get(viewer, "dialogs.delete.cancel", "home", home.name()), null, width, p -> openHome(p, homes, slot)),
+                button(lang().get(viewer, "dialogs.delete.confirm", "home", home.name()), null, width, p -> delete(p, homes, slot)));
+        show(viewer, lang().get(viewer, "dialogs.delete.title", "home", home.name()), List.of(), List.of(), buttons, null, 2);
     }
 
     private void delete(Player player, PlayerHomes homes, int slot) {

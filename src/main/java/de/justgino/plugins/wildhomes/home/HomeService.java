@@ -98,8 +98,8 @@ public final class HomeService {
         return null;
     }
 
-    public String defaultName(PlayerHomes homes, int slot) {
-        String base = plugin.lang().raw("default-name").trim();
+    public String defaultName(CommandSender actor, PlayerHomes homes, int slot) {
+        String base = plugin.lang().raw(actor, "default-name").trim();
         if (base.isEmpty()) base = "Home {slot}";
         if (!base.contains("{slot}")) base = base + " {slot}";
         for (int n = slot; n < slot + 1000; n++) {
@@ -143,7 +143,7 @@ public final class HomeService {
             plugin.lang().send(actor, "messages.limit-reached", "max", limit);
             return null;
         }
-        if (name == null || name.isEmpty()) name = defaultName(homes, slot);
+        if (name == null || name.isEmpty()) name = defaultName(actor, homes, slot);
         String error = nameError(homes, name, -1);
         if (error != null) {
             plugin.lang().send(actor, error, "home", name, "max", settings().nameMaxLength);

@@ -2,6 +2,7 @@ package de.justgino.plugins.wildhomes.config;
 
 import de.justgino.plugins.wildhomes.WildHomes;
 import org.bukkit.Material;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.File;
@@ -9,9 +10,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
@@ -23,6 +26,7 @@ public final class Settings {
     public enum ClickAction { MANAGE, TELEPORT }
 
     public final String language;
+    public final Map<String, String> autoLanguages;
     public final String serverName;
     public final boolean crossServer;
     public final int connectTimeout;
@@ -59,6 +63,7 @@ public final class Settings {
     public final int iconColumns;
     public final int iconWidth;
     public final List<Material> iconList;
+    public final List<Pattern> iconExclude;
     public final int deleteWidth;
     public final boolean confirmDelete;
 
@@ -68,7 +73,13 @@ public final class Settings {
     public final List<String> adminAliases;
 
     private Settings(WildHomes plugin, YamlConfiguration c) {
-        language = c.getString("language", "english").trim().toLowerCase(Locale.ROOT);
+        language = c.getString("language", "auto").trim().toLowerCase(Locale.ROOT);
+        Map<String, String> auto = new HashMap<>();
+        ConfigurationSection autoSection = c.getConfigurationSection("auto-languages");
+        if (autoSection != null) {
+            for (String key : autoSection.getKeys(false)) auto.put(key.toLowerCase(Locale.ROOT), String.valueOf(autoSection.get(key)).trim().toLowerCase(Locale.ROOT));
+        }
+        autoLanguages = Map.copyOf(auto);
         serverName = c.getString("server-name", "survival").trim();
         crossServer = c.getBoolean("cross-server.enabled");
         connectTimeout = Math.max(3, c.getInt("cross-server.connect-timeout", 15));
@@ -112,6 +123,19 @@ public final class Settings {
             if (m != null && m.isItem()) icons.add(m);
         }
         iconList = List.copyOf(icons);
+        List<Pattern> exclude = new ArrayList<>();
+        for (String glob : c.getStringList("dialogs.icons.exclude")) {
+            String clean = glob.trim().toLowerCase(Locale.ROOT).replace("minecraft:", "");
+            if (clean.isEmpty()) continue;
+            String[] parts = clean.split("\\*", -1);
+            StringBuilder regex = new StringBuilder();
+            for (int i = 0; i < parts.length; i++) {
+                if (i > 0) regex.append(".*");
+                if (!parts[i].isEmpty()) regex.append(Pattern.quote(parts[i]));
+            }
+            exclude.add(Pattern.compile(regex.toString()));
+        }
+        iconExclude = List.copyOf(exclude);
         deleteWidth = width(c.getInt("dialogs.delete.button-width", 150));
         confirmDelete = c.getBoolean("dialogs.delete.confirm", true);
 

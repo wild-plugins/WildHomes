@@ -86,11 +86,11 @@ public final class TeleportService {
 
     private void countdown(Player player, Home home, int seconds) {
         switch (settings().countdownDisplay) {
-            case ACTIONBAR -> player.sendActionBar(plugin.lang().get("teleport.countdown", "home", home.name(), "seconds", seconds));
+            case ACTIONBAR -> player.sendActionBar(plugin.lang().get(player, "teleport.countdown", "home", home.name(), "seconds", seconds));
             case CHAT -> plugin.lang().send(player, "teleport.countdown", "home", home.name(), "seconds", seconds);
             case TITLE -> player.showTitle(Title.title(
-                    plugin.lang().get("teleport.countdown-title", "home", home.name(), "seconds", seconds),
-                    plugin.lang().get("teleport.countdown-subtitle", "home", home.name(), "seconds", seconds),
+                    plugin.lang().get(player, "teleport.countdown-title", "home", home.name(), "seconds", seconds),
+                    plugin.lang().get(player, "teleport.countdown-subtitle", "home", home.name(), "seconds", seconds),
                     Title.Times.times(Duration.ZERO, Duration.ofMillis(1200), Duration.ofMillis(200))));
             case NONE -> {
             }

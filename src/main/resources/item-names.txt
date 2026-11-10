@@ -1,0 +1,1640 @@
+abandoned_camp_map	Abandoned Camp Map	Verlassenes-Lager-Karte
+acacia_boat	Acacia Boat	Akazienholzboot
+acacia_button	Acacia Button	Akazienholzknopf
+acacia_chest_boat	Acacia Boat with Chest	Akazienholztruhenboot
+acacia_door	Acacia Door	Akazienholztür
+acacia_fence	Acacia Fence	Akazienholzzaun
+acacia_fence_gate	Acacia Fence Gate	Akazienholzzauntor
+acacia_hanging_sign	Acacia Hanging Sign	Akazienholzhängeschild
+acacia_leaves	Acacia Leaves	Akazienlaub
+acacia_log	Acacia Log	Akazienstamm
+acacia_planks	Acacia Planks	Akazienholzbretter
+acacia_pressure_plate	Acacia Pressure Plate	Akazienholzdruckplatte
+acacia_sapling	Acacia Sapling	Akaziensetzling
+acacia_shelf	Acacia Shelf	Akazienholzregal
+acacia_sign	Acacia Sign	Akazienholzschild
+acacia_slab	Acacia Slab	Akazienholzstufe
+acacia_stairs	Acacia Stairs	Akazienholztreppe
+acacia_trapdoor	Acacia Trapdoor	Akazienholzfalltür
+acacia_wood	Acacia Wood	Akazienholz
+activator_rail	Activator Rail	Aktivierungsschiene
+allay_spawn_egg	Allay Spawn Egg	Hilfsgeister-Spawn-Ei
+allium	Allium	Zierlauch
+amethyst_block	Block of Amethyst	Amethystblock
+amethyst_cluster	Amethyst Cluster	Amethysthaufen
+amethyst_shard	Amethyst Shard	Amethystscherbe
+ancient_debris	Ancient Debris	Antiker Schrott
+andesite	Andesite	Andesit
+andesite_slab	Andesite Slab	Andesitstufe
+andesite_stairs	Andesite Stairs	Andesittreppe
+andesite_wall	Andesite Wall	Andesitmauer
+angler_pottery_sherd	Angler Pottery Sherd	Angler-Töpferscherbe
+anvil	Anvil	Amboss
+apple	Apple	Apfel
+archer_pottery_sherd	Archer Pottery Sherd	Schützen-Töpferscherbe
+armadillo_scute	Armadillo Scute	Gürteltier-Hornschild
+armadillo_spawn_egg	Armadillo Spawn Egg	Gürteltier-Spawn-Ei
+armor_stand	Armor Stand	Rüstungsständer
+arms_up_pottery_sherd	Arms Up Pottery Sherd	Gebärden-Töpferscherbe
+arrow	Arrow	Pfeil
+axolotl_bucket	Bucket of Axolotl	Axolotleimer
+axolotl_spawn_egg	Axolotl Spawn Egg	Axolotl-Spawn-Ei
+azalea	Azalea	Azalee
+azalea_leaves	Azalea Leaves	Azaleenlaub
+azure_bluet	Azure Bluet	Porzellansternchen
+baked_potato	Baked Potato	Ofenkartoffel
+bamboo	Bamboo	Bambus
+bamboo_block	Block of Bamboo	Bambusblock
+bamboo_button	Bamboo Button	Bambusknopf
+bamboo_chest_raft	Bamboo Raft with Chest	Bambus-Truhenfloß
+bamboo_door	Bamboo Door	Bambustür
+bamboo_fence	Bamboo Fence	Bambuszaun
+bamboo_fence_gate	Bamboo Fence Gate	Bambuszauntor
+bamboo_hanging_sign	Bamboo Hanging Sign	Bambushängeschild
+bamboo_mosaic	Bamboo Mosaic	Bambusmosaik
+bamboo_mosaic_slab	Bamboo Mosaic Slab	Bambusmosaikstufe
+bamboo_mosaic_stairs	Bamboo Mosaic Stairs	Bambusmosaiktreppe
+bamboo_planks	Bamboo Planks	Bambusbretter
+bamboo_pressure_plate	Bamboo Pressure Plate	Bambusdruckplatte
+bamboo_raft	Bamboo Raft	Bambusfloß
+bamboo_shelf	Bamboo Shelf	Bambusregal
+bamboo_sign	Bamboo Sign	Bambusschild
+bamboo_slab	Bamboo Slab	Bambusstufe
+bamboo_stairs	Bamboo Stairs	Bambustreppe
+bamboo_trapdoor	Bamboo Trapdoor	Bambusfalltür
+barrel	Barrel	Fass
+barrier	Barrier	Barriere
+basalt	Basalt	Basalt
+bat_spawn_egg	Bat Spawn Egg	Fledermaus-Spawn-Ei
+beacon	Beacon	Leuchtfeuer
+bedrock	Bedrock	Grundgestein
+bee_nest	Bee Nest	Bienennest
+bee_spawn_egg	Bee Spawn Egg	Bienen-Spawn-Ei
+beef	Raw Beef	Rohes Rindfleisch
+beehive	Beehive	Bienenstock
+beetroot	Beetroot	Rote Bete
+beetroot_seeds	Beetroot Seeds	Rote-Bete-Samen
+beetroot_soup	Beetroot Soup	Borschtsch
+bell	Bell	Glocke
+big_dripleaf	Big Dripleaf	Großes Tropfblatt
+birch_boat	Birch Boat	Birkenholzboot
+birch_button	Birch Button	Birkenholzknopf
+birch_chest_boat	Birch Boat with Chest	Birkenholztruhenboot
+birch_door	Birch Door	Birkenholztür
+birch_fence	Birch Fence	Birkenholzzaun
+birch_fence_gate	Birch Fence Gate	Birkenholzzauntor
+birch_hanging_sign	Birch Hanging Sign	Birkenholzhängeschild
+birch_leaves	Birch Leaves	Birkenlaub
+birch_log	Birch Log	Birkenstamm
+birch_planks	Birch Planks	Birkenholzbretter
+birch_pressure_plate	Birch Pressure Plate	Birkenholzdruckplatte
+birch_sapling	Birch Sapling	Birkensetzling
+birch_shelf	Birch Shelf	Birkenholzregal
+birch_sign	Birch Sign	Birkenholzschild
+birch_slab	Birch Slab	Birkenholzstufe
+birch_stairs	Birch Stairs	Birkenholztreppe
+birch_trapdoor	Birch Trapdoor	Birkenholzfalltür
+birch_wood	Birch Wood	Birkenholz
+black_banner	Black Banner	Schwarzes Banner
+black_bed	Black Bed	Schwarzes Bett
+black_bundle	Black Bundle	Schwarzes Bündel
+black_candle	Black Candle	Schwarze Kerze
+black_carpet	Black Carpet	Schwarzer Teppich
+black_concrete	Black Concrete	Schwarzer Beton
+black_concrete_powder	Black Concrete Powder	Schwarzer Trockenbeton
+black_concrete_slab	Black Concrete Slab	Schwarze Betonstufe
+black_concrete_stairs	Black Concrete Stairs	Schwarze Betontreppe
+black_cushion	Black Cushion	Schwarzes Kissen
+black_dye	Black Dye	Schwarzer Farbstoff
+black_glazed_terracotta	Black Glazed Terracotta	Schwarze glasierte Keramik
+black_harness	Black Harness	Schwarzes Geschirr
+black_shulker_box	Black Shulker Box	Schwarze Shulker-Kiste
+black_stained_glass_pane	Black Stained Glass Pane	Schwarze Glasscheibe
+black_terracotta	Black Terracotta	Schwarze Keramik
+black_wool	Black Wool	Schwarze Wolle
+black_wool_slab	Black Wool Slab	Schwarze Wollstufe
+black_wool_stairs	Black Wool Stairs	Schwarze Wolltreppe
+blackstone	Blackstone	Schwarzstein
+blackstone_slab	Blackstone Slab	Schwarzsteinstufe
+blackstone_stairs	Blackstone Stairs	Schwarzsteintreppe
+blackstone_wall	Blackstone Wall	Schwarzsteinmauer
+blade_pottery_sherd	Blade Pottery Sherd	Klingen-Töpferscherbe
+blast_furnace	Blast Furnace	Schmelzofen
+blaze_powder	Blaze Powder	Lohenstaub
+blaze_rod	Blaze Rod	Lohenrute
+blaze_spawn_egg	Blaze Spawn Egg	Lohen-Spawn-Ei
+blue_banner	Blue Banner	Blaues Banner
+blue_bed	Blue Bed	Blaues Bett
+blue_bundle	Blue Bundle	Blaues Bündel
+blue_candle	Blue Candle	Blaue Kerze
+blue_carpet	Blue Carpet	Blauer Teppich
+blue_concrete	Blue Concrete	Blauer Beton
+blue_concrete_powder	Blue Concrete Powder	Blauer Trockenbeton
+blue_concrete_slab	Blue Concrete Slab	Blaue Betonstufe
+blue_concrete_stairs	Blue Concrete Stairs	Blaue Betontreppe
+blue_cushion	Blue Cushion	Blaues Kissen
+blue_dye	Blue Dye	Blauer Farbstoff
+blue_egg	Blue Egg	Blaues Ei
+blue_glazed_terracotta	Blue Glazed Terracotta	Blaue glasierte Keramik
+blue_harness	Blue Harness	Blaues Geschirr
+blue_ice	Blue Ice	Blaueis
+blue_orchid	Blue Orchid	Blaue Orchidee
+blue_shulker_box	Blue Shulker Box	Blaue Shulker-Kiste
+blue_stained_glass_pane	Blue Stained Glass Pane	Blaue Glasscheibe
+blue_terracotta	Blue Terracotta	Blaue Keramik
+blue_wool	Blue Wool	Blaue Wolle
+blue_wool_slab	Blue Wool Slab	Blaue Wollstufe
+blue_wool_stairs	Blue Wool Stairs	Blaue Wolltreppe
+bogged_spawn_egg	Bogged Spawn Egg	Sumpfskelett-Spawn-Ei
+bolt_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+bone	Bone	Knochen
+bone_block	Bone Block	Knochenblock
+bone_meal	Bone Meal	Knochenmehl
+book	Book	Buch
+bookshelf	Bookshelf	Bücherregal
+bordure_indented_banner_pattern	Bordure Indented Banner Pattern	Spickelbord-Bannervorlage
+bow	Bow	Bogen
+bowl	Bowl	Schüssel
+brain_coral	Brain Coral	Hirnkoralle
+brain_coral_block	Brain Coral Block	Hirnkorallenblock
+brain_coral_fan	Brain Coral Fan	Hirnkorallenfächer
+bread	Bread	Brot
+breeze_rod	Breeze Rod	Böenrute
+breeze_spawn_egg	Breeze Spawn Egg	Böen-Spawn-Ei
+brewer_pottery_sherd	Brewer Pottery Sherd	Brauer-Töpferscherbe
+brewing_stand	Brewing Stand	Braustand
+brick	Brick	Ziegel
+brick_slab	Brick Slab	Ziegelstufe
+brick_stairs	Brick Stairs	Ziegeltreppe
+brick_wall	Brick Wall	Ziegelsteinmauer
+bricks	Bricks	Ziegelsteine
+brown_banner	Brown Banner	Braunes Banner
+brown_bed	Brown Bed	Braunes Bett
+brown_bundle	Brown Bundle	Braunes Bündel
+brown_candle	Brown Candle	Braune Kerze
+brown_carpet	Brown Carpet	Brauner Teppich
+brown_concrete	Brown Concrete	Brauner Beton
+brown_concrete_powder	Brown Concrete Powder	Brauner Trockenbeton
+brown_concrete_slab	Brown Concrete Slab	Braune Betonstufe
+brown_concrete_stairs	Brown Concrete Stairs	Braune Betontreppe
+brown_cushion	Brown Cushion	Braunes Kissen
+brown_dye	Brown Dye	Brauner Farbstoff
+brown_egg	Brown Egg	Braunes Ei
+brown_glazed_terracotta	Brown Glazed Terracotta	Braune glasierte Keramik
+brown_harness	Brown Harness	Braunes Geschirr
+brown_mushroom	Brown Mushroom	Brauner Pilz
+brown_mushroom_block	Brown Mushroom Block	Brauner Pilzblock
+brown_shulker_box	Brown Shulker Box	Braune Shulker-Kiste
+brown_stained_glass_pane	Brown Stained Glass Pane	Braune Glasscheibe
+brown_terracotta	Brown Terracotta	Braune Keramik
+brown_wool	Brown Wool	Braune Wolle
+brown_wool_slab	Brown Wool Slab	Braune Wollstufe
+brown_wool_stairs	Brown Wool Stairs	Braune Wolltreppe
+brush	Brush	Pinsel
+bubble_coral	Bubble Coral	Blasenkoralle
+bubble_coral_block	Bubble Coral Block	Blasenkorallenblock
+bubble_coral_fan	Bubble Coral Fan	Blasenkorallenfächer
+bucket	Bucket	Eimer
+budding_amethyst	Budding Amethyst	Amethystknospenblock
+bundle	Bundle	Bündel
+buried_ancient_city_map	Buried Ancient City Map	Antike-Stätten-Karte
+buried_mineshaft_map	Buried Mineshaft Map	Minenkarte
+buried_treasure_map	Buried Treasure Map	Schatzkarte
+buried_trial_chambers_map	Buried Trial Chambers Map	Prüfungskammernkarte
+burn_pottery_sherd	Burn Pottery Sherd	Flammen-Töpferscherbe
+bush	Bush	Busch
+cactus	Cactus	Kaktus
+cactus_flower	Cactus Flower	Kaktusblüte
+cake	Cake	Kuchen
+calcite	Calcite	Kalzit
+calibrated_sculk_sensor	Calibrated Sculk Sensor	Kalibrierter Sculk-Sensor
+camel_husk_spawn_egg	Camel Husk Spawn Egg	Zombiedromedar-Spawn-Ei
+camel_spawn_egg	Camel Spawn Egg	Dromedar-Spawn-Ei
+campfire	Campfire	Lagerfeuer
+candle	Candle	Kerze
+carrot	Carrot	Karotte
+carrot_on_a_stick	Carrot on a Stick	Karottenrute
+cartography_table	Cartography Table	Kartentisch
+carved_pumpkin	Carved Pumpkin	Geschnitzter Kürbis
+cat_spawn_egg	Cat Spawn Egg	Katzen-Spawn-Ei
+cauldron	Cauldron	Kessel
+cave_spider_spawn_egg	Cave Spider Spawn Egg	Höhlenspinnen-Spawn-Ei
+chain_command_block	Chain Command Block	Ketten-Befehlsblock
+chainmail_boots	Chainmail Boots	Kettenstiefel
+chainmail_chestplate	Chainmail Chestplate	Kettenhemd
+chainmail_helmet	Chainmail Helmet	Kettenhaube
+chainmail_leggings	Chainmail Leggings	Kettenhose
+charcoal	Charcoal	Holzkohle
+cherry_boat	Cherry Boat	Kirschholzboot
+cherry_button	Cherry Button	Kirschholzknopf
+cherry_chest_boat	Cherry Boat with Chest	Kirschholztruhenboot
+cherry_door	Cherry Door	Kirschholztür
+cherry_fence	Cherry Fence	Kirschholzzaun
+cherry_fence_gate	Cherry Fence Gate	Kirschholzzauntor
+cherry_hanging_sign	Cherry Hanging Sign	Kirschholzhängeschild
+cherry_leaves	Cherry Leaves	Kirschlaub
+cherry_log	Cherry Log	Kirschstamm
+cherry_planks	Cherry Planks	Kirschholzbretter
+cherry_pressure_plate	Cherry Pressure Plate	Kirschholzdruckplatte
+cherry_sapling	Cherry Sapling	Kirschsetzling
+cherry_shelf	Cherry Shelf	Kirschholzregal
+cherry_sign	Cherry Sign	Kirschholzschild
+cherry_slab	Cherry Slab	Kirschholzstufe
+cherry_stairs	Cherry Stairs	Kirschholztreppe
+cherry_trapdoor	Cherry Trapdoor	Kirschholzfalltür
+cherry_wood	Cherry Wood	Kirschholz
+chest	Chest	Truhe
+chest_minecart	Minecart with Chest	Güterlore
+chicken	Raw Chicken	Rohes Hühnchen
+chicken_spawn_egg	Chicken Spawn Egg	Huhn-Spawn-Ei
+chipped_anvil	Chipped Anvil	Angeschlagener Amboss
+chiseled_bookshelf	Chiseled Bookshelf	Gearbeitetes Bücherregal
+chiseled_cinnabar	Chiseled Cinnabar	Gemeißelter Zinnober
+chiseled_copper	Chiseled Copper	Gemeißelter Kupferblock
+chiseled_deepslate	Chiseled Deepslate	Gemeißelter Tiefenschiefer
+chiseled_nether_bricks	Chiseled Nether Bricks	Gemeißelte Netherziegel
+chiseled_polished_blackstone	Chiseled Polished Blackstone	Gemeißelter polierter Schwarzstein
+chiseled_quartz_block	Chiseled Quartz Block	Gemeißelter Quarzblock
+chiseled_red_sandstone	Chiseled Red Sandstone	Gemeißelter roter Sandstein
+chiseled_resin_bricks	Chiseled Resin Bricks	Gemeißelte Harzziegel
+chiseled_sandstone	Chiseled Sandstone	Gemeißelter Sandstein
+chiseled_stone_bricks	Chiseled Stone Bricks	Gemeißelte Steinziegel
+chiseled_sulfur	Chiseled Sulfur	Gemeißelter Schwefel
+chiseled_tuff	Chiseled Tuff	Gemeißelter Tuffstein
+chiseled_tuff_bricks	Chiseled Tuff Bricks	Gemeißelte Tuffsteinziegel
+chorus_flower	Chorus Flower	Chorusblüte
+chorus_fruit	Chorus Fruit	Chorusfrucht
+chorus_plant	Chorus Plant	Choruspflanze
+cinnabar	Cinnabar	Zinnober
+cinnabar_brick_slab	Cinnabar Brick Slab	Zinnoberziegelstufe
+cinnabar_brick_stairs	Cinnabar Brick Stairs	Zinnoberziegeltreppe
+cinnabar_brick_wall	Cinnabar Brick Wall	Zinnoberziegelmauer
+cinnabar_bricks	Cinnabar Bricks	Zinnoberziegel
+cinnabar_slab	Cinnabar Slab	Zinnoberstufe
+cinnabar_stairs	Cinnabar Stairs	Zinnobertreppe
+cinnabar_wall	Cinnabar Wall	Zinnobermauer
+clay	Clay	Ton
+clay_ball	Clay Ball	Tonklumpen
+clock	Clock	Uhr
+closed_eyeblossom	Closed Eyeblossom	Geschlossene Augenblüte
+coal	Coal	Kohle
+coal_block	Block of Coal	Kohleblock
+coal_ore	Coal Ore	Steinkohle
+coarse_dirt	Coarse Dirt	Grobe Erde
+coast_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+cobbled_deepslate	Cobbled Deepslate	Bruchtiefenschiefer
+cobbled_deepslate_slab	Cobbled Deepslate Slab	Bruchtiefenschieferstufe
+cobbled_deepslate_stairs	Cobbled Deepslate Stairs	Bruchtiefenschiefertreppe
+cobbled_deepslate_wall	Cobbled Deepslate Wall	Bruchtiefenschiefermauer
+cobblestone	Cobblestone	Bruchstein
+cobblestone_slab	Cobblestone Slab	Bruchsteinstufe
+cobblestone_stairs	Cobblestone Stairs	Bruchsteintreppe
+cobblestone_wall	Cobblestone Wall	Bruchsteinmauer
+cobweb	Cobweb	Spinnennetz
+cocoa_beans	Cocoa Beans	Kakaobohnen
+cod	Raw Cod	Roher Kabeljau
+cod_bucket	Bucket of Cod	Kabeljaueimer
+cod_spawn_egg	Cod Spawn Egg	Kabeljau-Spawn-Ei
+command_block	Command Block	Befehlsblock
+command_block_minecart	Minecart with Command Block	Befehlsblocklore
+comparator	Redstone Comparator	Redstone-Komparator
+compass	Compass	Kompass
+composter	Composter	Komposter
+conduit	Conduit	Aquisator
+cooked_beef	Steak	Steak
+cooked_chicken	Cooked Chicken	Gebratenes Hühnchen
+cooked_cod	Cooked Cod	Gebratener Kabeljau
+cooked_mutton	Cooked Mutton	Gebratenes Hammelfleisch
+cooked_porkchop	Cooked Porkchop	Gebratenes Schweinefleisch
+cooked_rabbit	Cooked Rabbit	Gebratenes Kaninchen
+cooked_salmon	Cooked Salmon	Gebratener Lachs
+cookie	Cookie	Keks
+copper_axe	Copper Axe	Kupferaxt
+copper_bars	Copper Bars	Kupfergitter
+copper_block	Block of Copper	Kupferblock
+copper_boots	Copper Boots	Kupferstiefel
+copper_bulb	Copper Bulb	Kupferleuchte
+copper_chain	Copper Chain	Kupferkette
+copper_chest	Copper Chest	Kupfertruhe
+copper_chestplate	Copper Chestplate	Kupferharnisch
+copper_door	Copper Door	Kupfertür
+copper_golem_spawn_egg	Copper Golem Spawn Egg	Kupfergolem-Spawn-Ei
+copper_golem_statue	Copper Golem Statue	Kupfergolemstatue
+copper_grate	Copper Grate	Kupferrost
+copper_helmet	Copper Helmet	Kupferhelm
+copper_hoe	Copper Hoe	Kupferhacke
+copper_horse_armor	Copper Horse Armor	Kupferner Rossharnisch
+copper_ingot	Copper Ingot	Kupferbarren
+copper_lantern	Copper Lantern	Kupferlaterne
+copper_leggings	Copper Leggings	Kupferbeinschutz
+copper_nautilus_armor	Copper Nautilus Armor	Kupferner Nautiluspanzer
+copper_nugget	Copper Nugget	Kupferklumpen
+copper_ore	Copper Ore	Kupfererz
+copper_pickaxe	Copper Pickaxe	Kupferspitzhacke
+copper_shovel	Copper Shovel	Kupferschaufel
+copper_spear	Copper Spear	Kupferspeer
+copper_sword	Copper Sword	Kupferschwert
+copper_torch	Copper Torch	Kupferfackel
+copper_trapdoor	Copper Trapdoor	Kupferfalltür
+cornflower	Cornflower	Kornblume
+cow_spawn_egg	Cow Spawn Egg	Kuh-Spawn-Ei
+cracked_deepslate_bricks	Cracked Deepslate Bricks	Rissige Tiefenschieferziegel
+cracked_deepslate_tiles	Cracked Deepslate Tiles	Rissige Tiefenschieferfliesen
+cracked_nether_bricks	Cracked Nether Bricks	Rissige Netherziegel
+cracked_polished_blackstone_bricks	Cracked Polished Blackstone Bricks	Rissige polierte Schwarzsteinziegel
+cracked_stone_bricks	Cracked Stone Bricks	Rissige Steinziegel
+crafter	Crafter	Werker
+crafting_table	Crafting Table	Werkbank
+creaking_heart	Creaking Heart	Knarzherz
+creaking_spawn_egg	Creaking Spawn Egg	Knarz-Spawn-Ei
+creeper_banner_pattern	Banner Pattern	Bannervorlage
+creeper_head	Creeper Head	Creeperkopf
+creeper_spawn_egg	Creeper Spawn Egg	Creeper-Spawn-Ei
+crimson_button	Crimson Button	Karmesinknopf
+crimson_door	Crimson Door	Karmesintür
+crimson_fence	Crimson Fence	Karmesinzaun
+crimson_fence_gate	Crimson Fence Gate	Karmesinzauntor
+crimson_fungus	Crimson Fungus	Karmesinpilz
+crimson_hanging_sign	Crimson Hanging Sign	Karmesinhängeschild
+crimson_hyphae	Crimson Hyphae	Karmesinhyphen
+crimson_nylium	Crimson Nylium	Karmesin-Nezel
+crimson_planks	Crimson Planks	Karmesinbretter
+crimson_pressure_plate	Crimson Pressure Plate	Karmesindruckplatte
+crimson_roots	Crimson Roots	Karmesinwurzeln
+crimson_shelf	Crimson Shelf	Karmesinregal
+crimson_sign	Crimson Sign	Karmesinschild
+crimson_slab	Crimson Slab	Karmesinstufe
+crimson_stairs	Crimson Stairs	Karmesintreppe
+crimson_stem	Crimson Stem	Karmesinstiel
+crimson_trapdoor	Crimson Trapdoor	Karmesinfalltür
+crossbow	Crossbow	Armbrust
+crying_obsidian	Crying Obsidian	Weinender Obsidian
+cut_copper	Cut Copper	Geschnittener Kupferblock
+cut_copper_slab	Cut Copper Slab	Geschnittene Kupferstufe
+cut_copper_stairs	Cut Copper Stairs	Geschnittene Kupfertreppe
+cut_red_sandstone	Cut Red Sandstone	Geschnittener roter Sandstein
+cut_red_sandstone_slab	Cut Red Sandstone Slab	Geschnittene rote Sandsteinstufe
+cut_sandstone	Cut Sandstone	Geschnittener Sandstein
+cut_sandstone_slab	Cut Sandstone Slab	Geschnittene Sandsteinstufe
+cyan_banner	Cyan Banner	Türkises Banner
+cyan_bed	Cyan Bed	Türkises Bett
+cyan_bundle	Cyan Bundle	Türkises Bündel
+cyan_candle	Cyan Candle	Türkise Kerze
+cyan_carpet	Cyan Carpet	Türkiser Teppich
+cyan_concrete	Cyan Concrete	Türkiser Beton
+cyan_concrete_powder	Cyan Concrete Powder	Türkiser Trockenbeton
+cyan_concrete_slab	Cyan Concrete Slab	Türkise Betonstufe
+cyan_concrete_stairs	Cyan Concrete Stairs	Türkise Betontreppe
+cyan_cushion	Cyan Cushion	Türkises Kissen
+cyan_dye	Cyan Dye	Türkiser Farbstoff
+cyan_glazed_terracotta	Cyan Glazed Terracotta	Türkise glasierte Keramik
+cyan_harness	Cyan Harness	Türkises Geschirr
+cyan_shulker_box	Cyan Shulker Box	Türkise Shulker-Kiste
+cyan_stained_glass_pane	Cyan Stained Glass Pane	Türkise Glasscheibe
+cyan_terracotta	Cyan Terracotta	Türkise Keramik
+cyan_wool	Cyan Wool	Türkise Wolle
+cyan_wool_slab	Cyan Wool Slab	Türkise Wollstufe
+cyan_wool_stairs	Cyan Wool Stairs	Türkise Wolltreppe
+damaged_anvil	Damaged Anvil	Beschädigter Amboss
+dandelion	Dandelion	Löwenzahn
+danger_pottery_sherd	Danger Pottery Sherd	Gefahren-Töpferscherbe
+dark_oak_boat	Dark Oak Boat	Schwarzeichenholzboot
+dark_oak_button	Dark Oak Button	Schwarzeichenholzknopf
+dark_oak_chest_boat	Dark Oak Boat with Chest	Schwarzeichenholztruhenboot
+dark_oak_door	Dark Oak Door	Schwarzeichenholztür
+dark_oak_fence	Dark Oak Fence	Schwarzeichenholzzaun
+dark_oak_fence_gate	Dark Oak Fence Gate	Schwarzeichenholzzauntor
+dark_oak_hanging_sign	Dark Oak Hanging Sign	Schwarzeichenholzhängeschild
+dark_oak_leaves	Dark Oak Leaves	Schwarzeichenlaub
+dark_oak_log	Dark Oak Log	Schwarzeichenstamm
+dark_oak_planks	Dark Oak Planks	Schwarzeichenholzbretter
+dark_oak_pressure_plate	Dark Oak Pressure Plate	Schwarzeichenholzdruckplatte
+dark_oak_sapling	Dark Oak Sapling	Schwarzeichensetzling
+dark_oak_shelf	Dark Oak Shelf	Schwarzeichenholzregal
+dark_oak_sign	Dark Oak Sign	Schwarzeichenholzschild
+dark_oak_slab	Dark Oak Slab	Schwarzeichenholzstufe
+dark_oak_stairs	Dark Oak Stairs	Schwarzeichenholztreppe
+dark_oak_trapdoor	Dark Oak Trapdoor	Schwarzeichenholzfalltür
+dark_oak_wood	Dark Oak Wood	Schwarzeichenholz
+dark_prismarine	Dark Prismarine	Dunkler Prismarin
+dark_prismarine_slab	Dark Prismarine Slab	Dunkle Prismarinstufe
+dark_prismarine_stairs	Dark Prismarine Stairs	Dunkle Prismarintreppe
+daylight_detector	Daylight Detector	Tageslichtsensor
+dead_brain_coral	Dead Brain Coral	Abgestorbene Hirnkoralle
+dead_brain_coral_block	Dead Brain Coral Block	Abgestorbener Hirnkorallenblock
+dead_brain_coral_fan	Dead Brain Coral Fan	Abgestorbener Hirnkorallenfächer
+dead_bubble_coral	Dead Bubble Coral	Abgestorbene Blasenkoralle
+dead_bubble_coral_block	Dead Bubble Coral Block	Abgestorbener Blasenkorallenblock
+dead_bubble_coral_fan	Dead Bubble Coral Fan	Abgestorbener Blasenkorallenfächer
+dead_bush	Dead Bush	Toter Busch
+dead_fire_coral	Dead Fire Coral	Abgestorbene Feuerkoralle
+dead_fire_coral_block	Dead Fire Coral Block	Abgestorbener Feuerkorallenblock
+dead_fire_coral_fan	Dead Fire Coral Fan	Abgestorbener Feuerkorallenfächer
+dead_horn_coral	Dead Horn Coral	Abgestorbene Geweihkoralle
+dead_horn_coral_block	Dead Horn Coral Block	Abgestorbener Geweihkorallenblock
+dead_horn_coral_fan	Dead Horn Coral Fan	Abgestorbener Geweihkorallenfächer
+dead_tube_coral	Dead Tube Coral	Abgestorbene Orgelkoralle
+dead_tube_coral_block	Dead Tube Coral Block	Abgestorbener Orgelkorallenblock
+dead_tube_coral_fan	Dead Tube Coral Fan	Abgestorbener Orgelkorallenfächer
+debug_stick	Debug Stick	Debug-Stab
+decorated_pot	Decorated Pot	Verzierter Krug
+deepslate	Deepslate	Tiefenschiefer
+deepslate_brick_slab	Deepslate Brick Slab	Tiefenschieferziegelstufe
+deepslate_brick_stairs	Deepslate Brick Stairs	Tiefenschieferziegeltreppe
+deepslate_brick_wall	Deepslate Brick Wall	Tiefenschieferziegelmauer
+deepslate_bricks	Deepslate Bricks	Tiefenschieferziegel
+deepslate_coal_ore	Deepslate Coal Ore	Tiefenschiefer-Steinkohle
+deepslate_copper_ore	Deepslate Copper Ore	Tiefenschiefer-Kupfererz
+deepslate_diamond_ore	Deepslate Diamond Ore	Tiefenschiefer-Diamanterz
+deepslate_emerald_ore	Deepslate Emerald Ore	Tiefenschiefer-Smaragderz
+deepslate_gold_ore	Deepslate Gold Ore	Tiefenschiefer-Golderz
+deepslate_iron_ore	Deepslate Iron Ore	Tiefenschiefer-Eisenerz
+deepslate_lapis_ore	Deepslate Lapis Lazuli Ore	Tiefenschiefer-Lapislazulierz
+deepslate_redstone_ore	Deepslate Redstone Ore	Tiefenschiefer-Redstone-Erz
+deepslate_tile_slab	Deepslate Tile Slab	Tiefenschieferfliesenstufe
+deepslate_tile_stairs	Deepslate Tile Stairs	Tiefenschieferfliesentreppe
+deepslate_tile_wall	Deepslate Tile Wall	Tiefenschieferfliesenmauer
+deepslate_tiles	Deepslate Tiles	Tiefenschieferfliesen
+desert_pyramid_map	Desert Pyramid Map	Wüstentempelkarte
+desert_village_map	Desert Village Map	Wüstendorfkarte
+detector_rail	Detector Rail	Sensorschiene
+diamond	Diamond	Diamant
+diamond_axe	Diamond Axe	Diamantaxt
+diamond_block	Block of Diamond	Diamantblock
+diamond_boots	Diamond Boots	Diamantstiefel
+diamond_chestplate	Diamond Chestplate	Diamantharnisch
+diamond_helmet	Diamond Helmet	Diamanthelm
+diamond_hoe	Diamond Hoe	Diamanthacke
+diamond_horse_armor	Diamond Horse Armor	Diamantener Rossharnisch
+diamond_leggings	Diamond Leggings	Diamantbeinschutz
+diamond_nautilus_armor	Diamond Nautilus Armor	Diamantener Nautiluspanzer
+diamond_ore	Diamond Ore	Diamanterz
+diamond_pickaxe	Diamond Pickaxe	Diamantspitzhacke
+diamond_shovel	Diamond Shovel	Diamantschaufel
+diamond_spear	Diamond Spear	Diamantspeer
+diamond_sword	Diamond Sword	Diamantschwert
+diorite	Diorite	Diorit
+diorite_slab	Diorite Slab	Dioritstufe
+diorite_stairs	Diorite Stairs	Diorittreppe
+diorite_wall	Diorite Wall	Dioritmauer
+dirt	Dirt	Erde
+dirt_path	Dirt Path	Trampelpfad
+disc_fragment_5	Disc Fragment	Plattenbruchstück
+dispenser	Dispenser	Werfer
+dolphin_spawn_egg	Dolphin Spawn Egg	Delfin-Spawn-Ei
+donkey_spawn_egg	Donkey Spawn Egg	Esel-Spawn-Ei
+dragon_breath	Dragon's Breath	Drachenatem
+dragon_egg	Dragon Egg	Drachenei
+dragon_head	Dragon Head	Drachenkopf
+dried_ghast	Dried Ghast	Ausgetrockneter Ghast
+dried_kelp	Dried Kelp	Getrockneter Seetang
+dried_kelp_block	Dried Kelp Block	Getrockneter Seetangblock
+dripstone_block	Dripstone Block	Tropfsteinblock
+dropper	Dropper	Spender
+drowned_spawn_egg	Drowned Spawn Egg	Ertrunkenen-Spawn-Ei
+dune_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+echo_shard	Echo Shard	Echoscherbe
+egg	Egg	Ei
+elder_guardian_spawn_egg	Elder Guardian Spawn Egg	Großwächter-Spawn-Ei
+elytra	Elytra	Elytren
+emerald	Emerald	Smaragd
+emerald_block	Block of Emerald	Smaragdblock
+emerald_ore	Emerald Ore	Smaragderz
+enchanted_book	Enchanted Book	Verzaubertes Buch
+enchanted_golden_apple	Enchanted Golden Apple	Verzauberter goldener Apfel
+enchanting_table	Enchanting Table	Zaubertisch
+end_crystal	End Crystal	Enderkristall
+end_portal_frame	End Portal Frame	Endportalrahmen
+end_rod	End Rod	Endstab
+end_stone	End Stone	Endstein
+end_stone_brick_slab	End Stone Brick Slab	Endsteinziegelstufe
+end_stone_brick_stairs	End Stone Brick Stairs	Endsteinziegeltreppe
+end_stone_brick_wall	End Stone Brick Wall	Endsteinziegelmauer
+end_stone_bricks	End Stone Bricks	Endsteinziegel
+ender_chest	Ender Chest	Endertruhe
+ender_dragon_spawn_egg	Ender Dragon Spawn Egg	Enderdrachen-Spawn-Ei
+ender_eye	Eye of Ender	Enderauge
+ender_pearl	Ender Pearl	Enderperle
+enderman_spawn_egg	Enderman Spawn Egg	Enderman-Spawn-Ei
+endermite_spawn_egg	Endermite Spawn Egg	Endermiten-Spawn-Ei
+evoker_spawn_egg	Evoker Spawn Egg	Magier-Spawn-Ei
+experience_bottle	Bottle o' Enchanting	Erfahrungsfläschchen
+explorer_pottery_sherd	Explorer Pottery Sherd	Entdecker-Töpferscherbe
+exposed_chiseled_copper	Exposed Chiseled Copper	Angelaufener gemeißelter Kupferblock
+exposed_copper	Exposed Copper	Angelaufener Kupferblock
+exposed_copper_bars	Exposed Copper Bars	Angelaufenes Kupfergitter
+exposed_copper_bulb	Exposed Copper Bulb	Angelaufene Kupferleuchte
+exposed_copper_chain	Exposed Copper Chain	Angelaufene Kupferkette
+exposed_copper_chest	Exposed Copper Chest	Angelaufene Kupfertruhe
+exposed_copper_door	Exposed Copper Door	Angelaufene Kupfertür
+exposed_copper_golem_statue	Exposed Copper Golem Statue	Angelaufene Kupfergolemstatue
+exposed_copper_grate	Exposed Copper Grate	Angelaufener Kupferrost
+exposed_copper_lantern	Exposed Copper Lantern	Angelaufene Kupferlaterne
+exposed_copper_trapdoor	Exposed Copper Trapdoor	Angelaufene Kupferfalltür
+exposed_cut_copper	Exposed Cut Copper	Angelaufener geschnittener Kupferblock
+exposed_cut_copper_slab	Exposed Cut Copper Slab	Angelaufene geschnittene Kupferstufe
+exposed_cut_copper_stairs	Exposed Cut Copper Stairs	Angelaufene geschnittene Kupfertreppe
+exposed_lightning_rod	Exposed Lightning Rod	Angelaufener Blitzableiter
+eye_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+farmland	Farmland	Ackerboden
+feather	Feather	Feder
+fermented_spider_eye	Fermented Spider Eye	Fermentiertes Spinnenauge
+fern	Fern	Farn
+field_masoned_banner_pattern	Field Masoned Banner Pattern	Mauerung-Bannervorlage
+filled_map	Map	Karte
+fire_charge	Fire Charge	Feuerkugel
+fire_coral	Fire Coral	Feuerkoralle
+fire_coral_block	Fire Coral Block	Feuerkorallenblock
+fire_coral_fan	Fire Coral Fan	Feuerkorallenfächer
+firefly_bush	Firefly Bush	Glühwürmchenbusch
+firework_rocket	Firework Rocket	Feuerwerksrakete
+firework_star	Firework Star	Feuerwerksstern
+fishing_rod	Fishing Rod	Angel
+fletching_table	Fletching Table	Bognertisch
+flint	Flint	Feuerstein
+flint_and_steel	Flint and Steel	Feuerzeug
+flow_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+flow_banner_pattern	Banner Pattern	Bannervorlage
+flow_pottery_sherd	Flow Pottery Sherd	Fluss-Töpferscherbe
+flower_banner_pattern	Banner Pattern	Bannervorlage
+flower_pot	Flower Pot	Blumentopf
+flowering_azalea	Flowering Azalea	Blühende Azalee
+flowering_azalea_leaves	Flowering Azalea Leaves	Blühendes Azaleenlaub
+fox_spawn_egg	Fox Spawn Egg	Fuchs-Spawn-Ei
+friend_pottery_sherd	Friend Pottery Sherd	Freundes-Töpferscherbe
+frog_spawn_egg	Frog Spawn Egg	Frosch-Spawn-Ei
+frogspawn	Frogspawn	Froschlaich
+furnace	Furnace	Ofen
+furnace_minecart	Minecart with Furnace	Antriebslore
+ghast_spawn_egg	Ghast Spawn Egg	Ghast-Spawn-Ei
+ghast_tear	Ghast Tear	Ghast-Träne
+gilded_blackstone	Gilded Blackstone	Golddurchzogener Schwarzstein
+glass_bottle	Glass Bottle	Glasflasche
+glass_pane	Glass Pane	Glasscheibe
+glistering_melon_slice	Glistering Melon Slice	Glitzernde Melonenscheibe
+globe_banner_pattern	Banner Pattern	Bannervorlage
+glow_berries	Glow Berries	Leuchtbeeren
+glow_ink_sac	Glow Ink Sac	Leuchttintenbeutel
+glow_item_frame	Glow Item Frame	Leuchtrahmen
+glow_lichen	Glow Lichen	Leuchtflechte
+glow_squid_spawn_egg	Glow Squid Spawn Egg	Leuchttintenfisch-Spawn-Ei
+glowstone	Glowstone	Leuchtstein
+glowstone_dust	Glowstone Dust	Leuchtsteinstaub
+goat_horn	Goat Horn	Bockshorn
+goat_spawn_egg	Goat Spawn Egg	Ziegen-Spawn-Ei
+gold_block	Block of Gold	Goldblock
+gold_ingot	Gold Ingot	Goldbarren
+gold_nugget	Gold Nugget	Goldklumpen
+gold_ore	Gold Ore	Golderz
+golden_apple	Golden Apple	Goldener Apfel
+golden_axe	Golden Axe	Goldaxt
+golden_boots	Golden Boots	Goldstiefel
+golden_carrot	Golden Carrot	Goldene Karotte
+golden_chestplate	Golden Chestplate	Goldharnisch
+golden_dandelion	Golden Dandelion	Goldener Löwenzahn
+golden_helmet	Golden Helmet	Goldhelm
+golden_hoe	Golden Hoe	Goldhacke
+golden_horse_armor	Golden Horse Armor	Goldener Rossharnisch
+golden_leggings	Golden Leggings	Goldbeinschutz
+golden_nautilus_armor	Golden Nautilus Armor	Goldener Nautiluspanzer
+golden_pickaxe	Golden Pickaxe	Goldspitzhacke
+golden_shovel	Golden Shovel	Goldschaufel
+golden_spear	Golden Spear	Goldspeer
+golden_sword	Golden Sword	Goldschwert
+granite	Granite	Granit
+granite_slab	Granite Slab	Granitstufe
+granite_stairs	Granite Stairs	Granittreppe
+granite_wall	Granite Wall	Granitmauer
+grass_block	Grass Block	Grasblock
+gravel	Gravel	Kies
+gray_banner	Gray Banner	Graues Banner
+gray_bed	Gray Bed	Graues Bett
+gray_bundle	Gray Bundle	Graues Bündel
+gray_candle	Gray Candle	Graue Kerze
+gray_carpet	Gray Carpet	Grauer Teppich
+gray_concrete	Gray Concrete	Grauer Beton
+gray_concrete_powder	Gray Concrete Powder	Grauer Trockenbeton
+gray_concrete_slab	Gray Concrete Slab	Graue Betonstufe
+gray_concrete_stairs	Gray Concrete Stairs	Graue Betontreppe
+gray_cushion	Gray Cushion	Graues Kissen
+gray_dye	Gray Dye	Grauer Farbstoff
+gray_glazed_terracotta	Gray Glazed Terracotta	Graue glasierte Keramik
+gray_harness	Gray Harness	Graues Geschirr
+gray_shulker_box	Gray Shulker Box	Graue Shulker-Kiste
+gray_stained_glass_pane	Gray Stained Glass Pane	Graue Glasscheibe
+gray_terracotta	Gray Terracotta	Graue Keramik
+gray_wool	Gray Wool	Graue Wolle
+gray_wool_slab	Gray Wool Slab	Graue Wollstufe
+gray_wool_stairs	Gray Wool Stairs	Graue Wolltreppe
+green_banner	Green Banner	Grünes Banner
+green_bed	Green Bed	Grünes Bett
+green_bundle	Green Bundle	Grünes Bündel
+green_candle	Green Candle	Grüne Kerze
+green_carpet	Green Carpet	Grüner Teppich
+green_concrete	Green Concrete	Grüner Beton
+green_concrete_powder	Green Concrete Powder	Grüner Trockenbeton
+green_concrete_slab	Green Concrete Slab	Grüne Betonstufe
+green_concrete_stairs	Green Concrete Stairs	Grüne Betontreppe
+green_cushion	Green Cushion	Grünes Kissen
+green_dye	Green Dye	Grüner Farbstoff
+green_glazed_terracotta	Green Glazed Terracotta	Grüne glasierte Keramik
+green_harness	Green Harness	Grünes Geschirr
+green_shulker_box	Green Shulker Box	Grüne Shulker-Kiste
+green_stained_glass_pane	Green Stained Glass Pane	Grüne Glasscheibe
+green_terracotta	Green Terracotta	Grüne Keramik
+green_wool	Green Wool	Grüne Wolle
+green_wool_slab	Green Wool Slab	Grüne Wollstufe
+green_wool_stairs	Green Wool Stairs	Grüne Wolltreppe
+grindstone	Grindstone	Schleifstein
+guardian_spawn_egg	Guardian Spawn Egg	Wächter-Spawn-Ei
+gunpowder	Gunpowder	Schwarzpulver
+guster_banner_pattern	Banner Pattern	Bannervorlage
+guster_pottery_sherd	Guster Pottery Sherd	Windstoßer-Töpferscherbe
+hanging_roots	Hanging Roots	Hängende Wurzeln
+happy_ghast_spawn_egg	Happy Ghast Spawn Egg	Glücklicher-Ghast-Spawn-Ei
+hay_block	Hay Bale	Strohballen
+heart_of_the_sea	Heart of the Sea	Herz des Meeres
+heart_pottery_sherd	Heart Pottery Sherd	Herz-Töpferscherbe
+heartbreak_pottery_sherd	Heartbreak Pottery Sherd	Herzschmerz-Töpferscherbe
+heavy_core	Heavy Core	Schwerer Kern
+heavy_weighted_pressure_plate	Heavy Weighted Pressure Plate	Grobwägeplatte
+hoglin_spawn_egg	Hoglin Spawn Egg	Hoglin-Spawn-Ei
+honey_block	Honey Block	Honigblock
+honey_bottle	Honey Bottle	Honigflasche
+honeycomb	Honeycomb	Honigwabe
+honeycomb_block	Honeycomb Block	Honigwabenblock
+hopper	Hopper	Trichter
+hopper_minecart	Minecart with Hopper	Trichterlore
+horn_coral	Horn Coral	Geweihkoralle
+horn_coral_block	Horn Coral Block	Geweihkorallenblock
+horn_coral_fan	Horn Coral Fan	Geweihkorallenfächer
+horse_spawn_egg	Horse Spawn Egg	Pferde-Spawn-Ei
+host_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+howl_pottery_sherd	Howl Pottery Sherd	Geheul-Töpferscherbe
+husk_spawn_egg	Husk Spawn Egg	Wüstenzombie-Spawn-Ei
+ice	Ice	Eis
+infested_chiseled_stone_bricks	Infested Chiseled Stone Bricks	Befallene gemeißelte Steinziegel
+infested_cobblestone	Infested Cobblestone	Befallener Bruchstein
+infested_cracked_stone_bricks	Infested Cracked Stone Bricks	Befallene rissige Steinziegel
+infested_deepslate	Infested Deepslate	Befallener Tiefenschiefer
+infested_mossy_stone_bricks	Infested Mossy Stone Bricks	Befallene bemooste Steinziegel
+infested_stone	Infested Stone	Befallener Stein
+infested_stone_bricks	Infested Stone Bricks	Befallene Steinziegel
+ink_sac	Ink Sac	Tintenbeutel
+iron_axe	Iron Axe	Eisenaxt
+iron_bars	Iron Bars	Eisengitter
+iron_block	Block of Iron	Eisenblock
+iron_boots	Iron Boots	Eisenstiefel
+iron_chain	Iron Chain	Eisenkette
+iron_chestplate	Iron Chestplate	Eisenharnisch
+iron_door	Iron Door	Eisentür
+iron_golem_spawn_egg	Iron Golem Spawn Egg	Eisengolem-Spawn-Ei
+iron_helmet	Iron Helmet	Eisenhelm
+iron_hoe	Iron Hoe	Eisenhacke
+iron_horse_armor	Iron Horse Armor	Eiserner Rossharnisch
+iron_ingot	Iron Ingot	Eisenbarren
+iron_leggings	Iron Leggings	Eisenbeinschutz
+iron_nautilus_armor	Iron Nautilus Armor	Eiserner Nautiluspanzer
+iron_nugget	Iron Nugget	Eisenklumpen
+iron_ore	Iron Ore	Eisenerz
+iron_pickaxe	Iron Pickaxe	Eisenspitzhacke
+iron_shovel	Iron Shovel	Eisenschaufel
+iron_spear	Iron Spear	Eisenspeer
+iron_sword	Iron Sword	Eisenschwert
+iron_trapdoor	Iron Trapdoor	Eisenfalltür
+item_frame	Item Frame	Rahmen
+jack_o_lantern	Jack o'Lantern	Kürbislaterne
+jigsaw	Jigsaw Block	Verbundblock
+jukebox	Jukebox	Plattenspieler
+jungle_boat	Jungle Boat	Tropenholzboot
+jungle_button	Jungle Button	Tropenholzknopf
+jungle_chest_boat	Jungle Boat with Chest	Tropenholztruhenboot
+jungle_door	Jungle Door	Tropenholztür
+jungle_fence	Jungle Fence	Tropenholzzaun
+jungle_fence_gate	Jungle Fence Gate	Tropenholzzauntor
+jungle_hanging_sign	Jungle Hanging Sign	Tropenholzhängeschild
+jungle_leaves	Jungle Leaves	Tropenbaumlaub
+jungle_log	Jungle Log	Tropenbaumstamm
+jungle_planks	Jungle Planks	Tropenholzbretter
+jungle_pressure_plate	Jungle Pressure Plate	Tropenholzdruckplatte
+jungle_pyramid_map	Jungle Pyramid Map	Dschungeltempelkarte
+jungle_sapling	Jungle Sapling	Tropenbaumsetzling
+jungle_shelf	Jungle Shelf	Tropenholzregal
+jungle_sign	Jungle Sign	Tropenholzschild
+jungle_slab	Jungle Slab	Tropenholzstufe
+jungle_stairs	Jungle Stairs	Tropenholztreppe
+jungle_trapdoor	Jungle Trapdoor	Tropenholzfalltür
+jungle_wood	Jungle Wood	Tropenholz
+kelp	Kelp	Seetang
+knowledge_book	Knowledge Book	Buch des Wissens
+ladder	Ladder	Leiter
+lantern	Lantern	Laterne
+lapis_block	Block of Lapis Lazuli	Lapislazuliblock
+lapis_lazuli	Lapis Lazuli	Lapislazuli
+lapis_ore	Lapis Lazuli Ore	Lapislazulierz
+large_amethyst_bud	Large Amethyst Bud	Große Amethystknospe
+large_fern	Large Fern	Großer Farn
+lava_bucket	Lava Bucket	Lavaeimer
+lead	Lead	Leine
+leaf_litter	Leaf Litter	Laubhaufen
+leather	Leather	Leder
+leather_boots	Leather Boots	Lederstiefel
+leather_chestplate	Leather Tunic	Lederjacke
+leather_helmet	Leather Cap	Lederkappe
+leather_horse_armor	Leather Horse Armor	Lederner Rossharnisch
+leather_leggings	Leather Pants	Lederhose
+lectern	Lectern	Lesepult
+lever	Lever	Hebel
+light	Light	Lichtblock
+light_blue_banner	Light Blue Banner	Hellblaues Banner
+light_blue_bed	Light Blue Bed	Hellblaues Bett
+light_blue_bundle	Light Blue Bundle	Hellblaues Bündel
+light_blue_candle	Light Blue Candle	Hellblaue Kerze
+light_blue_carpet	Light Blue Carpet	Hellblauer Teppich
+light_blue_concrete	Light Blue Concrete	Hellblauer Beton
+light_blue_concrete_powder	Light Blue Concrete Powder	Hellblauer Trockenbeton
+light_blue_concrete_slab	Light Blue Concrete Slab	Hellblaue Betonstufe
+light_blue_concrete_stairs	Light Blue Concrete Stairs	Hellblaue Betontreppe
+light_blue_cushion	Light Blue Cushion	Hellblaues Kissen
+light_blue_dye	Light Blue Dye	Hellblauer Farbstoff
+light_blue_glazed_terracotta	Light Blue Glazed Terracotta	Hellblaue glasierte Keramik
+light_blue_harness	Light Blue Harness	Hellblaues Geschirr
+light_blue_shulker_box	Light Blue Shulker Box	Hellblaue Shulker-Kiste
+light_blue_stained_glass_pane	Light Blue Stained Glass Pane	Hellblaue Glasscheibe
+light_blue_terracotta	Light Blue Terracotta	Hellblaue Keramik
+light_blue_wool	Light Blue Wool	Hellblaue Wolle
+light_blue_wool_slab	Light Blue Wool Slab	Hellblaue Wollstufe
+light_blue_wool_stairs	Light Blue Wool Stairs	Hellblaue Wolltreppe
+light_gray_banner	Light Gray Banner	Hellgraues Banner
+light_gray_bed	Light Gray Bed	Hellgraues Bett
+light_gray_bundle	Light Gray Bundle	Hellgraues Bündel
+light_gray_candle	Light Gray Candle	Hellgraue Kerze
+light_gray_carpet	Light Gray Carpet	Hellgrauer Teppich
+light_gray_concrete	Light Gray Concrete	Hellgrauer Beton
+light_gray_concrete_powder	Light Gray Concrete Powder	Hellgrauer Trockenbeton
+light_gray_concrete_slab	Light Gray Concrete Slab	Hellgraue Betonstufe
+light_gray_concrete_stairs	Light Gray Concrete Stairs	Hellgraue Betontreppe
+light_gray_cushion	Light Gray Cushion	Hellgraues Kissen
+light_gray_dye	Light Gray Dye	Hellgrauer Farbstoff
+light_gray_glazed_terracotta	Light Gray Glazed Terracotta	Hellgraue glasierte Keramik
+light_gray_harness	Light Gray Harness	Hellgraues Geschirr
+light_gray_shulker_box	Light Gray Shulker Box	Hellgraue Shulker-Kiste
+light_gray_stained_glass_pane	Light Gray Stained Glass Pane	Hellgraue Glasscheibe
+light_gray_terracotta	Light Gray Terracotta	Hellgraue Keramik
+light_gray_wool	Light Gray Wool	Hellgraue Wolle
+light_gray_wool_slab	Light Gray Wool Slab	Hellgraue Wollstufe
+light_gray_wool_stairs	Light Gray Wool Stairs	Hellgraue Wolltreppe
+light_weighted_pressure_plate	Light Weighted Pressure Plate	Feinwägeplatte
+lightning_rod	Lightning Rod	Blitzableiter
+lilac	Lilac	Flieder
+lily_of_the_valley	Lily of the Valley	Maiglöckchen
+lily_pad	Lily Pad	Seerosenblatt
+lime_banner	Lime Banner	Hellgrünes Banner
+lime_bed	Lime Bed	Hellgrünes Bett
+lime_bundle	Lime Bundle	Hellgrünes Bündel
+lime_candle	Lime Candle	Hellgrüne Kerze
+lime_carpet	Lime Carpet	Hellgrüner Teppich
+lime_concrete	Lime Concrete	Hellgrüner Beton
+lime_concrete_powder	Lime Concrete Powder	Hellgrüner Trockenbeton
+lime_concrete_slab	Lime Concrete Slab	Hellgrüne Betonstufe
+lime_concrete_stairs	Lime Concrete Stairs	Hellgrüne Betontreppe
+lime_cushion	Lime Cushion	Hellgrünes Kissen
+lime_dye	Lime Dye	Hellgrüner Farbstoff
+lime_glazed_terracotta	Lime Glazed Terracotta	Hellgrüne glasierte Keramik
+lime_harness	Lime Harness	Hellgrünes Geschirr
+lime_shulker_box	Lime Shulker Box	Hellgrüne Shulker-Kiste
+lime_stained_glass_pane	Lime Stained Glass Pane	Hellgrüne Glasscheibe
+lime_terracotta	Lime Terracotta	Hellgrüne Keramik
+lime_wool	Lime Wool	Hellgrüne Wolle
+lime_wool_slab	Lime Wool Slab	Hellgrüne Wollstufe
+lime_wool_stairs	Lime Wool Stairs	Hellgrüne Wolltreppe
+lingering_potion	Lingering Potion	Verweiltrank
+llama_spawn_egg	Llama Spawn Egg	Lama-Spawn-Ei
+lodestone	Lodestone	Leitstein
+loom	Loom	Webstuhl
+mace	Mace	Streitkolben
+magenta_banner	Magenta Banner	Magenta Banner
+magenta_bed	Magenta Bed	Magenta Bett
+magenta_bundle	Magenta Bundle	Magenta Bündel
+magenta_candle	Magenta Candle	Magenta Kerze
+magenta_carpet	Magenta Carpet	Magenta Teppich
+magenta_concrete	Magenta Concrete	Magenta Beton
+magenta_concrete_powder	Magenta Concrete Powder	Magenta Trockenbeton
+magenta_concrete_slab	Magenta Concrete Slab	Magenta Betonstufe
+magenta_concrete_stairs	Magenta Concrete Stairs	Magenta Betontreppe
+magenta_cushion	Magenta Cushion	Magenta Kissen
+magenta_dye	Magenta Dye	Magenta Farbstoff
+magenta_glazed_terracotta	Magenta Glazed Terracotta	Magenta glasierte Keramik
+magenta_harness	Magenta Harness	Magenta Geschirr
+magenta_shulker_box	Magenta Shulker Box	Magenta Shulker-Kiste
+magenta_stained_glass_pane	Magenta Stained Glass Pane	Magenta Glasscheibe
+magenta_terracotta	Magenta Terracotta	Magenta Keramik
+magenta_wool	Magenta Wool	Magenta Wolle
+magenta_wool_slab	Magenta Wool Slab	Magenta Wollstufe
+magenta_wool_stairs	Magenta Wool Stairs	Magenta Wolltreppe
+magma_block	Magma Block	Magmablock
+magma_cream	Magma Cream	Magmacreme
+magma_cube_spawn_egg	Magma Cube Spawn Egg	Magmawürfel-Spawn-Ei
+mangrove_boat	Mangrove Boat	Mangrovenholzboot
+mangrove_button	Mangrove Button	Mangrovenholzknopf
+mangrove_chest_boat	Mangrove Boat with Chest	Mangrovenholztruhenboot
+mangrove_door	Mangrove Door	Mangrovenholztür
+mangrove_fence	Mangrove Fence	Mangrovenholzzaun
+mangrove_fence_gate	Mangrove Fence Gate	Mangrovenholzzauntor
+mangrove_hanging_sign	Mangrove Hanging Sign	Mangrovenholzhängeschild
+mangrove_leaves	Mangrove Leaves	Mangrovenlaub
+mangrove_log	Mangrove Log	Mangrovenstamm
+mangrove_planks	Mangrove Planks	Mangrovenholzbretter
+mangrove_pressure_plate	Mangrove Pressure Plate	Mangrovenholzdruckplatte
+mangrove_propagule	Mangrove Propagule	Mangroven-Keimling
+mangrove_roots	Mangrove Roots	Mangrovenwurzeln
+mangrove_shelf	Mangrove Shelf	Mangrovenholzregal
+mangrove_sign	Mangrove Sign	Mangrovenholzschild
+mangrove_slab	Mangrove Slab	Mangrovenholzstufe
+mangrove_stairs	Mangrove Stairs	Mangrovenholztreppe
+mangrove_trapdoor	Mangrove Trapdoor	Mangrovenholzfalltür
+mangrove_wood	Mangrove Wood	Mangrovenholz
+map	Empty Map	Leere Karte
+medium_amethyst_bud	Medium Amethyst Bud	Mittlere Amethystknospe
+melon	Melon	Melone
+melon_seeds	Melon Seeds	Melonenkerne
+melon_slice	Melon Slice	Melonenscheibe
+milk_bucket	Milk Bucket	Milcheimer
+minecart	Minecart	Lore
+miner_pottery_sherd	Miner Pottery Sherd	Bergarbeiter-Töpferscherbe
+mojang_banner_pattern	Banner Pattern	Bannervorlage
+mooshroom_spawn_egg	Mooshroom Spawn Egg	Mooshroom-Spawn-Ei
+moss_block	Moss Block	Moosblock
+moss_carpet	Moss Carpet	Moosteppich
+mossy_cobblestone	Mossy Cobblestone	Bemooster Bruchstein
+mossy_cobblestone_slab	Mossy Cobblestone Slab	Bemooste Bruchsteinstufe
+mossy_cobblestone_stairs	Mossy Cobblestone Stairs	Bemooste Bruchsteintreppe
+mossy_cobblestone_wall	Mossy Cobblestone Wall	Bemooste Bruchsteinmauer
+mossy_stone_brick_slab	Mossy Stone Brick Slab	Bemooste Steinziegelstufe
+mossy_stone_brick_stairs	Mossy Stone Brick Stairs	Bemooste Steinziegeltreppe
+mossy_stone_brick_wall	Mossy Stone Brick Wall	Bemooste Steinziegelmauer
+mossy_stone_bricks	Mossy Stone Bricks	Bemooste Steinziegel
+mourner_pottery_sherd	Mourner Pottery Sherd	Wimmerer-Töpferscherbe
+mud	Mud	Schlamm
+mud_brick_slab	Mud Brick Slab	Schlammziegelstufe
+mud_brick_stairs	Mud Brick Stairs	Schlammziegeltreppe
+mud_brick_wall	Mud Brick Wall	Schlammziegelmauer
+mud_bricks	Mud Bricks	Schlammziegel
+muddy_mangrove_roots	Muddy Mangrove Roots	Schlammige Mangrovenwurzeln
+mule_spawn_egg	Mule Spawn Egg	Maultier-Spawn-Ei
+mushroom_stem	Mushroom Stem	Pilzstiel
+mushroom_stew	Mushroom Stew	Pilzsuppe
+music_disc_11	Music Disc	Schallplatte
+music_disc_13	Music Disc	Schallplatte
+music_disc_5	Music Disc	Schallplatte
+music_disc_blocks	Music Disc	Schallplatte
+music_disc_bounce	Music Disc	Schallplatte
+music_disc_cat	Music Disc	Schallplatte
+music_disc_chirp	Music Disc	Schallplatte
+music_disc_creator	Music Disc	Schallplatte
+music_disc_creator_music_box	Music Disc	Schallplatte
+music_disc_far	Music Disc	Schallplatte
+music_disc_lava_chicken	Music Disc	Schallplatte
+music_disc_mall	Music Disc	Schallplatte
+music_disc_mellohi	Music Disc	Schallplatte
+music_disc_otherside	Music Disc	Schallplatte
+music_disc_pigstep	Music Disc	Schallplatte
+music_disc_precipice	Music Disc	Schallplatte
+music_disc_relic	Music Disc	Schallplatte
+music_disc_stal	Music Disc	Schallplatte
+music_disc_strad	Music Disc	Schallplatte
+music_disc_tears	Music Disc	Schallplatte
+music_disc_wait	Music Disc	Schallplatte
+music_disc_ward	Music Disc	Schallplatte
+mutton	Raw Mutton	Rohes Hammelfleisch
+mycelium	Mycelium	Myzel
+name_tag	Name Tag	Namensschild
+nautilus_shell	Nautilus Shell	Nautilusschale
+nautilus_spawn_egg	Nautilus Spawn Egg	Nautilus-Spawn-Ei
+nether_brick	Nether Brick	Netherziegel
+nether_brick_fence	Nether Brick Fence	Netherziegelzaun
+nether_brick_slab	Nether Brick Slab	Netherziegelstufe
+nether_brick_stairs	Nether Brick Stairs	Netherziegeltreppe
+nether_brick_wall	Nether Brick Wall	Netherziegelmauer
+nether_bricks	Nether Bricks	Netherziegel
+nether_gold_ore	Nether Gold Ore	Nethergolderz
+nether_quartz_ore	Nether Quartz Ore	Netherquarzerz
+nether_sprouts	Nether Sprouts	Nethersprossen
+nether_star	Nether Star	Netherstern
+nether_wart	Nether Wart	Netherwarze
+nether_wart_block	Nether Wart Block	Netherwarzenblock
+netherite_axe	Netherite Axe	Netheritaxt
+netherite_block	Block of Netherite	Netheritblock
+netherite_boots	Netherite Boots	Netheritstiefel
+netherite_chestplate	Netherite Chestplate	Netheritharnisch
+netherite_helmet	Netherite Helmet	Netherithelm
+netherite_hoe	Netherite Hoe	Netherithacke
+netherite_horse_armor	Netherite Horse Armor	Netheritener Rossharnisch
+netherite_ingot	Netherite Ingot	Netheritbarren
+netherite_leggings	Netherite Leggings	Netheritbeinschutz
+netherite_nautilus_armor	Netherite Nautilus Armor	Netheritener Nautiluspanzer
+netherite_pickaxe	Netherite Pickaxe	Netheritspitzhacke
+netherite_scrap	Netherite Scrap	Netheritplatten
+netherite_shovel	Netherite Shovel	Netheritschaufel
+netherite_spear	Netherite Spear	Netheritspeer
+netherite_sword	Netherite Sword	Netheritschwert
+netherite_upgrade_smithing_template	Smithing Template	Schmiedevorlage
+netherrack	Netherrack	Netherrack
+note_block	Note Block	Notenblock
+oak_boat	Oak Boat	Eichenholzboot
+oak_button	Oak Button	Eichenholzknopf
+oak_chest_boat	Oak Boat with Chest	Eichenholztruhenboot
+oak_door	Oak Door	Eichenholztür
+oak_fence	Oak Fence	Eichenholzzaun
+oak_fence_gate	Oak Fence Gate	Eichenholzzauntor
+oak_hanging_sign	Oak Hanging Sign	Eichenholzhängeschild
+oak_leaves	Oak Leaves	Eichenlaub
+oak_log	Oak Log	Eichenstamm
+oak_planks	Oak Planks	Eichenholzbretter
+oak_pressure_plate	Oak Pressure Plate	Eichenholzdruckplatte
+oak_sapling	Oak Sapling	Eichensetzling
+oak_shelf	Oak Shelf	Eichenholzregal
+oak_sign	Oak Sign	Eichenholzschild
+oak_slab	Oak Slab	Eichenholzstufe
+oak_stairs	Oak Stairs	Eichenholztreppe
+oak_trapdoor	Oak Trapdoor	Eichenholzfalltür
+oak_wood	Oak Wood	Eichenholz
+observer	Observer	Beobachter
+obsidian	Obsidian	Obsidian
+ocean_monument_map	Ocean Monument Map	Ozeanmonumentkarte
+ocelot_spawn_egg	Ocelot Spawn Egg	Ozelot-Spawn-Ei
+ochre_froglight	Ochre Froglight	Ockernes Froschlicht
+ominous_bottle	Ominous Bottle	Unheilvolle Flasche
+ominous_trial_key	Ominous Trial Key	Unheilvoller Prüfungsschlüssel
+open_eyeblossom	Open Eyeblossom	Geöffnete Augenblüte
+orange_banner	Orange Banner	Oranges Banner
+orange_bed	Orange Bed	Oranges Bett
+orange_bundle	Orange Bundle	Oranges Bündel
+orange_candle	Orange Candle	Orange Kerze
+orange_carpet	Orange Carpet	Oranger Teppich
+orange_concrete	Orange Concrete	Oranger Beton
+orange_concrete_powder	Orange Concrete Powder	Oranger Trockenbeton
+orange_concrete_slab	Orange Concrete Slab	Orange Betonstufe
+orange_concrete_stairs	Orange Concrete Stairs	Orange Betontreppe
+orange_cushion	Orange Cushion	Oranges Kissen
+orange_dye	Orange Dye	Oranger Farbstoff
+orange_glazed_terracotta	Orange Glazed Terracotta	Orange glasierte Keramik
+orange_harness	Orange Harness	Oranges Geschirr
+orange_poplar_leaves	Orange Poplar Leaves	Oranges Pappellaub
+orange_shulker_box	Orange Shulker Box	Orange Shulker-Kiste
+orange_stained_glass_pane	Orange Stained Glass Pane	Orange Glasscheibe
+orange_terracotta	Orange Terracotta	Orange Keramik
+orange_tulip	Orange Tulip	Orange Tulpe
+orange_wool	Orange Wool	Orange Wolle
+orange_wool_slab	Orange Wool Slab	Orange Wollstufe
+orange_wool_stairs	Orange Wool Stairs	Orange Wolltreppe
+oxeye_daisy	Oxeye Daisy	Margerite
+oxidized_chiseled_copper	Oxidized Chiseled Copper	Oxidierter gemeißelter Kupferblock
+oxidized_copper	Oxidized Copper	Oxidierter Kupferblock
+oxidized_copper_bars	Oxidized Copper Bars	Oxidiertes Kupfergitter
+oxidized_copper_bulb	Oxidized Copper Bulb	Oxidierte Kupferleuchte
+oxidized_copper_chain	Oxidized Copper Chain	Oxidierte Kupferkette
+oxidized_copper_chest	Oxidized Copper Chest	Oxidierte Kupfertruhe
+oxidized_copper_door	Oxidized Copper Door	Oxidierte Kupfertür
+oxidized_copper_golem_statue	Oxidized Copper Golem Statue	Oxidierte Kupfergolemstatue
+oxidized_copper_grate	Oxidized Copper Grate	Oxidierter Kupferrost
+oxidized_copper_lantern	Oxidized Copper Lantern	Oxidierte Kupferlaterne
+oxidized_copper_trapdoor	Oxidized Copper Trapdoor	Oxidierte Kupferfalltür
+oxidized_cut_copper	Oxidized Cut Copper	Oxidierter geschnittener Kupferblock
+oxidized_cut_copper_slab	Oxidized Cut Copper Slab	Oxidierte geschnittene Kupferstufe
+oxidized_cut_copper_stairs	Oxidized Cut Copper Stairs	Oxidierte geschnittene Kupfertreppe
+oxidized_lightning_rod	Oxidized Lightning Rod	Oxidierter Blitzableiter
+packed_ice	Packed Ice	Packeis
+packed_mud	Packed Mud	Fester Schlamm
+painting	Painting	Gemälde
+pale_hanging_moss	Pale Hanging Moss	Hängendes Blassmoos
+pale_moss_block	Pale Moss Block	Blassmoosblock
+pale_moss_carpet	Pale Moss Carpet	Blassmoosteppich
+pale_oak_boat	Pale Oak Boat	Blasseichenholzboot
+pale_oak_button	Pale Oak Button	Blasseichenholzknopf
+pale_oak_chest_boat	Pale Oak Boat with Chest	Blasseichenholztruhenboot
+pale_oak_door	Pale Oak Door	Blasseichenholztür
+pale_oak_fence	Pale Oak Fence	Blasseichenholzzaun
+pale_oak_fence_gate	Pale Oak Fence Gate	Blasseichenholzzauntor
+pale_oak_hanging_sign	Pale Oak Hanging Sign	Blasseichenholzhängeschild
+pale_oak_leaves	Pale Oak Leaves	Blasseichenlaub
+pale_oak_log	Pale Oak Log	Blasseichenstamm
+pale_oak_planks	Pale Oak Planks	Blasseichenholzbretter
+pale_oak_pressure_plate	Pale Oak Pressure Plate	Blasseichenholzdruckplatte
+pale_oak_sapling	Pale Oak Sapling	Blasseichensetzling
+pale_oak_shelf	Pale Oak Shelf	Blasseichenholzregal
+pale_oak_sign	Pale Oak Sign	Blasseichenholzschild
+pale_oak_slab	Pale Oak Slab	Blasseichenholzstufe
+pale_oak_stairs	Pale Oak Stairs	Blasseichenholztreppe
+pale_oak_trapdoor	Pale Oak Trapdoor	Blasseichenholzfalltür
+pale_oak_wood	Pale Oak Wood	Blasseichenholz
+panda_spawn_egg	Panda Spawn Egg	Panda-Spawn-Ei
+paper	Paper	Papier
+parched_spawn_egg	Parched Spawn Egg	Vertrockneten-Spawn-Ei
+parrot_spawn_egg	Parrot Spawn Egg	Papageien-Spawn-Ei
+pearlescent_froglight	Pearlescent Froglight	Perlmutternes Froschlicht
+peony	Peony	Pfingstrose
+petrified_oak_slab	Petrified Oak Slab	Versteinerte Eichenholzstufe
+phantom_membrane	Phantom Membrane	Phantomhaut
+phantom_spawn_egg	Phantom Spawn Egg	Phantom-Spawn-Ei
+pig_spawn_egg	Pig Spawn Egg	Schweine-Spawn-Ei
+piglin_banner_pattern	Banner Pattern	Bannervorlage
+piglin_brute_spawn_egg	Piglin Brute Spawn Egg	Piglin-Barbaren-Spawn-Ei
+piglin_head	Piglin Head	Piglinkopf
+piglin_spawn_egg	Piglin Spawn Egg	Piglin-Spawn-Ei
+pillager_spawn_egg	Pillager Spawn Egg	Plünderer-Spawn-Ei
+pink_banner	Pink Banner	Rosa Banner
+pink_bed	Pink Bed	Rosa Bett
+pink_bundle	Pink Bundle	Rosa Bündel
+pink_candle	Pink Candle	Rosa Kerze
+pink_carpet	Pink Carpet	Rosa Teppich
+pink_concrete	Pink Concrete	Rosa Beton
+pink_concrete_powder	Pink Concrete Powder	Rosa Trockenbeton
+pink_concrete_slab	Pink Concrete Slab	Rosa Betonstufe
+pink_concrete_stairs	Pink Concrete Stairs	Rosa Betontreppe
+pink_cushion	Pink Cushion	Rosa Kissen
+pink_dye	Pink Dye	Rosa Farbstoff
+pink_glazed_terracotta	Pink Glazed Terracotta	Rosa glasierte Keramik
+pink_harness	Pink Harness	Rosa Geschirr
+pink_petals	Pink Petals	Rosa Blütenblätter
+pink_shulker_box	Pink Shulker Box	Rosa Shulker-Kiste
+pink_stained_glass_pane	Pink Stained Glass Pane	Rosa Glasscheibe
+pink_terracotta	Pink Terracotta	Rosa Keramik
+pink_tulip	Pink Tulip	Rosa Tulpe
+pink_wool	Pink Wool	Rosa Wolle
+pink_wool_slab	Pink Wool Slab	Rosa Wollstufe
+pink_wool_stairs	Pink Wool Stairs	Rosa Wolltreppe
+piston	Piston	Kolben
+pitcher_plant	Pitcher Plant	Kannenpflanze
+pitcher_pod	Pitcher Pod	Kannenpflanzenkapsel
+plains_village_map	Plains Village Map	Ebenendorfkarte
+player_head	Player Head	Spielerkopf
+plenty_pottery_sherd	Plenty Pottery Sherd	Reichtums-Töpferscherbe
+podzol	Podzol	Podsol
+pointed_dripstone	Pointed Dripstone	Spitzer Tropfstein
+poisonous_potato	Poisonous Potato	Giftige Kartoffel
+polar_bear_spawn_egg	Polar Bear Spawn Egg	Eisbären-Spawn-Ei
+polished_andesite	Polished Andesite	Polierter Andesit
+polished_andesite_slab	Polished Andesite Slab	Polierte Andesitstufe
+polished_andesite_stairs	Polished Andesite Stairs	Polierte Andesittreppe
+polished_basalt	Polished Basalt	Polierter Basalt
+polished_blackstone	Polished Blackstone	Polierter Schwarzstein
+polished_blackstone_brick_slab	Polished Blackstone Brick Slab	Polierte Schwarzsteinziegelstufe
+polished_blackstone_brick_stairs	Polished Blackstone Brick Stairs	Polierte Schwarzsteinziegeltreppe
+polished_blackstone_brick_wall	Polished Blackstone Brick Wall	Polierte Schwarzsteinziegelmauer
+polished_blackstone_bricks	Polished Blackstone Bricks	Polierte Schwarzsteinziegel
+polished_blackstone_button	Polished Blackstone Button	Polierter Schwarzsteinknopf
+polished_blackstone_pressure_plate	Polished Blackstone Pressure Plate	Polierte Schwarzsteindruckplatte
+polished_blackstone_slab	Polished Blackstone Slab	Polierte Schwarzsteinstufe
+polished_blackstone_stairs	Polished Blackstone Stairs	Polierte Schwarzsteintreppe
+polished_blackstone_wall	Polished Blackstone Wall	Polierte Schwarzsteinmauer
+polished_cinnabar	Polished Cinnabar	Polierter Zinnober
+polished_cinnabar_slab	Polished Cinnabar Slab	Polierte Zinnoberstufe
+polished_cinnabar_stairs	Polished Cinnabar Stairs	Polierte Zinnobertreppe
+polished_cinnabar_wall	Polished Cinnabar Wall	Polierte Zinnobermauer
+polished_deepslate	Polished Deepslate	Polierter Tiefenschiefer
+polished_deepslate_slab	Polished Deepslate Slab	Polierte Tiefenschieferstufe
+polished_deepslate_stairs	Polished Deepslate Stairs	Polierte Tiefenschiefertreppe
+polished_deepslate_wall	Polished Deepslate Wall	Polierte Tiefenschiefermauer
+polished_diorite	Polished Diorite	Polierter Diorit
+polished_diorite_slab	Polished Diorite Slab	Polierte Dioritstufe
+polished_diorite_stairs	Polished Diorite Stairs	Polierte Diorittreppe
+polished_granite	Polished Granite	Polierter Granit
+polished_granite_slab	Polished Granite Slab	Polierte Granitstufe
+polished_granite_stairs	Polished Granite Stairs	Polierte Granittreppe
+polished_sulfur	Polished Sulfur	Polierter Schwefel
+polished_sulfur_slab	Polished Sulfur Slab	Polierte Schwefelstufe
+polished_sulfur_stairs	Polished Sulfur Stairs	Polierte Schwefeltreppe
+polished_sulfur_wall	Polished Sulfur Wall	Polierte Schwefelmauer
+polished_tuff	Polished Tuff	Polierter Tuffstein
+polished_tuff_slab	Polished Tuff Slab	Polierte Tuffsteinstufe
+polished_tuff_stairs	Polished Tuff Stairs	Polierte Tuffsteintreppe
+polished_tuff_wall	Polished Tuff Wall	Polierte Tuffsteinmauer
+poplar_boat	Poplar Boat	Pappelholzboot
+poplar_button	Poplar Button	Pappelholzknopf
+poplar_chest_boat	Poplar Boat with Chest	Pappelholztruhenboot
+poplar_door	Poplar Door	Pappelholztür
+poplar_fence	Poplar Fence	Pappelholzzaun
+poplar_fence_gate	Poplar Fence Gate	Pappelholzzauntor
+poplar_hanging_sign	Poplar Hanging Sign	Pappelholzhängeschild
+poplar_log	Poplar Log	Pappelstamm
+poplar_planks	Poplar Planks	Pappelholzbretter
+poplar_pressure_plate	Poplar Pressure Plate	Pappelholzdruckplatte
+poplar_sapling	Poplar Sapling	Pappelsetzling
+poplar_shelf	Poplar Shelf	Pappelholzregal
+poplar_sign	Poplar Sign	Pappelholzschild
+poplar_slab	Poplar Slab	Pappelholzstufe
+poplar_stairs	Poplar Stairs	Pappelholztreppe
+poplar_trapdoor	Poplar Trapdoor	Pappelholzfalltür
+poplar_wood	Poplar Wood	Pappelholz
+popped_chorus_fruit	Popped Chorus Fruit	Geplatzte Chorusfrucht
+poppy	Poppy	Mohn
+porkchop	Raw Porkchop	Rohes Schweinefleisch
+potato	Potato	Kartoffel
+potent_sulfur	Potent Sulfur	Reaktiver Schwefel
+potion	Potion	Trank
+powder_snow_bucket	Powder Snow Bucket	Pulverschneeeimer
+powered_rail	Powered Rail	Antriebsschiene
+prismarine	Prismarine	Prismarin
+prismarine_brick_slab	Prismarine Brick Slab	Prismarinziegelstufe
+prismarine_brick_stairs	Prismarine Brick Stairs	Prismarinziegeltreppe
+prismarine_bricks	Prismarine Bricks	Prismarinziegel
+prismarine_crystals	Prismarine Crystals	Prismarinkristalle
+prismarine_shard	Prismarine Shard	Prismarinscherbe
+prismarine_slab	Prismarine Slab	Prismarinstufe
+prismarine_stairs	Prismarine Stairs	Prismarintreppe
+prismarine_wall	Prismarine Wall	Prismarinmauer
+prize_pottery_sherd	Prize Pottery Sherd	Juwelen-Töpferscherbe
+pufferfish	Pufferfish	Kugelfisch
+pufferfish_bucket	Bucket of Pufferfish	Kugelfischeimer
+pufferfish_spawn_egg	Pufferfish Spawn Egg	Kugelfisch-Spawn-Ei
+pumpkin	Pumpkin	Kürbis
+pumpkin_pie	Pumpkin Pie	Kürbiskuchen
+pumpkin_seeds	Pumpkin Seeds	Kürbiskerne
+purple_banner	Purple Banner	Violettes Banner
+purple_bed	Purple Bed	Violettes Bett
+purple_bundle	Purple Bundle	Violettes Bündel
+purple_candle	Purple Candle	Violette Kerze
+purple_carpet	Purple Carpet	Violetter Teppich
+purple_concrete	Purple Concrete	Violetter Beton
+purple_concrete_powder	Purple Concrete Powder	Violetter Trockenbeton
+purple_concrete_slab	Purple Concrete Slab	Violette Betonstufe
+purple_concrete_stairs	Purple Concrete Stairs	Violette Betontreppe
+purple_cushion	Purple Cushion	Violettes Kissen
+purple_dye	Purple Dye	Violetter Farbstoff
+purple_glazed_terracotta	Purple Glazed Terracotta	Violette glasierte Keramik
+purple_harness	Purple Harness	Violettes Geschirr
+purple_shulker_box	Purple Shulker Box	Violette Shulker-Kiste
+purple_stained_glass_pane	Purple Stained Glass Pane	Violette Glasscheibe
+purple_terracotta	Purple Terracotta	Violette Keramik
+purple_wool	Purple Wool	Violette Wolle
+purple_wool_slab	Purple Wool Slab	Violette Wollstufe
+purple_wool_stairs	Purple Wool Stairs	Violette Wolltreppe
+purpur_block	Purpur Block	Purpurblock
+purpur_pillar	Purpur Pillar	Purpursäule
+purpur_slab	Purpur Slab	Purpurstufe
+purpur_stairs	Purpur Stairs	Purpurtreppe
+quartz	Nether Quartz	Netherquarz
+quartz_block	Block of Quartz	Quarzblock
+quartz_bricks	Quartz Bricks	Quarzziegel
+quartz_pillar	Quartz Pillar	Quarzsäule
+quartz_slab	Quartz Slab	Quarzstufe
+quartz_stairs	Quartz Stairs	Quarztreppe
+rabbit	Raw Rabbit	Rohes Kaninchen
+rabbit_foot	Rabbit's Foot	Hasenpfote
+rabbit_hide	Rabbit Hide	Kaninchenfell
+rabbit_spawn_egg	Rabbit Spawn Egg	Kaninchen-Spawn-Ei
+rabbit_stew	Rabbit Stew	Kaninchenragout
+rail	Rail	Schiene
+raiser_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+ravager_spawn_egg	Ravager Spawn Egg	Verwüster-Spawn-Ei
+raw_copper	Raw Copper	Rohkupfer
+raw_copper_block	Block of Raw Copper	Rohkupferblock
+raw_gold	Raw Gold	Rohgold
+raw_gold_block	Block of Raw Gold	Rohgoldblock
+raw_iron	Raw Iron	Roheisen
+raw_iron_block	Block of Raw Iron	Roheisenblock
+recovery_compass	Recovery Compass	Bergungskompass
+red_banner	Red Banner	Rotes Banner
+red_bed	Red Bed	Rotes Bett
+red_bundle	Red Bundle	Rotes Bündel
+red_candle	Red Candle	Rote Kerze
+red_carpet	Red Carpet	Roter Teppich
+red_concrete	Red Concrete	Roter Beton
+red_concrete_powder	Red Concrete Powder	Roter Trockenbeton
+red_concrete_slab	Red Concrete Slab	Rote Betonstufe
+red_concrete_stairs	Red Concrete Stairs	Rote Betontreppe
+red_cushion	Red Cushion	Rotes Kissen
+red_dye	Red Dye	Roter Farbstoff
+red_glazed_terracotta	Red Glazed Terracotta	Rote glasierte Keramik
+red_harness	Red Harness	Rotes Geschirr
+red_mushroom	Red Mushroom	Roter Pilz
+red_mushroom_block	Red Mushroom Block	Roter Pilzblock
+red_nether_brick_slab	Red Nether Brick Slab	Rote Netherziegelstufe
+red_nether_brick_stairs	Red Nether Brick Stairs	Rote Netherziegeltreppe
+red_nether_brick_wall	Red Nether Brick Wall	Rote Netherziegelmauer
+red_nether_bricks	Red Nether Bricks	Rote Netherziegel
+red_poplar_leaves	Red Poplar Leaves	Rotes Pappellaub
+red_sand	Red Sand	Roter Sand
+red_sandstone	Red Sandstone	Roter Sandstein
+red_sandstone_slab	Red Sandstone Slab	Rote Sandsteinstufe
+red_sandstone_stairs	Red Sandstone Stairs	Rote Sandsteintreppe
+red_sandstone_wall	Red Sandstone Wall	Rote Sandsteinmauer
+red_shrub	Red Shrub	Roter Strauch
+red_shulker_box	Red Shulker Box	Rote Shulker-Kiste
+red_stained_glass_pane	Red Stained Glass Pane	Rote Glasscheibe
+red_terracotta	Red Terracotta	Rote Keramik
+red_tulip	Red Tulip	Rote Tulpe
+red_wool	Red Wool	Rote Wolle
+red_wool_slab	Red Wool Slab	Rote Wollstufe
+red_wool_stairs	Red Wool Stairs	Rote Wolltreppe
+redstone	Redstone Dust	Redstone-Staub
+redstone_block	Block of Redstone	Redstone-Block
+redstone_lamp	Redstone Lamp	Redstone-Lampe
+redstone_ore	Redstone Ore	Redstone-Erz
+redstone_torch	Redstone Torch	Redstone-Fackel
+reinforced_deepslate	Reinforced Deepslate	Verstärkter Tiefenschiefer
+repeater	Redstone Repeater	Redstone-Verstärker
+repeating_command_block	Repeating Command Block	Wiederhol-Befehlsblock
+resin_block	Block of Resin	Harzblock
+resin_brick	Resin Brick	Harzziegel
+resin_brick_slab	Resin Brick Slab	Harzziegelstufe
+resin_brick_stairs	Resin Brick Stairs	Harzziegeltreppe
+resin_brick_wall	Resin Brick Wall	Harzziegelmauer
+resin_bricks	Resin Bricks	Harzziegel
+resin_clump	Resin Clump	Harzklumpen
+respawn_anchor	Respawn Anchor	Seelenanker
+rib_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+rooted_dirt	Rooted Dirt	Wurzelerde
+rose_bush	Rose Bush	Rosenstrauch
+rotten_flesh	Rotten Flesh	Verrottetes Fleisch
+saddle	Saddle	Sattel
+salmon	Raw Salmon	Roher Lachs
+salmon_bucket	Bucket of Salmon	Lachseimer
+salmon_spawn_egg	Salmon Spawn Egg	Lachs-Spawn-Ei
+sand	Sand	Sand
+sandstone	Sandstone	Sandstein
+sandstone_slab	Sandstone Slab	Sandsteinstufe
+sandstone_stairs	Sandstone Stairs	Sandsteintreppe
+sandstone_wall	Sandstone Wall	Sandsteinmauer
+savanna_village_map	Savanna Village Map	Savannendorfkarte
+scaffolding	Scaffolding	Gerüst
+scrape_pottery_sherd	Scrape Pottery Sherd	Abschabe-Töpferscherbe
+sculk	Sculk	Sculk
+sculk_catalyst	Sculk Catalyst	Sculk-Katalysator
+sculk_sensor	Sculk Sensor	Sculk-Sensor
+sculk_shrieker	Sculk Shrieker	Sculk-Kreischer
+sculk_vein	Sculk Vein	Sculk-Ader
+sea_lantern	Sea Lantern	Seelaterne
+sea_pickle	Sea Pickle	Meeresgurke
+seagrass	Seagrass	Seegras
+sentry_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+shaper_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+sheaf_pottery_sherd	Sheaf Pottery Sherd	Garben-Töpferscherbe
+shears	Shears	Schere
+sheep_spawn_egg	Sheep Spawn Egg	Schafs-Spawn-Ei
+shelf_mushroom	Shelf Mushroom	Baumpilz
+shelter_pottery_sherd	Shelter Pottery Sherd	Zufluchts-Töpferscherbe
+shield	Shield	Schild
+short_dry_grass	Short Dry Grass	Niedriges Trockengras
+short_grass	Short Grass	Niedriges Gras
+shroomlight	Shroomlight	Pilzlicht
+shulker_box	Shulker Box	Shulker-Kiste
+shulker_shell	Shulker Shell	Shulker-Schale
+shulker_spawn_egg	Shulker Spawn Egg	Shulker-Spawn-Ei
+silence_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+silverfish_spawn_egg	Silverfish Spawn Egg	Silberfischchen-Spawn-Ei
+skeleton_horse_spawn_egg	Skeleton Horse Spawn Egg	Skelettpferde-Spawn-Ei
+skeleton_skull	Skeleton Skull	Skelettschädel
+skeleton_spawn_egg	Skeleton Spawn Egg	Skelett-Spawn-Ei
+skull_banner_pattern	Banner Pattern	Bannervorlage
+skull_pottery_sherd	Skull Pottery Sherd	Totenkopf-Töpferscherbe
+slime_ball	Slimeball	Schleimball
+slime_block	Slime Block	Schleimblock
+slime_spawn_egg	Slime Spawn Egg	Schleim-Spawn-Ei
+small_amethyst_bud	Small Amethyst Bud	Kleine Amethystknospe
+small_dripleaf	Small Dripleaf	Kleines Tropfblatt
+smithing_table	Smithing Table	Schmiedetisch
+smoker	Smoker	Räucherofen
+smooth_basalt	Smooth Basalt	Glatter Basalt
+smooth_quartz	Smooth Quartz Block	Glatter Quarzblock
+smooth_quartz_slab	Smooth Quartz Slab	Glatte Quarzstufe
+smooth_quartz_stairs	Smooth Quartz Stairs	Glatte Quarztreppe
+smooth_red_sandstone	Smooth Red Sandstone	Glatter roter Sandstein
+smooth_red_sandstone_slab	Smooth Red Sandstone Slab	Glatte rote Sandsteinstufe
+smooth_red_sandstone_stairs	Smooth Red Sandstone Stairs	Glatte rote Sandsteintreppe
+smooth_sandstone	Smooth Sandstone	Glatter Sandstein
+smooth_sandstone_slab	Smooth Sandstone Slab	Glatte Sandsteinstufe
+smooth_sandstone_stairs	Smooth Sandstone Stairs	Glatte Sandsteintreppe
+smooth_stone	Smooth Stone	Glatter Stein
+smooth_stone_slab	Smooth Stone Slab	Glatte Steinstufe
+sniffer_egg	Sniffer Egg	Schnüffler-Ei
+sniffer_spawn_egg	Sniffer Spawn Egg	Schnüffler-Spawn-Ei
+snort_pottery_sherd	Snort Pottery Sherd	Schnaub-Töpferscherbe
+snout_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+snow	Snow	Schnee
+snow_block	Snow Block	Schneeblock
+snow_golem_spawn_egg	Snow Golem Spawn Egg	Schneegolem-Spawn-Ei
+snowball	Snowball	Schneeball
+snowy_village_map	Snowy Village Map	Schneedorfkarte
+soul_campfire	Soul Campfire	Seelenlagerfeuer
+soul_lantern	Soul Lantern	Seelenlaterne
+soul_sand	Soul Sand	Seelensand
+soul_soil	Soul Soil	Seelenerde
+soul_torch	Soul Torch	Seelenfackel
+spawner	Monster Spawner	Spawner
+spectral_arrow	Spectral Arrow	Spektralpfeil
+spider_eye	Spider Eye	Spinnenauge
+spider_spawn_egg	Spider Spawn Egg	Spinnen-Spawn-Ei
+spire_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+splash_potion	Splash Potion	Wurftrank
+sponge	Sponge	Schwamm
+spore_blossom	Spore Blossom	Sporenblüte
+spruce_boat	Spruce Boat	Fichtenholzboot
+spruce_button	Spruce Button	Fichtenholzknopf
+spruce_chest_boat	Spruce Boat with Chest	Fichtenholztruhenboot
+spruce_door	Spruce Door	Fichtenholztür
+spruce_fence	Spruce Fence	Fichtenholzzaun
+spruce_fence_gate	Spruce Fence Gate	Fichtenholzzauntor
+spruce_hanging_sign	Spruce Hanging Sign	Fichtenholzhängeschild
+spruce_leaves	Spruce Leaves	Fichtennadeln
+spruce_log	Spruce Log	Fichtenstamm
+spruce_planks	Spruce Planks	Fichtenholzbretter
+spruce_pressure_plate	Spruce Pressure Plate	Fichtenholzdruckplatte
+spruce_sapling	Spruce Sapling	Fichtensetzling
+spruce_shelf	Spruce Shelf	Fichtenholzregal
+spruce_sign	Spruce Sign	Fichtenholzschild
+spruce_slab	Spruce Slab	Fichtenholzstufe
+spruce_stairs	Spruce Stairs	Fichtenholztreppe
+spruce_trapdoor	Spruce Trapdoor	Fichtenholzfalltür
+spruce_wood	Spruce Wood	Fichtenholz
+spyglass	Spyglass	Fernrohr
+squid_spawn_egg	Squid Spawn Egg	Tintenfisch-Spawn-Ei
+stick	Stick	Stock
+sticky_piston	Sticky Piston	Klebriger Kolben
+stone	Stone	Stein
+stone_axe	Stone Axe	Steinaxt
+stone_brick_slab	Stone Brick Slab	Steinziegelstufe
+stone_brick_stairs	Stone Brick Stairs	Steinziegeltreppe
+stone_brick_wall	Stone Brick Wall	Steinziegelmauer
+stone_bricks	Stone Bricks	Steinziegel
+stone_button	Stone Button	Steinknopf
+stone_hoe	Stone Hoe	Steinhacke
+stone_pickaxe	Stone Pickaxe	Steinspitzhacke
+stone_pressure_plate	Stone Pressure Plate	Steindruckplatte
+stone_shovel	Stone Shovel	Steinschaufel
+stone_slab	Stone Slab	Steinstufe
+stone_spear	Stone Spear	Steinspeer
+stone_stairs	Stone Stairs	Steintreppe
+stone_sword	Stone Sword	Steinschwert
+stonecutter	Stonecutter	Steinsäge
+straw_bed	Straw Bed	Strohbett
+stray_spawn_egg	Stray Spawn Egg	Eiswanderer-Spawn-Ei
+strider_spawn_egg	Strider Spawn Egg	Schreiter-Spawn-Ei
+string	String	Faden
+stripped_acacia_log	Stripped Acacia Log	Entrindeter Akazienstamm
+stripped_acacia_wood	Stripped Acacia Wood	Entrindetes Akazienholz
+stripped_bamboo_block	Block of Stripped Bamboo	Geschälter Bambusblock
+stripped_birch_log	Stripped Birch Log	Entrindeter Birkenstamm
+stripped_birch_wood	Stripped Birch Wood	Entrindetes Birkenholz
+stripped_cherry_log	Stripped Cherry Log	Entrindeter Kirschstamm
+stripped_cherry_wood	Stripped Cherry Wood	Entrindetes Kirschholz
+stripped_crimson_hyphae	Stripped Crimson Hyphae	Geschälte Karmesinhyphen
+stripped_crimson_stem	Stripped Crimson Stem	Geschälter Karmesinstiel
+stripped_dark_oak_log	Stripped Dark Oak Log	Entrindeter Schwarzeichenstamm
+stripped_dark_oak_wood	Stripped Dark Oak Wood	Entrindetes Schwarzeichenholz
+stripped_jungle_log	Stripped Jungle Log	Entrindeter Tropenbaumstamm
+stripped_jungle_wood	Stripped Jungle Wood	Entrindetes Tropenholz
+stripped_mangrove_log	Stripped Mangrove Log	Entrindeter Mangrovenstamm
+stripped_mangrove_wood	Stripped Mangrove Wood	Entrindetes Mangrovenholz
+stripped_oak_log	Stripped Oak Log	Entrindeter Eichenstamm
+stripped_oak_wood	Stripped Oak Wood	Entrindetes Eichenholz
+stripped_pale_oak_log	Stripped Pale Oak Log	Entrindeter Blasseichenstamm
+stripped_pale_oak_wood	Stripped Pale Oak Wood	Entrindetes Blasseichenholz
+stripped_poplar_log	Stripped Poplar Log	Entrindeter Pappelstamm
+stripped_poplar_wood	Stripped Poplar Wood	Entrindetes Pappelholz
+stripped_spruce_log	Stripped Spruce Log	Entrindeter Fichtenstamm
+stripped_spruce_wood	Stripped Spruce Wood	Entrindetes Fichtenholz
+stripped_warped_hyphae	Stripped Warped Hyphae	Geschälte Wirrhyphen
+stripped_warped_stem	Stripped Warped Stem	Geschälter Wirrstiel
+structure_block	Structure Block	Konstruktionsblock
+structure_void	Structure Void	Konstruktionsleere
+sugar	Sugar	Zucker
+sugar_cane	Sugar Cane	Zuckerrohr
+sulfur	Sulfur	Schwefel
+sulfur_brick_slab	Sulfur Brick Slab	Schwefelziegelstufe
+sulfur_brick_stairs	Sulfur Brick Stairs	Schwefelziegeltreppe
+sulfur_brick_wall	Sulfur Brick Wall	Schwefelziegelmauer
+sulfur_bricks	Sulfur Bricks	Schwefelziegel
+sulfur_cube_bucket	Bucket of Sulfur Cube	Schwefelwürfeleimer
+sulfur_cube_spawn_egg	Sulfur Cube Spawn Egg	Schwefelwürfel-Spawn-Ei
+sulfur_slab	Sulfur Slab	Schwefelstufe
+sulfur_spike	Sulfur Spike	Schwefelspitze
+sulfur_stairs	Sulfur Stairs	Schwefeltreppe
+sulfur_wall	Sulfur Wall	Schwefelmauer
+sunflower	Sunflower	Sonnenblume
+suspicious_gravel	Suspicious Gravel	Seltsamer Kies
+suspicious_sand	Suspicious Sand	Seltsamer Sand
+suspicious_stew	Suspicious Stew	Seltsame Suppe
+swamp_hut_map	Swamp Hut Map	Sumpfhüttenkarte
+sweet_berries	Sweet Berries	Süßbeeren
+tadpole_bucket	Bucket of Tadpole	Kaulquappeneimer
+tadpole_spawn_egg	Tadpole Spawn Egg	Kaulquappen-Spawn-Ei
+taiga_village_map	Taiga Village Map	Taigadorfkarte
+tall_dry_grass	Tall Dry Grass	Hohes Trockengras
+tall_grass	Tall Grass	Hohes Gras
+target	Target	Zielblock
+terracotta	Terracotta	Keramik
+test_block	Test Block	Testblock
+test_instance_block	Test Instance Block	Testinstanzblock
+tide_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+tinted_glass	Tinted Glass	Getöntes Glas
+tipped_arrow	Tipped Arrow	Getränkter Pfeil
+tnt	TNT	TNT
+tnt_minecart	Minecart with TNT	TNT-Lore
+torch	Torch	Fackel
+torchflower	Torchflower	Fackellilie
+torchflower_seeds	Torchflower Seeds	Fackelliliensamen
+totem_of_undying	Totem of Undying	Totem der Unsterblichkeit
+trader_llama_spawn_egg	Trader Llama Spawn Egg	Händlerlama-Spawn-Ei
+trapped_chest	Trapped Chest	Redstone-Truhe
+trial_key	Trial Key	Prüfungsschlüssel
+trial_spawner	Trial Spawner	Prüfungs-Spawner
+trident	Trident	Dreizack
+tripwire_hook	Tripwire Hook	Haken
+tropical_fish	Tropical Fish	Tropenfisch
+tropical_fish_bucket	Bucket of Tropical Fish	Tropenfischeimer
+tropical_fish_spawn_egg	Tropical Fish Spawn Egg	Tropenfisch-Spawn-Ei
+tube_coral	Tube Coral	Orgelkoralle
+tube_coral_block	Tube Coral Block	Orgelkorallenblock
+tube_coral_fan	Tube Coral Fan	Orgelkorallenfächer
+tuff	Tuff	Tuffstein
+tuff_brick_slab	Tuff Brick Slab	Tuffsteinziegelstufe
+tuff_brick_stairs	Tuff Brick Stairs	Tuffsteinziegeltreppe
+tuff_brick_wall	Tuff Brick Wall	Tuffsteinziegelmauer
+tuff_bricks	Tuff Bricks	Tuffsteinziegel
+tuff_slab	Tuff Slab	Tuffsteinstufe
+tuff_stairs	Tuff Stairs	Tuffsteintreppe
+tuff_wall	Tuff Wall	Tuffsteinmauer
+turtle_egg	Turtle Egg	Schildkrötenei
+turtle_helmet	Turtle Shell	Schildkrötenpanzer
+turtle_scute	Turtle Scute	Schildkröten-Hornschild
+turtle_spawn_egg	Turtle Spawn Egg	Schildkröten-Spawn-Ei
+twisting_vines	Twisting Vines	Zwirbelranken
+vault	Vault	Tresor
+verdant_froglight	Verdant Froglight	Junggrünes Froschlicht
+vex_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+vex_spawn_egg	Vex Spawn Egg	Plagegeister-Spawn-Ei
+villager_spawn_egg	Villager Spawn Egg	Dorfbewohner-Spawn-Ei
+vindicator_spawn_egg	Vindicator Spawn Egg	Diener-Spawn-Ei
+vine	Vines	Ranken
+wandering_trader_spawn_egg	Wandering Trader Spawn Egg	Fahrender-Händler-Spawn-Ei
+ward_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+warden_spawn_egg	Warden Spawn Egg	Wärter-Spawn-Ei
+warm_ocean_ruins_map	Warm Ocean Ruins Map	Warme-Ozeanruinen-Karte
+warped_button	Warped Button	Wirrknopf
+warped_door	Warped Door	Wirrtür
+warped_fence	Warped Fence	Wirrzaun
+warped_fence_gate	Warped Fence Gate	Wirrzauntor
+warped_fungus	Warped Fungus	Wirrpilz
+warped_fungus_on_a_stick	Warped Fungus on a Stick	Wirrpilzrute
+warped_hanging_sign	Warped Hanging Sign	Wirrhängeschild
+warped_hyphae	Warped Hyphae	Wirrhyphen
+warped_nylium	Warped Nylium	Wirr-Nezel
+warped_planks	Warped Planks	Wirrbretter
+warped_pressure_plate	Warped Pressure Plate	Wirrdruckplatte
+warped_roots	Warped Roots	Wirrwurzeln
+warped_shelf	Warped Shelf	Wirrregal
+warped_sign	Warped Sign	Wirrschild
+warped_slab	Warped Slab	Wirrstufe
+warped_stairs	Warped Stairs	Wirrtreppe
+warped_stem	Warped Stem	Wirrstiel
+warped_trapdoor	Warped Trapdoor	Wirrfalltür
+warped_wart_block	Warped Wart Block	Wirrwarzenblock
+water_bucket	Water Bucket	Wassereimer
+waxed_chiseled_copper	Waxed Chiseled Copper	Gewachster gemeißelter Kupferblock
+waxed_copper_bars	Waxed Copper Bars	Gewachstes Kupfergitter
+waxed_copper_block	Waxed Block of Copper	Gewachster Kupferblock
+waxed_copper_bulb	Waxed Copper Bulb	Gewachste Kupferleuchte
+waxed_copper_chain	Waxed Copper Chain	Gewachste Kupferkette
+waxed_copper_chest	Waxed Copper Chest	Gewachste Kupfertruhe
+waxed_copper_door	Waxed Copper Door	Gewachste Kupfertür
+waxed_copper_golem_statue	Waxed Copper Golem Statue	Gewachste Kupfergolemstatue
+waxed_copper_grate	Waxed Copper Grate	Gewachster Kupferrost
+waxed_copper_lantern	Waxed Copper Lantern	Gewachste Kupferlaterne
+waxed_copper_trapdoor	Waxed Copper Trapdoor	Gewachste Kupferfalltür
+waxed_cut_copper	Waxed Cut Copper	Gewachster geschnittener Kupferblock
+waxed_cut_copper_slab	Waxed Cut Copper Slab	Gewachste geschnittene Kupferstufe
+waxed_cut_copper_stairs	Waxed Cut Copper Stairs	Gewachste geschnittene Kupfertreppe
+waxed_exposed_chiseled_copper	Waxed Exposed Chiseled Copper	Gewachster angelaufener gemeißelter Kupferblock
+waxed_exposed_copper	Waxed Exposed Copper	Gewachster angelaufener Kupferblock
+waxed_exposed_copper_bars	Waxed Exposed Copper Bars	Gewachstes angelaufenes Kupfergitter
+waxed_exposed_copper_bulb	Waxed Exposed Copper Bulb	Gewachste angelaufene Kupferleuchte
+waxed_exposed_copper_chain	Waxed Exposed Copper Chain	Gewachste angelaufene Kupferkette
+waxed_exposed_copper_chest	Waxed Exposed Copper Chest	Gewachste angelaufene Kupfertruhe
+waxed_exposed_copper_door	Waxed Exposed Copper Door	Gewachste angelaufene Kupfertür
+waxed_exposed_copper_golem_statue	Waxed Exposed Copper Golem Statue	Gewachste angelaufene Kupfergolemstatue
+waxed_exposed_copper_grate	Waxed Exposed Copper Grate	Gewachster angelaufener Kupferrost
+waxed_exposed_copper_lantern	Waxed Exposed Copper Lantern	Gewachste angelaufene Kupferlaterne
+waxed_exposed_copper_trapdoor	Waxed Exposed Copper Trapdoor	Gewachste angelaufene Kupferfalltür
+waxed_exposed_cut_copper	Waxed Exposed Cut Copper	Gewachster angelaufener geschnittener Kupferblock
+waxed_exposed_cut_copper_slab	Waxed Exposed Cut Copper Slab	Gewachste angelaufene geschnittene Kupferstufe
+waxed_exposed_cut_copper_stairs	Waxed Exposed Cut Copper Stairs	Gewachste angelaufene geschnittene Kupfertreppe
+waxed_exposed_lightning_rod	Waxed Exposed Lightning Rod	Gewachster angelaufener Blitzableiter
+waxed_lightning_rod	Waxed Lightning Rod	Gewachster Blitzableiter
+waxed_oxidized_chiseled_copper	Waxed Oxidized Chiseled Copper	Gewachster oxidierter gemeißelter Kupferblock
+waxed_oxidized_copper	Waxed Oxidized Copper	Gewachster oxidierter Kupferblock
+waxed_oxidized_copper_bars	Waxed Oxidized Copper Bars	Gewachstes oxidiertes Kupfergitter
+waxed_oxidized_copper_bulb	Waxed Oxidized Copper Bulb	Gewachste oxidierte Kupferleuchte
+waxed_oxidized_copper_chain	Waxed Oxidized Copper Chain	Gewachste oxidierte Kupferkette
+waxed_oxidized_copper_chest	Waxed Oxidized Copper Chest	Gewachste oxidierte Kupfertruhe
+waxed_oxidized_copper_door	Waxed Oxidized Copper Door	Gewachste oxidierte Kupfertür
+waxed_oxidized_copper_golem_statue	Waxed Oxidized Copper Golem Statue	Gewachste oxidierte Kupfergolemstatue
+waxed_oxidized_copper_grate	Waxed Oxidized Copper Grate	Gewachster oxidierter Kupferrost
+waxed_oxidized_copper_lantern	Waxed Oxidized Copper Lantern	Gewachste oxidierte Kupferlaterne
+waxed_oxidized_copper_trapdoor	Waxed Oxidized Copper Trapdoor	Gewachste oxidierte Kupferfalltür
+waxed_oxidized_cut_copper	Waxed Oxidized Cut Copper	Gewachster oxidierter geschnittener Kupferblock
+waxed_oxidized_cut_copper_slab	Waxed Oxidized Cut Copper Slab	Gewachste oxidierte geschnittene Kupferstufe
+waxed_oxidized_cut_copper_stairs	Waxed Oxidized Cut Copper Stairs	Gewachste oxidierte geschnittene Kupfertreppe
+waxed_oxidized_lightning_rod	Waxed Oxidized Lightning Rod	Gewachster oxidierter Blitzableiter
+waxed_weathered_chiseled_copper	Waxed Weathered Chiseled Copper	Gewachster verwitterter gemeißelter Kupferblock
+waxed_weathered_copper	Waxed Weathered Copper	Gewachster verwitterter Kupferblock
+waxed_weathered_copper_bars	Waxed Weathered Copper Bars	Gewachstes verwittertes Kupfergitter
+waxed_weathered_copper_bulb	Waxed Weathered Copper Bulb	Gewachste verwitterte Kupferleuchte
+waxed_weathered_copper_chain	Waxed Weathered Copper Chain	Gewachste verwitterte Kupferkette
+waxed_weathered_copper_chest	Waxed Weathered Copper Chest	Gewachste verwitterte Kupfertruhe
+waxed_weathered_copper_door	Waxed Weathered Copper Door	Gewachste verwitterte Kupfertür
+waxed_weathered_copper_golem_statue	Waxed Weathered Copper Golem Statue	Gewachste verwitterte Kupfergolemstatue
+waxed_weathered_copper_grate	Waxed Weathered Copper Grate	Gewachster verwitterter Kupferrost
+waxed_weathered_copper_lantern	Waxed Weathered Copper Lantern	Gewachste verwitterte Kupferlaterne
+waxed_weathered_copper_trapdoor	Waxed Weathered Copper Trapdoor	Gewachste verwitterte Kupferfalltür
+waxed_weathered_cut_copper	Waxed Weathered Cut Copper	Gewachster verwitterter geschnittener Kupferblock
+waxed_weathered_cut_copper_slab	Waxed Weathered Cut Copper Slab	Gewachste verwitterte geschnittene Kupferstufe
+waxed_weathered_cut_copper_stairs	Waxed Weathered Cut Copper Stairs	Gewachste verwitterte geschnittene Kupfertreppe
+waxed_weathered_lightning_rod	Waxed Weathered Lightning Rod	Gewachster verwitterter Blitzableiter
+wayfinder_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+weathered_chiseled_copper	Weathered Chiseled Copper	Verwitterter gemeißelter Kupferblock
+weathered_copper	Weathered Copper	Verwitterter Kupferblock
+weathered_copper_bars	Weathered Copper Bars	Verwittertes Kupfergitter
+weathered_copper_bulb	Weathered Copper Bulb	Verwitterte Kupferleuchte
+weathered_copper_chain	Weathered Copper Chain	Verwitterte Kupferkette
+weathered_copper_chest	Weathered Copper Chest	Verwitterte Kupfertruhe
+weathered_copper_door	Weathered Copper Door	Verwitterte Kupfertür
+weathered_copper_golem_statue	Weathered Copper Golem Statue	Verwitterte Kupfergolemstatue
+weathered_copper_grate	Weathered Copper Grate	Verwitterter Kupferrost
+weathered_copper_lantern	Weathered Copper Lantern	Verwitterte Kupferlaterne
+weathered_copper_trapdoor	Weathered Copper Trapdoor	Verwitterte Kupferfalltür
+weathered_cut_copper	Weathered Cut Copper	Verwitterter geschnittener Kupferblock
+weathered_cut_copper_slab	Weathered Cut Copper Slab	Verwitterte geschnittene Kupferstufe
+weathered_cut_copper_stairs	Weathered Cut Copper Stairs	Verwitterte geschnittene Kupfertreppe
+weathered_lightning_rod	Weathered Lightning Rod	Verwitterter Blitzableiter
+weeping_vines	Weeping Vines	Trauerranken
+wet_sponge	Wet Sponge	Nasser Schwamm
+wheat	Wheat	Weizen
+wheat_seeds	Wheat Seeds	Weizenkörner
+white_banner	White Banner	Weißes Banner
+white_bed	White Bed	Weißes Bett
+white_bundle	White Bundle	Weißes Bündel
+white_candle	White Candle	Weiße Kerze
+white_carpet	White Carpet	Weißer Teppich
+white_concrete	White Concrete	Weißer Beton
+white_concrete_powder	White Concrete Powder	Weißer Trockenbeton
+white_concrete_slab	White Concrete Slab	Weiße Betonstufe
+white_concrete_stairs	White Concrete Stairs	Weiße Betontreppe
+white_cushion	White Cushion	Weißes Kissen
+white_dye	White Dye	Weißer Farbstoff
+white_glazed_terracotta	White Glazed Terracotta	Weiße glasierte Keramik
+white_harness	White Harness	Weißes Geschirr
+white_shulker_box	White Shulker Box	Weiße Shulker-Kiste
+white_stained_glass_pane	White Stained Glass Pane	Weiße Glasscheibe
+white_terracotta	White Terracotta	Weiße Keramik
+white_tulip	White Tulip	Weiße Tulpe
+white_wool	White Wool	Weiße Wolle
+white_wool_slab	White Wool Slab	Weiße Wollstufe
+white_wool_stairs	White Wool Stairs	Weiße Wolltreppe
+wild_armor_trim_smithing_template	Smithing Template	Schmiedevorlage
+wildflowers	Wildflowers	Wildblumen
+wind_charge	Wind Charge	Windkugel
+witch_spawn_egg	Witch Spawn Egg	Hexen-Spawn-Ei
+wither_rose	Wither Rose	Wither-Rose
+wither_skeleton_skull	Wither Skeleton Skull	Wither-Skelettschädel
+wither_skeleton_spawn_egg	Wither Skeleton Spawn Egg	Wither-Skelett-Spawn-Ei
+wither_spawn_egg	Wither Spawn Egg	Wither-Spawn-Ei
+wolf_armor	Wolf Armor	Wolfspanzer
+wolf_spawn_egg	Wolf Spawn Egg	Wolfs-Spawn-Ei
+wooden_axe	Wooden Axe	Holzaxt
+wooden_hoe	Wooden Hoe	Holzhacke
+wooden_pickaxe	Wooden Pickaxe	Holzspitzhacke
+wooden_shovel	Wooden Shovel	Holzschaufel
+wooden_spear	Wooden Spear	Holzspeer
+wooden_sword	Wooden Sword	Holzschwert
+woodland_mansion_map	Woodland Mansion Map	Waldanwesenkarte
+writable_book	Book and Quill	Buch und Feder
+written_book	Written Book	Beschriebenes Buch
+yellow_banner	Yellow Banner	Gelbes Banner
+yellow_bed	Yellow Bed	Gelbes Bett
+yellow_bundle	Yellow Bundle	Gelbes Bündel
+yellow_candle	Yellow Candle	Gelbe Kerze
+yellow_carpet	Yellow Carpet	Gelber Teppich
+yellow_concrete	Yellow Concrete	Gelber Beton
+yellow_concrete_powder	Yellow Concrete Powder	Gelber Trockenbeton
+yellow_concrete_slab	Yellow Concrete Slab	Gelbe Betonstufe
+yellow_concrete_stairs	Yellow Concrete Stairs	Gelbe Betontreppe
+yellow_cushion	Yellow Cushion	Gelbes Kissen
+yellow_dye	Yellow Dye	Gelber Farbstoff
+yellow_glazed_terracotta	Yellow Glazed Terracotta	Gelbe glasierte Keramik
+yellow_harness	Yellow Harness	Gelbes Geschirr
+yellow_poplar_leaves	Yellow Poplar Leaves	Gelbes Pappellaub
+yellow_shulker_box	Yellow Shulker Box	Gelbe Shulker-Kiste
+yellow_stained_glass_pane	Yellow Stained Glass Pane	Gelbe Glasscheibe
+yellow_terracotta	Yellow Terracotta	Gelbe Keramik
+yellow_wool	Yellow Wool	Gelbe Wolle
+yellow_wool_slab	Yellow Wool Slab	Gelbe Wollstufe
+yellow_wool_stairs	Yellow Wool Stairs	Gelbe Wolltreppe
+zoglin_spawn_egg	Zoglin Spawn Egg	Zoglin-Spawn-Ei
+zombie_head	Zombie Head	Zombiekopf
+zombie_horse_spawn_egg	Zombie Horse Spawn Egg	Zombiepferde-Spawn-Ei
+zombie_nautilus_spawn_egg	Zombie Nautilus Spawn Egg	Zombienautilus-Spawn-Ei
+zombie_spawn_egg	Zombie Spawn Egg	Zombie-Spawn-Ei
+zombie_villager_spawn_egg	Zombie Villager Spawn Egg	Zombiedorfbewohner-Spawn-Ei
+zombified_piglin_spawn_egg	Zombified Piglin Spawn Egg	Zombifizierter-Piglin-Spawn-Ei

@@ -27,6 +27,9 @@ messages:
   world-disabled: "<red>In dieser Welt kannst du kein Zuhause setzen."
   player-not-found: "<red>Es gibt keinen Spieler namens <white>{player}</white>."
   usage-delhome: "<red>Benutzung: <white>/delhome <name>"
+  language-current: "Sprache: <white>{language}</white>. Verfügbar: <white>{languages}"
+  language-set: "Sprache auf <white>{language}</white> gestellt."
+  language-unknown: "<red>Die Sprache <white>{language}</white> gibt es nicht. Verfügbar: <white>{languages}"
 
 teleport:
   countdown: "Teleport zu <white>{home}</white> in <white>{seconds}</white>..."
@@ -47,6 +50,7 @@ admin:
     - "<white>/home-admin open <spieler> <gray>- Zuhause eines Spielers verwalten"
     - "<white>/home-admin tp <spieler> <zuhause> <gray>- zu einem Zuhause eines Spielers teleportieren"
     - "<white>/home-admin delete <spieler> <zuhause> <gray>- ein Zuhause eines Spielers löschen"
+    - "<white>/home-admin language <name> <gray>- auto, english, german, ..."
     - "<white>/home-admin reload <gray>- Konfiguration und Sprache neu laden"
 
 dialogs:
